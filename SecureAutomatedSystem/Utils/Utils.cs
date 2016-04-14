@@ -12,8 +12,9 @@ namespace SecureAutomatedSystem.Utils {
         }
 
         public static Bitmap CreateBitmapFromResources(string name, System.Reflection.Assembly asm) {
-            return (Bitmap)CreateImageFromResources(name, asm);
+            return (Bitmap) CreateImageFromResources(name, asm);
         }
+
         public static Image CreateImageFromResources(string name, System.Reflection.Assembly asm) {
             System.IO.Stream stream = asm.GetManifestResourceStream(name);
             return Image.FromStream(stream);
@@ -25,7 +26,7 @@ namespace SecureAutomatedSystem.Utils {
     }
 
     public static class Constants {
-        public static int ValidKeyLenght = 10;
+        public static int ValidKeyLenght = 6;
         public static string DemoKey = "DemoKey";
     }
 }

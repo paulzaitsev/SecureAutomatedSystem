@@ -26,7 +26,13 @@ namespace SecureAutomatedSystem.DemoMode {
                 return false;
             if (key.Length != Constants.ValidKeyLenght)
                 return false;
-            return true; //TODO
+            return Validate(key);
+        }
+
+        static bool Validate(string key) {
+            string left = key.Substring(0, Constants.ValidKeyLenght/2);
+            string right = key.Substring(3, Constants.ValidKeyLenght/2);
+            return left.Sum(x => Convert.ToInt32(x)) == right.Sum(x => Convert.ToInt32(x));
         }
     }
 }
