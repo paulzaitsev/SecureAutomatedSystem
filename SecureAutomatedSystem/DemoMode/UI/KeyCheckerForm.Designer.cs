@@ -59,7 +59,7 @@
             // demoModecb
             // 
             this.demoModecb.AutoSize = true;
-            this.demoModecb.Location = new System.Drawing.Point(3, 30);
+            this.demoModecb.Location = new System.Drawing.Point(3, 31);
             this.demoModecb.Name = "demoModecb";
             this.demoModecb.Size = new System.Drawing.Size(83, 17);
             this.demoModecb.TabIndex = 5;
@@ -78,19 +78,19 @@
             this.tableLayoutPanel1.Controls.Add(this.cancelButton, 1, 2);
             this.tableLayoutPanel1.Controls.Add(this.okButton, 0, 2);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(20, 60);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 3;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 54F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 46F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 29F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(429, 80);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(429, 82);
             this.tableLayoutPanel1.TabIndex = 6;
             this.tableLayoutPanel1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.tableLayoutPanel1_MouseClick_1);
             // 
             // cancelButton
             // 
-            this.cancelButton.Location = new System.Drawing.Point(348, 53);
+            this.cancelButton.Location = new System.Drawing.Point(348, 55);
             this.cancelButton.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
             this.cancelButton.Name = "cancelButton";
             this.cancelButton.Size = new System.Drawing.Size(75, 23);
@@ -103,7 +103,7 @@
             // 
             this.okButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.okButton.Enabled = false;
-            this.okButton.Location = new System.Drawing.Point(267, 53);
+            this.okButton.Location = new System.Drawing.Point(267, 55);
             this.okButton.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
             this.okButton.Name = "okButton";
             this.okButton.Size = new System.Drawing.Size(75, 23);
@@ -116,13 +116,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(429, 80);
+            this.ClientSize = new System.Drawing.Size(469, 162);
             this.Controls.Add(this.tableLayoutPanel1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "KeyCheckerForm";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "License key";
             this.MouseClick += new System.Windows.Forms.MouseEventHandler(this.KeyCheckerForm_MouseClick);
             ((System.ComponentModel.ISupportInitialize)(this.iconBox)).EndInit();

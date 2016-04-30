@@ -10,11 +10,12 @@ using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MetroFramework.Forms;
 using Microsoft.Win32;
 using SecureAutomatedSystem.Utils;
 
 namespace SecureAutomatedSystem.DemoMode.UI {
-    public partial class KeyCheckerForm : Form {
+    public partial class KeyCheckerForm : MetroForm {
         public KeyCheckerForm() {
             InitializeComponent();
         }
@@ -33,7 +34,7 @@ namespace SecureAutomatedSystem.DemoMode.UI {
 
         private void ResetFieldValue() {
             if (string.IsNullOrEmpty(keyField.Text)) {
-                keyField.Text = UIStringId.EnterLicenseKey;
+                keyField.Text = StringId.EnterLicenseKey;
                 this.iconBox.Image = null;
             }
         }
@@ -47,9 +48,12 @@ namespace SecureAutomatedSystem.DemoMode.UI {
         }
 
         private void demoModecb_CheckedChanged(object sender, EventArgs e) {
-            keyField.Enabled = false;
-            SetIconSuccess();
-            okButton.Enabled = ((CheckBox) sender).Checked;
+            bool check = ((CheckBox) sender).Checked;
+            keyField.Enabled = !check;
+            if (check)
+                SetIconSuccess();
+            else SeticonFail();
+            okButton.Enabled = check;
         }
 
         private void keyField_TextChanged(object sender, EventArgs e) {

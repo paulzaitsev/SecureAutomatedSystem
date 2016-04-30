@@ -1,20 +1,19 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using SecureAutomatedSystem.Utils;
 
 namespace SecureAutomatedSystem.DemoMode {
     public static class KeyChecker {
         public static string ValidLicenseKey { get; private set; }
         public static bool IsValidKey {
-            get { return IsValid(ValidLicenseKey); }
+            get { return IsValid(ValidLicenseKey) || RegisterUtils.CheckRegister(); }
         }
 
         public static void RegisterKey(string key) {
-            if (IsValid(key))
+            if (IsValid(key)) {
                 ValidLicenseKey = key;
+                RegisterUtils.SetInRegister(key);
+            }
         }
 
         public static bool IsValid(string key) {
@@ -22,7 +21,7 @@ namespace SecureAutomatedSystem.DemoMode {
                 return true;
             if (string.IsNullOrEmpty(key))
                 return false;
-            if (string.Equals(key, UIStringId.EnterLicenseKey))
+            if (string.Equals(key, StringId.EnterLicenseKey))
                 return false;
             if (key.Length != Constants.ValidKeyLenght)
                 return false;

@@ -7,13 +7,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using MetroFramework;
 using MetroFramework.Forms;
-using SecureAutomatedSystem.Modules.Views;
 
-namespace SecureAutomatedSystem {
-    public partial class MainForm : MetroForm {
-        public MainForm() {
+namespace SecureAutomatedSystem.Snapshot {
+    public partial class SnapshotForm : MetroForm {
+        public SnapshotForm() {
             InitializeComponent();
         }
     }

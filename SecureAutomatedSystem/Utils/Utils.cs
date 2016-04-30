@@ -4,6 +4,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.Win32;
 
 namespace SecureAutomatedSystem.Utils {
     public static class Utils {
@@ -21,8 +22,25 @@ namespace SecureAutomatedSystem.Utils {
         }
     }
 
-    public static class UIStringId {
+    public static class RegisterUtils {
+        public static void SetInRegister(string value) {
+            using (RegistryKey key = Registry.CurrentUser.CreateSubKey(StringId.RegistrySubKeyName)) {
+                key.SetValue(StringId.LicenseKey, CryptoUtils.GetMd5Hash(value));
+            }
+        }
+
+        public static bool CheckRegister() {
+            using (RegistryKey key = Registry.CurrentUser.OpenSubKey(StringId.RegistrySubKeyName)) {
+                return key != null && key.GetValue(StringId.LicenseKey) != null;
+            }
+        }
+    }
+
+    public static class StringId {
         public const string EnterLicenseKey = "Enter license key";
+        public const string LicenseKey = "Licensekey";
+        public const string AppName = "SecureAutomatedSystem";
+        public const string RegistrySubKeyName = "SOFTWARE" + "\\" + "SecureAutomatedSystem";
     }
 
     public static class Constants {

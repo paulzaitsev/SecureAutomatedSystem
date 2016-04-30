@@ -1,19 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Data;
 using System.Drawing;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using MetroFramework;
-using MetroFramework.Forms;
-using SecureAutomatedSystem.Modules.Views;
+using MetroFramework.Controls;
 
-namespace SecureAutomatedSystem {
-    public partial class MainForm : MetroForm {
-        public MainForm() {
+namespace SecureAutomatedSystem.Modules.Views {
+    [ToolboxItem(false)]
+    public partial class PageViewBase : MetroUserControl {
+        public PageViewBase() {
             InitializeComponent();
         }
     }
