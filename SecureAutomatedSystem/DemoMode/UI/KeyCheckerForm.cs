@@ -81,5 +81,9 @@ namespace SecureAutomatedSystem.DemoMode.UI {
             KeyChecker.RegisterKey(demoModecb.Checked ? Constants.DemoKey : keyField.Text);
             this.Close();
         }
+
+        private void tableLayoutPanel3_Paint(object sender, PaintEventArgs e) {
+
+        }
     }
 }
