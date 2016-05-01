@@ -9,7 +9,6 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using MetroFramework;
 using MetroFramework.Forms;
-using SecureAutomatedSystem.Modules.Views;
 using System.Globalization;
 using SecureAutomatedSystem.ProcessEmulation;
 using SecureAutomatedSystem.Snapshot;

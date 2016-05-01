@@ -14,5 +14,9 @@ namespace SecureAutomatedSystem.Snapshot {
         public SnapshotForm() {
             InitializeComponent();
         }
+
+        private void lineCurvesChart7_Load(object sender, EventArgs e) {
+
+        }
     }
 }
