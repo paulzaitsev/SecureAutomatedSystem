@@ -99,6 +99,8 @@
     <Compile Include="Modules\Views\StatisticsTabPageView.Designer.cs">
       <DependentUpon>StatisticsTabPageView.cs</DependentUpon>
     </Compile>
+    <Compile Include="ProcessEmulation\Emulator.cs" />
+    <Compile Include="ProcessEmulation\Product.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Modules\Model.cs" />
