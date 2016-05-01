@@ -11,18 +11,20 @@ using MetroFramework;
 using MetroFramework.Forms;
 using SecureAutomatedSystem.Modules.Views;
 using System.Globalization;
+using SecureAutomatedSystem.ProcessEmulation;
+using SecureAutomatedSystem.Snapshot;
 
 namespace SecureAutomatedSystem {
     public partial class MainForm : MetroForm {
-        
+
         public MainForm() {
             InitializeComponent();
-            
+
         }
+
         private Emulator factory;
 
-        private void GetCurrentProduct()
-        {
+        private void OnProductProduced(object sender, EventArgs e) {
             textBox1.Text = factory.CurrentProduct.OuterDiameter.ToString();
             textBox2.Text = factory.CurrentProduct.OuterRadius.ToString();
             textBox3.Text = factory.CurrentProduct.InnerDiameter.ToString();
@@ -35,8 +37,7 @@ namespace SecureAutomatedSystem {
             textBox10.Text = factory.CurrentProduct.OuterPairingRadiusCyl.ToString();
         }
 
-        private void RevertAccessibilityInProcessTab()
-        {
+        private void RevertAccessibilityInProcessTab() {
             Stop.Enabled = !Stop.Enabled;
             Start.Enabled = !Start.Enabled;
             InputDelay.Enabled = !InputDelay.Enabled;
@@ -50,11 +51,9 @@ namespace SecureAutomatedSystem {
             textBox18.Enabled = !textBox18.Enabled;
         }
 
-        private void Start_Click(object sender, EventArgs e)
-        {
+        private void Start_Click(object sender, EventArgs e) {
             RevertAccessibilityInProcessTab();
-            try
-            {             
+            try {
                 float p1 = Convert.ToSingle(textBox11.Text, new CultureInfo("en-US"));
                 float p2 = p1/2;
                 float p3 = Convert.ToSingle(textBox12.Text, new CultureInfo("en-US"));
@@ -65,33 +64,38 @@ namespace SecureAutomatedSystem {
                 float p8 = Convert.ToSingle(textBox16.Text, new CultureInfo("en-US"));
                 float p9 = Convert.ToSingle(textBox17.Text, new CultureInfo("en-US"));
                 float p10 = Convert.ToSingle(textBox18.Text, new CultureInfo("en-US"));
-                factory = new Emulator(Convert.ToSingle(InputDelay.Text),SavingInDB.Checked,EncryptInDB.Checked, new Product(p1,p2,p3,p4,p5,p6,p7,p8,p9,p10));
+                factory = new Emulator(Convert.ToSingle(InputDelay.Text), SavingInDB.Checked, EncryptInDB.Checked,
+                    new Product(p1, p2, p3, p4, p5, p6, p7, p8, p9, p10));
             }
-            catch
-            {
-                MessageBox.Show("All parameters must be float and use point delimiter! Start session with default settings.", "Error", MessageBoxButtons.OK);
+            catch {
+                MessageBox.Show(
+                    "All parameters must be float and use point delimiter! Start session with default settings.",
+                    "Error", MessageBoxButtons.OK);
                 factory = new Emulator();
             }
-            
-            factory.ProductProduced += GetCurrentProduct;
+
+            factory.ProductProduced += OnProductProduced;
             factory.StartProducing();
         }
 
-        private void Stop_Click(object sender, EventArgs e)
-        {
-            RevertAccessibilityInProcessTab();            
+        private void Stop_Click(object sender, EventArgs e) {
+            RevertAccessibilityInProcessTab();
             factory.StopProducing();
         }
 
-        private void SavingInDB_CheckedChanged(object sender, EventArgs e)
-        {
+        private void SavingInDB_CheckedChanged(object sender, EventArgs e) {
             EncryptInDB.Enabled = !EncryptInDB.Enabled;
             factory.SaveInDB = !factory.SaveInDB;
         }
 
-        private void EncryptInDB_CheckedChanged(object sender, EventArgs e)
-        {
+        private void EncryptInDB_CheckedChanged(object sender, EventArgs e) {
             factory.EncryptData = !factory.EncryptData;
+        }
+
+        private void snapshotTile_Click(object sender, EventArgs e) {
+            using (SnapshotForm form = new SnapshotForm()) {
+                form.ShowDialog();
+            }
         }
     }
 }
