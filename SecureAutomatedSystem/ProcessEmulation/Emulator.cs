@@ -20,9 +20,10 @@ namespace SecureAutomatedSystem.ProcessEmulation{
         public bool InWork { get; private set; }
         public Product CurrentProduct { get; private set; }
         public Product Benchmark { get; private set; }
+        private static readonly Product DefaultBenchmark = new Product(10, 5, 10, 5, 7, 7, 7, 10, 10, 8);
         public EventHandler ProductProduced;
 
-        public Emulator() : this(1, false, false, new Product(10, 10, 10, 10, 10, 10, 10, 10, 10, 10)) {
+        public Emulator() : this(1, false, false, DefaultBenchmark) {
         }
 
         public Emulator(float Delay, bool ProducerSaveInDB, bool ProducerEncryptData, Product ProductBenchmark) {
