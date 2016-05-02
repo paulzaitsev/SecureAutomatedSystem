@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Threading.Tasks;
+using System.Data;
 
 namespace SecureAutomatedSystem.ProcessEmulation{
     public class Emulator {
@@ -39,6 +40,9 @@ namespace SecureAutomatedSystem.ProcessEmulation{
             while (InWork) {
                 CurrentProduct = ProduceNewProduct(rnd);
                 ProductProduced(this, EventArgs.Empty);
+                if (SaveInDB) {
+                    SaveData(EncryptData);
+                }
                 await Task.Delay((int) ProducerDelay*1000);
             }
         }
@@ -62,6 +66,8 @@ namespace SecureAutomatedSystem.ProcessEmulation{
             return new Product(OuterDiameter, OuterRadius, InnerDiameter, InnerRadius, OuterPairingRadius, WallThickness, TopThickness, BottomLowersectionHeight, TopDiameter, OuterPairingRadiusCyl);
         }
 
-        private void SaveData(bool EncryptData) { }
+        private void SaveData(bool EncryptData) {
+            
+        }
     }
 }

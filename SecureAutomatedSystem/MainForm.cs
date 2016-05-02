@@ -84,11 +84,15 @@ namespace SecureAutomatedSystem {
 
         private void SavingInDB_CheckedChanged(object sender, EventArgs e) {
             EncryptInDB.Enabled = !EncryptInDB.Enabled;
-            factory.SaveInDB = !factory.SaveInDB;
+            if (factory != null) {
+                factory.SaveInDB = !factory.SaveInDB;
+            }            
         }
 
         private void EncryptInDB_CheckedChanged(object sender, EventArgs e) {
-            factory.EncryptData = !factory.EncryptData;
+            if (factory != null) {
+                factory.EncryptData = !factory.EncryptData;
+            }
         }
 
         private void snapshotTile_Click(object sender, EventArgs e) {

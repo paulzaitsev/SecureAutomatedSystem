@@ -61,6 +61,9 @@
     <Compile Include="Charts\LineCurves\LineCurvesChart.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="databaseDataSet.cs">
+      <DependentUpon>databaseDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="databaseDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -116,9 +119,9 @@
       <DependentUpon>databaseDataSet.xsd</DependentUpon>
     </None>
     <None Include="databaseDataSet.xsd">
+      <SubType>Designer</SubType>
       <Generator>MSDataSetGenerator</Generator>
       <LastGenOutput>databaseDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
     </None>
     <None Include="databaseDataSet.xss">
       <DependentUpon>databaseDataSet.xsd</DependentUpon>
