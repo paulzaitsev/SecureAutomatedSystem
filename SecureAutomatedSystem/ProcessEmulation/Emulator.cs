@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Threading.Tasks;
-using System.Data;
 
 namespace SecureAutomatedSystem.ProcessEmulation{
     public class Emulator {
@@ -66,8 +65,8 @@ namespace SecureAutomatedSystem.ProcessEmulation{
             return new Product(OuterDiameter, OuterRadius, InnerDiameter, InnerRadius, OuterPairingRadius, WallThickness, TopThickness, BottomLowersectionHeight, TopDiameter, OuterPairingRadiusCyl);
         }
 
-        private void SaveData(bool EncryptData) {
-            
+        private void SaveData(bool EncryptData) {            
+            DBConnection.PullNewProduct(CurrentProduct);
         }
     }
 }

@@ -82,6 +82,7 @@
     <Compile Include="MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="ProcessEmulation\DBConnection.cs" />
     <Compile Include="ProcessEmulation\Emulator.cs" />
     <Compile Include="ProcessEmulation\Product.cs" />
     <Compile Include="Program.cs" />
