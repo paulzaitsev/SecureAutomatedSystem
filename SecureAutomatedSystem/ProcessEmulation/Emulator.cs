@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Threading.Tasks;
+using System.Security.Cryptography;
 
 namespace SecureAutomatedSystem.ProcessEmulation{
     public class Emulator {
@@ -20,6 +21,7 @@ namespace SecureAutomatedSystem.ProcessEmulation{
         public bool InWork { get; private set; }
         public Product CurrentProduct { get; private set; }
         public Product Benchmark { get; private set; }
+        public string EncryptionKey { private get; set; }
         private static readonly Product DefaultBenchmark = new Product(10, 5, 10, 5, 7, 7, 7, 10, 10, 8);
         public EventHandler ProductProduced;
 
@@ -31,6 +33,7 @@ namespace SecureAutomatedSystem.ProcessEmulation{
             SaveInDB = ProducerSaveInDB;
             EncryptData = ProducerEncryptData;
             Benchmark = ProductBenchmark;
+            EncryptionKey = "";
         }
 
         public async void StartProducing() {
@@ -40,7 +43,7 @@ namespace SecureAutomatedSystem.ProcessEmulation{
                 CurrentProduct = ProduceNewProduct(rnd);
                 ProductProduced(this, EventArgs.Empty);
                 if (SaveInDB) {
-                    SaveData(EncryptData);
+                    SaveData();
                 }
                 await Task.Delay((int) ProducerDelay*1000);
             }
@@ -65,8 +68,16 @@ namespace SecureAutomatedSystem.ProcessEmulation{
             return new Product(OuterDiameter, OuterRadius, InnerDiameter, InnerRadius, OuterPairingRadius, WallThickness, TopThickness, BottomLowersectionHeight, TopDiameter, OuterPairingRadiusCyl);
         }
 
-        private void SaveData(bool EncryptData) {            
-            DBConnection.PullNewProduct(CurrentProduct);
+        private void SaveData() {
+            if (!EncryptData || EncryptionKey.Length != 8) {
+                DBConnection.PullNewProduct(CurrentProduct);
+            }
+            else {
+                DES Encryptor = DES.Create();
+                Encryptor.Mode = CipherMode.ECB;
+                Encryptor.Key = System.Text.Encoding.UTF8.GetBytes(EncryptionKey);
+                DBConnection.PullNewProductWithEnctyprion(Encryptor, CurrentProduct);
+            }            
         }
     }
 }

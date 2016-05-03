@@ -82,6 +82,8 @@
             this.aboutTile = new MetroFramework.Controls.MetroTile();
             this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.databaseDataSet = new SecureAutomatedSystem.databaseDataSet();
+            this.FilePath = new System.Windows.Forms.TextBox();
+            this.SearchKeyButton = new System.Windows.Forms.Button();
             this.tableLayoutPanelProcess.SuspendLayout();
             this.metroTabControl1.SuspendLayout();
             this.metroTabPage1.SuspendLayout();
@@ -632,21 +634,25 @@
             this.tableLayoutPanel4.Controls.Add(this.Stop, 0, 2);
             this.tableLayoutPanel4.Controls.Add(this.Start, 0, 1);
             this.tableLayoutPanel4.Controls.Add(this.EncryptInDB, 0, 6);
-            this.tableLayoutPanel4.Controls.Add(this.SavingInDB, 0, 5);
             this.tableLayoutPanel4.Controls.Add(this.InputDelay, 0, 4);
             this.tableLayoutPanel4.Controls.Add(this.label11, 0, 3);
+            this.tableLayoutPanel4.Controls.Add(this.SavingInDB, 0, 5);
+            this.tableLayoutPanel4.Controls.Add(this.FilePath, 0, 7);
+            this.tableLayoutPanel4.Controls.Add(this.SearchKeyButton, 0, 8);
             this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel4.Location = new System.Drawing.Point(3, 36);
             this.tableLayoutPanel4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 3);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
-            this.tableLayoutPanel4.RowCount = 7;
+            this.tableLayoutPanel4.RowCount = 9;
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 16F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 49.46236F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.53764F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 18F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 27F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 24F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 237F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 17F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 26F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 28F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 178F));
             this.tableLayoutPanel4.Size = new System.Drawing.Size(134, 392);
             this.tableLayoutPanel4.TabIndex = 28;
             // 
@@ -654,9 +660,9 @@
             // 
             this.Stop.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Stop.Enabled = false;
-            this.Stop.Location = new System.Drawing.Point(3, 53);
+            this.Stop.Location = new System.Drawing.Point(3, 52);
             this.Stop.Name = "Stop";
-            this.Stop.Size = new System.Drawing.Size(128, 29);
+            this.Stop.Size = new System.Drawing.Size(128, 27);
             this.Stop.TabIndex = 4;
             this.Stop.Text = "Stop Process";
             this.Stop.UseVisualStyleBackColor = true;
@@ -667,7 +673,7 @@
             this.Start.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Start.Location = new System.Drawing.Point(3, 19);
             this.Start.Name = "Start";
-            this.Start.Size = new System.Drawing.Size(128, 28);
+            this.Start.Size = new System.Drawing.Size(128, 27);
             this.Start.TabIndex = 2;
             this.Start.Text = "Start Process";
             this.Start.UseVisualStyleBackColor = true;
@@ -677,7 +683,7 @@
             // 
             this.EncryptInDB.AutoSize = true;
             this.EncryptInDB.Enabled = false;
-            this.EncryptInDB.Location = new System.Drawing.Point(3, 157);
+            this.EncryptInDB.Location = new System.Drawing.Point(3, 158);
             this.EncryptInDB.Name = "EncryptInDB";
             this.EncryptInDB.Size = new System.Drawing.Size(117, 17);
             this.EncryptInDB.TabIndex = 28;
@@ -688,7 +694,7 @@
             // SavingInDB
             // 
             this.SavingInDB.AutoSize = true;
-            this.SavingInDB.Location = new System.Drawing.Point(3, 133);
+            this.SavingInDB.Location = new System.Drawing.Point(3, 128);
             this.SavingInDB.Name = "SavingInDB";
             this.SavingInDB.Size = new System.Drawing.Size(120, 17);
             this.SavingInDB.TabIndex = 27;
@@ -699,7 +705,7 @@
             // InputDelay
             // 
             this.InputDelay.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.InputDelay.Location = new System.Drawing.Point(3, 106);
+            this.InputDelay.Location = new System.Drawing.Point(3, 102);
             this.InputDelay.Name = "InputDelay";
             this.InputDelay.Size = new System.Drawing.Size(128, 20);
             this.InputDelay.TabIndex = 25;
@@ -709,7 +715,7 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(3, 86);
+            this.label11.Location = new System.Drawing.Point(3, 83);
             this.label11.Margin = new System.Windows.Forms.Padding(3, 1, 3, 0);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(115, 13);
@@ -791,6 +797,26 @@
             // 
             this.databaseDataSet.DataSetName = "databaseDataSet";
             this.databaseDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // FilePath
+            // 
+            this.FilePath.Enabled = false;
+            this.FilePath.Location = new System.Drawing.Point(3, 186);
+            this.FilePath.Name = "FilePath";
+            this.FilePath.Size = new System.Drawing.Size(128, 20);
+            this.FilePath.TabIndex = 29;
+            this.FilePath.TextChanged += new System.EventHandler(this.FilePath_TextChanged);
+            // 
+            // SearchKeyButton
+            // 
+            this.SearchKeyButton.Enabled = false;
+            this.SearchKeyButton.Location = new System.Drawing.Point(3, 216);
+            this.SearchKeyButton.Name = "SearchKeyButton";
+            this.SearchKeyButton.Size = new System.Drawing.Size(128, 23);
+            this.SearchKeyButton.TabIndex = 30;
+            this.SearchKeyButton.Text = "Choose key file";
+            this.SearchKeyButton.UseVisualStyleBackColor = true;
+            this.SearchKeyButton.Click += new System.EventHandler(this.SearchKeyButton_Click);
             // 
             // MainForm
             // 
@@ -877,7 +903,9 @@
         private System. Windows. Forms. TableLayoutPanel tableLayoutPanel1;
         private System. Windows. Forms. TableLayoutPanel tableLayoutPanel2;
         private System. Windows. Forms. TableLayoutPanel tableLayoutPanel3;
-        private System. Windows. Forms. TableLayoutPanel tableLayoutPanel4;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
+        private System.Windows.Forms.TextBox FilePath;
+        private System.Windows.Forms.Button SearchKeyButton;
     }
 }
 

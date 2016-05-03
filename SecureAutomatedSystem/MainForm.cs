@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using MetroFramework;
 using MetroFramework.Forms;
 using System.Globalization;
+using System.IO;
 using SecureAutomatedSystem.ProcessEmulation;
 using SecureAutomatedSystem.Snapshot;
 
@@ -18,10 +19,10 @@ namespace SecureAutomatedSystem {
 
         public MainForm() {
             InitializeComponent();
-
         }
 
         private Emulator factory;
+        private string KeyForNextSession;
 
         private void OnProductProduced(object sender, EventArgs e) {
             textBox1.Text = factory.CurrentProduct.OuterDiameter.ToString();
@@ -63,8 +64,14 @@ namespace SecureAutomatedSystem {
                 float p8 = Convert.ToSingle(textBox16.Text, new CultureInfo("en-US"));
                 float p9 = Convert.ToSingle(textBox17.Text, new CultureInfo("en-US"));
                 float p10 = Convert.ToSingle(textBox18.Text, new CultureInfo("en-US"));
-                factory = new Emulator(Convert.ToSingle(InputDelay.Text), SavingInDB.Checked, EncryptInDB.Checked,
-                    new Product(p1, p2, p3, p4, p5, p6, p7, p8, p9, p10));
+                if (KeyForNextSession == null) {
+                    factory = new Emulator(Convert.ToSingle(InputDelay.Text), SavingInDB.Checked, EncryptInDB.Checked,
+                                        new Product(p1, p2, p3, p4, p5, p6, p7, p8, p9, p10));
+                }
+                else {
+                    factory = new Emulator(Convert.ToSingle(InputDelay.Text), SavingInDB.Checked, EncryptInDB.Checked,
+                                        new Product(p1, p2, p3, p4, p5, p6, p7, p8, p9, p10)) { EncryptionKey = KeyForNextSession };
+                }                
             }
             catch {
                 MessageBox.Show(
@@ -80,6 +87,7 @@ namespace SecureAutomatedSystem {
         private void Stop_Click(object sender, EventArgs e) {
             RevertAccessibilityInProcessTab();
             factory.StopProducing();
+            KeyForNextSession = null;
         }
 
         private void SavingInDB_CheckedChanged(object sender, EventArgs e) {
@@ -90,6 +98,7 @@ namespace SecureAutomatedSystem {
         }
 
         private void EncryptInDB_CheckedChanged(object sender, EventArgs e) {
+            SearchKeyButton.Enabled = !SearchKeyButton.Enabled;
             if (factory != null) {
                 factory.EncryptData = !factory.EncryptData;
             }
@@ -100,5 +109,33 @@ namespace SecureAutomatedSystem {
                 form.ShowDialog();
             }
         }
+
+        private void SearchKeyButton_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog SearchKeyDialog = new OpenFileDialog();
+            SearchKeyDialog.ShowDialog();
+            FilePath.Text = SearchKeyDialog.FileName;
+        }
+
+        private void FilePath_TextChanged(object sender, EventArgs e) {
+            try {
+                using (StreamReader KeyReader = new StreamReader(@FilePath.Text)) {
+                    string KeyForEncryption = KeyReader.ReadToEnd();
+                    if (KeyForEncryption.Length != 8) {
+                        MessageBox.Show("Key must contain 8 symbols. Statistic will be saved without encryption.",
+                                        "Error", MessageBoxButtons.OK);
+                    }
+                    if (factory != null)
+                        factory.EncryptionKey = KeyForEncryption;
+                    else
+                        KeyForNextSession = KeyForEncryption;
+                }
+            }
+            catch {
+                MessageBox.Show("Can't find file with encryption key or file corrupted. Saving statistics without encryption",
+                                       "Error", MessageBoxButtons.OK);
+            }
+        }
+
     }
 }

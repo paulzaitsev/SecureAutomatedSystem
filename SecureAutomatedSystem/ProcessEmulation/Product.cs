@@ -10,7 +10,7 @@
         public float BottomLowersectionHeight { get; private set; }
         public float TopDiameter { get; private set; }
         public float OuterPairingRadiusCyl { get; private set; }
-
+             
         public Product(float p1, float p2, float p3, float p4, float p5, float p6, float p7, float p8, float p9,
             float p10) {
             OuterDiameter = p1;
