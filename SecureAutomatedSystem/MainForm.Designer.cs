@@ -72,18 +72,17 @@
             this.Stop = new System.Windows.Forms.Button();
             this.Start = new System.Windows.Forms.Button();
             this.EncryptInDB = new System.Windows.Forms.CheckBox();
-            this.SavingInDB = new System.Windows.Forms.CheckBox();
             this.InputDelay = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.metroTabPage2 = new MetroFramework.Controls.MetroTabPage();
+            this.SavingInDB = new System.Windows.Forms.CheckBox();
+            this.FilePath = new System.Windows.Forms.TextBox();
+            this.SearchKeyButton = new System.Windows.Forms.Button();
             this.tableLayoutPanelMenu = new System.Windows.Forms.TableLayoutPanel();
             this.snapshotTile = new MetroFramework.Controls.MetroTile();
             this.licenseTile = new MetroFramework.Controls.MetroTile();
             this.aboutTile = new MetroFramework.Controls.MetroTile();
             this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.databaseDataSet = new SecureAutomatedSystem.databaseDataSet();
-            this.FilePath = new System.Windows.Forms.TextBox();
-            this.SearchKeyButton = new System.Windows.Forms.Button();
             this.tableLayoutPanelProcess.SuspendLayout();
             this.metroTabControl1.SuspendLayout();
             this.metroTabPage1.SuspendLayout();
@@ -114,7 +113,6 @@
             // metroTabControl1
             // 
             this.metroTabControl1.Controls.Add(this.metroTabPage1);
-            this.metroTabControl1.Controls.Add(this.metroTabPage2);
             this.metroTabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.metroTabControl1.Location = new System.Drawing.Point(115, 3);
             this.metroTabControl1.Name = "metroTabControl1";
@@ -691,17 +689,6 @@
             this.EncryptInDB.UseVisualStyleBackColor = true;
             this.EncryptInDB.CheckedChanged += new System.EventHandler(this.EncryptInDB_CheckedChanged);
             // 
-            // SavingInDB
-            // 
-            this.SavingInDB.AutoSize = true;
-            this.SavingInDB.Location = new System.Drawing.Point(3, 128);
-            this.SavingInDB.Name = "SavingInDB";
-            this.SavingInDB.Size = new System.Drawing.Size(120, 17);
-            this.SavingInDB.TabIndex = 27;
-            this.SavingInDB.Text = "Save Statistic in DB";
-            this.SavingInDB.UseVisualStyleBackColor = true;
-            this.SavingInDB.CheckedChanged += new System.EventHandler(this.SavingInDB_CheckedChanged);
-            // 
             // InputDelay
             // 
             this.InputDelay.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -722,19 +709,36 @@
             this.label11.TabIndex = 26;
             this.label11.Text = "Producing Speed (sec)";
             // 
-            // metroTabPage2
+            // SavingInDB
             // 
-            this.metroTabPage2.HorizontalScrollbarBarColor = true;
-            this.metroTabPage2.HorizontalScrollbarHighlightOnWheel = false;
-            this.metroTabPage2.HorizontalScrollbarSize = 10;
-            this.metroTabPage2.Location = new System.Drawing.Point(4, 38);
-            this.metroTabPage2.Name = "metroTabPage2";
-            this.metroTabPage2.Size = new System.Drawing.Size(676, 451);
-            this.metroTabPage2.TabIndex = 1;
-            this.metroTabPage2.Text = "Statistics";
-            this.metroTabPage2.VerticalScrollbarBarColor = true;
-            this.metroTabPage2.VerticalScrollbarHighlightOnWheel = false;
-            this.metroTabPage2.VerticalScrollbarSize = 10;
+            this.SavingInDB.AutoSize = true;
+            this.SavingInDB.Location = new System.Drawing.Point(3, 128);
+            this.SavingInDB.Name = "SavingInDB";
+            this.SavingInDB.Size = new System.Drawing.Size(120, 17);
+            this.SavingInDB.TabIndex = 27;
+            this.SavingInDB.Text = "Save Statistic in DB";
+            this.SavingInDB.UseVisualStyleBackColor = true;
+            this.SavingInDB.CheckedChanged += new System.EventHandler(this.SavingInDB_CheckedChanged);
+            // 
+            // FilePath
+            // 
+            this.FilePath.Enabled = false;
+            this.FilePath.Location = new System.Drawing.Point(3, 186);
+            this.FilePath.Name = "FilePath";
+            this.FilePath.Size = new System.Drawing.Size(128, 20);
+            this.FilePath.TabIndex = 29;
+            this.FilePath.TextChanged += new System.EventHandler(this.FilePath_TextChanged);
+            // 
+            // SearchKeyButton
+            // 
+            this.SearchKeyButton.Enabled = false;
+            this.SearchKeyButton.Location = new System.Drawing.Point(3, 216);
+            this.SearchKeyButton.Name = "SearchKeyButton";
+            this.SearchKeyButton.Size = new System.Drawing.Size(128, 23);
+            this.SearchKeyButton.TabIndex = 30;
+            this.SearchKeyButton.Text = "Choose key file";
+            this.SearchKeyButton.UseVisualStyleBackColor = true;
+            this.SearchKeyButton.Click += new System.EventHandler(this.SearchKeyButton_Click);
             // 
             // tableLayoutPanelMenu
             // 
@@ -798,26 +802,6 @@
             this.databaseDataSet.DataSetName = "databaseDataSet";
             this.databaseDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // FilePath
-            // 
-            this.FilePath.Enabled = false;
-            this.FilePath.Location = new System.Drawing.Point(3, 186);
-            this.FilePath.Name = "FilePath";
-            this.FilePath.Size = new System.Drawing.Size(128, 20);
-            this.FilePath.TabIndex = 29;
-            this.FilePath.TextChanged += new System.EventHandler(this.FilePath_TextChanged);
-            // 
-            // SearchKeyButton
-            // 
-            this.SearchKeyButton.Enabled = false;
-            this.SearchKeyButton.Location = new System.Drawing.Point(3, 216);
-            this.SearchKeyButton.Name = "SearchKeyButton";
-            this.SearchKeyButton.Size = new System.Drawing.Size(128, 23);
-            this.SearchKeyButton.TabIndex = 30;
-            this.SearchKeyButton.Text = "Choose key file";
-            this.SearchKeyButton.UseVisualStyleBackColor = true;
-            this.SearchKeyButton.Click += new System.EventHandler(this.SearchKeyButton_Click);
-            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -848,8 +832,7 @@
 
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanelProcess;
         private MetroFramework.Controls.MetroTabControl metroTabControl1;
-        private MetroFramework.Controls.MetroTabPage metroTabPage1;
-        private MetroFramework.Controls.MetroTabPage metroTabPage2;
+        private MetroFramework. Controls. MetroTabPage metroTabPage1;
         private System.Windows.Forms.BindingSource bindingSource1;
         private databaseDataSet databaseDataSet;
         private System.Windows.Forms.TextBox textBox1;

@@ -1,4 +1,7 @@
-﻿using SecureAutomatedSystem.ProcessEmulation;
+﻿using System;
+using System.Windows.Forms.DataVisualization.Charting;
+using SecureAutomatedSystem.ProcessEmulation;
+using WinFormsChartSamples;
 
 namespace SecureAutomatedSystem.Utils {
     public static class DBUtils {
@@ -39,6 +42,17 @@ namespace SecureAutomatedSystem.Utils {
 
         static string AssignParameter(float value, string key) {
             return CryptoUtils.EncryptParameter(value, key);
+        }
+
+        public static void BindToData(this LineCurvesChart lcChart, string fieldName, string key) {
+            lcChart.Series["Series1"].Points.Clear();
+            foreach (databaseDataSet.productRow dataRow in dataSet.product) {
+                var valueX = dataRow["id"];
+                var valueY = dataRow[fieldName];
+                double realX = Double.Parse(valueX.ToString());
+                double realY = Double.Parse(valueY.ToString());
+                lcChart.Series["Series1"].Points.Add(new DataPoint(realX, realY));
+            }
         }
     }
 }

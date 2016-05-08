@@ -22,7 +22,6 @@ namespace SecureAutomatedSystem.ProcessEmulation{
         public bool InWork { get; private set; }
         public Product CurrentProduct { get; private set; }
         public Product Benchmark { get; private set; }
-        public string EncryptionKey { private get; set; }
         private static readonly Product DefaultBenchmark = new Product(10, 5, 10, 5, 7, 7, 7, 10, 10, 8);
         public EventHandler ProductProduced;
 
@@ -34,7 +33,7 @@ namespace SecureAutomatedSystem.ProcessEmulation{
             SaveInDB = ProducerSaveInDB;
             EncryptData = ProducerEncryptData;
             Benchmark = ProductBenchmark;
-            EncryptionKey = "";
+            AppRunner.EncryptionKey = "";
         }
 
         public async void StartProducing() {
@@ -54,27 +53,27 @@ namespace SecureAutomatedSystem.ProcessEmulation{
             InWork = false;
         }
 
-        private Product ProduceNewProduct(Random RandomGeneratorVariable) {
-            float OuterDiameter = Benchmark.OuterDiameter + (float)((RandomGeneratorVariable.Next(100)-50.0)/50.0) + (float)RandomGeneratorVariable.NextDouble()/2; 
-            float OuterRadius = OuterDiameter / 2; 
-            float InnerDiameter = Benchmark.InnerDiameter + (float)((RandomGeneratorVariable.Next(100) - 50.0) / 50.0) + (float)RandomGeneratorVariable.NextDouble()/2; 
-            float InnerRadius = InnerDiameter / 2; 
-            float OuterPairingRadius = Benchmark.OuterPairingRadius + (float)((RandomGeneratorVariable.Next(100) - 50.0) / 50.0) + (float)RandomGeneratorVariable.NextDouble()/2; 
-            float WallThickness = Benchmark.WallThickness + (float)((RandomGeneratorVariable.Next(100) - 50.0) / 50.0) + (float)RandomGeneratorVariable.NextDouble()/2; 
-            float TopThickness = Benchmark.TopThickness + (float)((RandomGeneratorVariable.Next(100) - 50.0) / 50.0) + (float)RandomGeneratorVariable.NextDouble()/2; 
-            float BottomLowersectionHeight = Benchmark.BottomLowersectionHeight + (float)((RandomGeneratorVariable.Next(100) - 50.0) / 50.0) + (float)RandomGeneratorVariable.NextDouble()/2; 
-            float TopDiameter = Benchmark.TopDiameter + (float)((RandomGeneratorVariable.Next(100) - 50.0) / 50.0) + (float)RandomGeneratorVariable.NextDouble()/2;
-            float OuterPairingRadiusCyl = Benchmark.OuterPairingRadiusCyl + (float)((RandomGeneratorVariable.Next(100) - 50.0) / 50.0) + (float)RandomGeneratorVariable.NextDouble()/2;
+        private Product ProduceNewProduct(Random randomGeneratorVariable) {
+            float outerDiameter = Benchmark.OuterDiameter + (float)((randomGeneratorVariable.Next(100)-50.0)/50.0) + (float)randomGeneratorVariable.NextDouble()/2; 
+            float outerRadius = outerDiameter / 2; 
+            float innerDiameter = Benchmark.InnerDiameter + (float)((randomGeneratorVariable.Next(100) - 50.0) / 50.0) + (float)randomGeneratorVariable.NextDouble()/2; 
+            float innerRadius = innerDiameter / 2; 
+            float outerPairingRadius = Benchmark.OuterPairingRadius + (float)((randomGeneratorVariable.Next(100) - 50.0) / 50.0) + (float)randomGeneratorVariable.NextDouble()/2; 
+            float wallThickness = Benchmark.WallThickness + (float)((randomGeneratorVariable.Next(100) - 50.0) / 50.0) + (float)randomGeneratorVariable.NextDouble()/2; 
+            float topThickness = Benchmark.TopThickness + (float)((randomGeneratorVariable.Next(100) - 50.0) / 50.0) + (float)randomGeneratorVariable.NextDouble()/2; 
+            float bottomLowersectionHeight = Benchmark.BottomLowersectionHeight + (float)((randomGeneratorVariable.Next(100) - 50.0) / 50.0) + (float)randomGeneratorVariable.NextDouble()/2; 
+            float topDiameter = Benchmark.TopDiameter + (float)((randomGeneratorVariable.Next(100) - 50.0) / 50.0) + (float)randomGeneratorVariable.NextDouble()/2;
+            float outerPairingRadiusCyl = Benchmark.OuterPairingRadiusCyl + (float)((randomGeneratorVariable.Next(100) - 50.0) / 50.0) + (float)randomGeneratorVariable.NextDouble()/2;
 
-            return new Product(OuterDiameter, OuterRadius, InnerDiameter, InnerRadius, OuterPairingRadius, WallThickness, TopThickness, BottomLowersectionHeight, TopDiameter, OuterPairingRadiusCyl);
+            return new Product(outerDiameter, outerRadius, innerDiameter, innerRadius, outerPairingRadius, wallThickness, topThickness, bottomLowersectionHeight, topDiameter, outerPairingRadiusCyl);
         }
 
         private void SaveData() {
-            if (!EncryptData || EncryptionKey.Length != 8) {
+            if (!EncryptData || AppRunner.EncryptionKey.Length != 8) {
                 DBUtils.PullNewProduct(CurrentProduct);
             }
             else {
-                DBUtils.PullNewProductWithEnctyprion(CurrentProduct, EncryptionKey);
+                DBUtils. PullNewProductWithEnctyprion(CurrentProduct, AppRunner.EncryptionKey);
             }            
         }
     }

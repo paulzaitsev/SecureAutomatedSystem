@@ -35,16 +35,16 @@
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
             this.metricsTabPage = new MetroFramework.Controls.MetroTabPage();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
-            this.lineCurvesChart9 = new WinFormsChartSamples.LineCurvesChart();
-            this.lineCurvesChart10 = new WinFormsChartSamples.LineCurvesChart();
-            this.lineCurvesChart7 = new WinFormsChartSamples.LineCurvesChart();
-            this.lineCurvesChart8 = new WinFormsChartSamples.LineCurvesChart();
-            this.lineCurvesChart5 = new WinFormsChartSamples.LineCurvesChart();
-            this.lineCurvesChart6 = new WinFormsChartSamples.LineCurvesChart();
-            this.lineCurvesChart3 = new WinFormsChartSamples.LineCurvesChart();
-            this.lineCurvesChart4 = new WinFormsChartSamples.LineCurvesChart();
-            this.lineCurvesChart1 = new WinFormsChartSamples.LineCurvesChart();
-            this.lineCurvesChart2 = new WinFormsChartSamples.LineCurvesChart();
+            this.outer_diameter_chart = new WinFormsChartSamples.LineCurvesChart();
+            this.inner_diameter_chart = new WinFormsChartSamples.LineCurvesChart();
+            this.outer_radius_chart = new WinFormsChartSamples.LineCurvesChart();
+            this.inner_radius_chart = new WinFormsChartSamples.LineCurvesChart();
+            this.ogive_pairing_radius_chart = new WinFormsChartSamples.LineCurvesChart();
+            this.wall_thickness_chart = new WinFormsChartSamples.LineCurvesChart();
+            this.top_thickness_chart = new WinFormsChartSamples.LineCurvesChart();
+            this.top_diameter_chart = new WinFormsChartSamples.LineCurvesChart();
+            this.bottom_lowersection_height_chart = new WinFormsChartSamples.LineCurvesChart();
+            this.outer_pairing_radius_cyl_chart = new WinFormsChartSamples.LineCurvesChart();
             this.tableLayoutPanel1.SuspendLayout();
             this.metroTabControl1.SuspendLayout();
             this.diameterMetricsTabPage.SuspendLayout();
@@ -107,8 +107,8 @@
             this.tableLayoutPanel2.BackColor = System.Drawing.Color.White;
             this.tableLayoutPanel2.ColumnCount = 1;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.Controls.Add(this.lineCurvesChart9, 0, 0);
-            this.tableLayoutPanel2.Controls.Add(this.lineCurvesChart10, 0, 1);
+            this.tableLayoutPanel2.Controls.Add(this.outer_diameter_chart, 0, 0);
+            this.tableLayoutPanel2.Controls.Add(this.inner_diameter_chart, 0, 1);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
@@ -138,8 +138,8 @@
             this.tableLayoutPanel3.BackColor = System.Drawing.Color.White;
             this.tableLayoutPanel3.ColumnCount = 1;
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel3.Controls.Add(this.lineCurvesChart7, 0, 0);
-            this.tableLayoutPanel3.Controls.Add(this.lineCurvesChart8, 0, 1);
+            this.tableLayoutPanel3.Controls.Add(this.outer_radius_chart, 0, 0);
+            this.tableLayoutPanel3.Controls.Add(this.inner_radius_chart, 0, 1);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel3.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
@@ -169,8 +169,8 @@
             this.tableLayoutPanel4.BackColor = System.Drawing.Color.White;
             this.tableLayoutPanel4.ColumnCount = 1;
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel4.Controls.Add(this.lineCurvesChart5, 0, 0);
-            this.tableLayoutPanel4.Controls.Add(this.lineCurvesChart6, 0, 1);
+            this.tableLayoutPanel4.Controls.Add(this.ogive_pairing_radius_chart, 0, 0);
+            this.tableLayoutPanel4.Controls.Add(this.wall_thickness_chart, 0, 1);
             this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel4.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
@@ -200,8 +200,8 @@
             this.tableLayoutPanel5.BackColor = System.Drawing.Color.White;
             this.tableLayoutPanel5.ColumnCount = 1;
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel5.Controls.Add(this.lineCurvesChart3, 0, 0);
-            this.tableLayoutPanel5.Controls.Add(this.lineCurvesChart4, 0, 1);
+            this.tableLayoutPanel5.Controls.Add(this.top_thickness_chart, 0, 0);
+            this.tableLayoutPanel5.Controls.Add(this.top_diameter_chart, 0, 1);
             this.tableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel5.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel5.Name = "tableLayoutPanel5";
@@ -231,8 +231,8 @@
             this.tableLayoutPanel6.BackColor = System.Drawing.Color.White;
             this.tableLayoutPanel6.ColumnCount = 1;
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel6.Controls.Add(this.lineCurvesChart1, 0, 0);
-            this.tableLayoutPanel6.Controls.Add(this.lineCurvesChart2, 0, 1);
+            this.tableLayoutPanel6.Controls.Add(this.bottom_lowersection_height_chart, 0, 0);
+            this.tableLayoutPanel6.Controls.Add(this.outer_pairing_radius_cyl_chart, 0, 1);
             this.tableLayoutPanel6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel6.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel6.Name = "tableLayoutPanel6";
@@ -242,105 +242,125 @@
             this.tableLayoutPanel6.Size = new System.Drawing.Size(832, 507);
             this.tableLayoutPanel6.TabIndex = 2;
             // 
-            // lineCurvesChart9
+            // outer_diameter_chart
             // 
-            this.lineCurvesChart9.BackColor = System.Drawing.Color.White;
-            this.lineCurvesChart9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lineCurvesChart9.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lineCurvesChart9.Location = new System.Drawing.Point(3, 3);
-            this.lineCurvesChart9.Name = "lineCurvesChart9";
-            this.lineCurvesChart9.Size = new System.Drawing.Size(826, 247);
-            this.lineCurvesChart9.TabIndex = 0;
+            this.outer_diameter_chart.BackColor = System.Drawing.Color.White;
+            this.outer_diameter_chart.Caption = "Outer diameter";
+            this.outer_diameter_chart.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.outer_diameter_chart.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.outer_diameter_chart.Location = new System.Drawing.Point(3, 3);
+            this.outer_diameter_chart.Name = "outer_diameter_chart";
+            this.outer_diameter_chart.Size = new System.Drawing.Size(826, 247);
+            this.outer_diameter_chart.TabIndex = 0;
+            this.outer_diameter_chart.UseSelectable = true;
             // 
-            // lineCurvesChart10
+            // inner_diameter_chart
             // 
-            this.lineCurvesChart10.BackColor = System.Drawing.Color.White;
-            this.lineCurvesChart10.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lineCurvesChart10.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lineCurvesChart10.Location = new System.Drawing.Point(3, 256);
-            this.lineCurvesChart10.Name = "lineCurvesChart10";
-            this.lineCurvesChart10.Size = new System.Drawing.Size(826, 248);
-            this.lineCurvesChart10.TabIndex = 1;
+            this.inner_diameter_chart.BackColor = System.Drawing.Color.White;
+            this.inner_diameter_chart.Caption = "Inner diameter";
+            this.inner_diameter_chart.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.inner_diameter_chart.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.inner_diameter_chart.Location = new System.Drawing.Point(3, 256);
+            this.inner_diameter_chart.Name = "inner_diameter_chart";
+            this.inner_diameter_chart.Size = new System.Drawing.Size(826, 248);
+            this.inner_diameter_chart.TabIndex = 1;
+            this.inner_diameter_chart.UseSelectable = true;
             // 
-            // lineCurvesChart7
+            // outer_radius_chart
             // 
-            this.lineCurvesChart7.BackColor = System.Drawing.Color.White;
-            this.lineCurvesChart7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lineCurvesChart7.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lineCurvesChart7.Location = new System.Drawing.Point(3, 3);
-            this.lineCurvesChart7.Name = "lineCurvesChart7";
-            this.lineCurvesChart7.Size = new System.Drawing.Size(826, 247);
-            this.lineCurvesChart7.TabIndex = 0;
+            this.outer_radius_chart.BackColor = System.Drawing.Color.White;
+            this.outer_radius_chart.Caption = "Outer radius";
+            this.outer_radius_chart.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.outer_radius_chart.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.outer_radius_chart.Location = new System.Drawing.Point(3, 3);
+            this.outer_radius_chart.Name = "outer_radius_chart";
+            this.outer_radius_chart.Size = new System.Drawing.Size(826, 247);
+            this.outer_radius_chart.TabIndex = 0;
+            this.outer_radius_chart.UseSelectable = true;
             // 
-            // lineCurvesChart8
+            // inner_radius_chart
             // 
-            this.lineCurvesChart8.BackColor = System.Drawing.Color.White;
-            this.lineCurvesChart8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lineCurvesChart8.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lineCurvesChart8.Location = new System.Drawing.Point(3, 256);
-            this.lineCurvesChart8.Name = "lineCurvesChart8";
-            this.lineCurvesChart8.Size = new System.Drawing.Size(826, 248);
-            this.lineCurvesChart8.TabIndex = 1;
+            this.inner_radius_chart.BackColor = System.Drawing.Color.White;
+            this.inner_radius_chart.Caption = "Inner radius";
+            this.inner_radius_chart.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.inner_radius_chart.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.inner_radius_chart.Location = new System.Drawing.Point(3, 256);
+            this.inner_radius_chart.Name = "inner_radius_chart";
+            this.inner_radius_chart.Size = new System.Drawing.Size(826, 248);
+            this.inner_radius_chart.TabIndex = 1;
+            this.inner_radius_chart.UseSelectable = true;
             // 
-            // lineCurvesChart5
+            // ogive_pairing_radius_chart
             // 
-            this.lineCurvesChart5.BackColor = System.Drawing.Color.White;
-            this.lineCurvesChart5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lineCurvesChart5.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lineCurvesChart5.Location = new System.Drawing.Point(3, 3);
-            this.lineCurvesChart5.Name = "lineCurvesChart5";
-            this.lineCurvesChart5.Size = new System.Drawing.Size(826, 247);
-            this.lineCurvesChart5.TabIndex = 0;
+            this.ogive_pairing_radius_chart.BackColor = System.Drawing.Color.White;
+            this.ogive_pairing_radius_chart.Caption = "Outer pairing radius";
+            this.ogive_pairing_radius_chart.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ogive_pairing_radius_chart.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ogive_pairing_radius_chart.Location = new System.Drawing.Point(3, 3);
+            this.ogive_pairing_radius_chart.Name = "ogive_pairing_radius_chart";
+            this.ogive_pairing_radius_chart.Size = new System.Drawing.Size(826, 247);
+            this.ogive_pairing_radius_chart.TabIndex = 0;
+            this.ogive_pairing_radius_chart.UseSelectable = true;
             // 
-            // lineCurvesChart6
+            // wall_thickness_chart
             // 
-            this.lineCurvesChart6.BackColor = System.Drawing.Color.White;
-            this.lineCurvesChart6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lineCurvesChart6.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lineCurvesChart6.Location = new System.Drawing.Point(3, 256);
-            this.lineCurvesChart6.Name = "lineCurvesChart6";
-            this.lineCurvesChart6.Size = new System.Drawing.Size(826, 248);
-            this.lineCurvesChart6.TabIndex = 1;
+            this.wall_thickness_chart.BackColor = System.Drawing.Color.White;
+            this.wall_thickness_chart.Caption = "Wall thickness";
+            this.wall_thickness_chart.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.wall_thickness_chart.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.wall_thickness_chart.Location = new System.Drawing.Point(3, 256);
+            this.wall_thickness_chart.Name = "wall_thickness_chart";
+            this.wall_thickness_chart.Size = new System.Drawing.Size(826, 248);
+            this.wall_thickness_chart.TabIndex = 1;
+            this.wall_thickness_chart.UseSelectable = true;
             // 
-            // lineCurvesChart3
+            // top_thickness_chart
             // 
-            this.lineCurvesChart3.BackColor = System.Drawing.Color.White;
-            this.lineCurvesChart3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lineCurvesChart3.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lineCurvesChart3.Location = new System.Drawing.Point(3, 3);
-            this.lineCurvesChart3.Name = "lineCurvesChart3";
-            this.lineCurvesChart3.Size = new System.Drawing.Size(826, 247);
-            this.lineCurvesChart3.TabIndex = 0;
+            this.top_thickness_chart.BackColor = System.Drawing.Color.White;
+            this.top_thickness_chart.Caption = "Top thickness";
+            this.top_thickness_chart.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.top_thickness_chart.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.top_thickness_chart.Location = new System.Drawing.Point(3, 3);
+            this.top_thickness_chart.Name = "top_thickness_chart";
+            this.top_thickness_chart.Size = new System.Drawing.Size(826, 247);
+            this.top_thickness_chart.TabIndex = 0;
+            this.top_thickness_chart.UseSelectable = true;
             // 
-            // lineCurvesChart4
+            // top_diameter_chart
             // 
-            this.lineCurvesChart4.BackColor = System.Drawing.Color.White;
-            this.lineCurvesChart4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lineCurvesChart4.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lineCurvesChart4.Location = new System.Drawing.Point(3, 256);
-            this.lineCurvesChart4.Name = "lineCurvesChart4";
-            this.lineCurvesChart4.Size = new System.Drawing.Size(826, 248);
-            this.lineCurvesChart4.TabIndex = 1;
+            this.top_diameter_chart.BackColor = System.Drawing.Color.White;
+            this.top_diameter_chart.Caption = "Top diameter";
+            this.top_diameter_chart.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.top_diameter_chart.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.top_diameter_chart.Location = new System.Drawing.Point(3, 256);
+            this.top_diameter_chart.Name = "top_diameter_chart";
+            this.top_diameter_chart.Size = new System.Drawing.Size(826, 248);
+            this.top_diameter_chart.TabIndex = 1;
+            this.top_diameter_chart.UseSelectable = true;
             // 
-            // lineCurvesChart1
+            // bottom_lowersection_height_chart
             // 
-            this.lineCurvesChart1.BackColor = System.Drawing.Color.White;
-            this.lineCurvesChart1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lineCurvesChart1.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lineCurvesChart1.Location = new System.Drawing.Point(3, 3);
-            this.lineCurvesChart1.Name = "lineCurvesChart1";
-            this.lineCurvesChart1.Size = new System.Drawing.Size(826, 247);
-            this.lineCurvesChart1.TabIndex = 0;
+            this.bottom_lowersection_height_chart.BackColor = System.Drawing.Color.White;
+            this.bottom_lowersection_height_chart.Caption = "Bottom lowersection height";
+            this.bottom_lowersection_height_chart.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.bottom_lowersection_height_chart.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bottom_lowersection_height_chart.Location = new System.Drawing.Point(3, 3);
+            this.bottom_lowersection_height_chart.Name = "bottom_lowersection_height_chart";
+            this.bottom_lowersection_height_chart.Size = new System.Drawing.Size(826, 247);
+            this.bottom_lowersection_height_chart.TabIndex = 0;
+            this.bottom_lowersection_height_chart.UseSelectable = true;
             // 
-            // lineCurvesChart2
+            // outer_pairing_radius_cyl_chart
             // 
-            this.lineCurvesChart2.BackColor = System.Drawing.Color.White;
-            this.lineCurvesChart2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lineCurvesChart2.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lineCurvesChart2.Location = new System.Drawing.Point(3, 256);
-            this.lineCurvesChart2.Name = "lineCurvesChart2";
-            this.lineCurvesChart2.Size = new System.Drawing.Size(826, 248);
-            this.lineCurvesChart2.TabIndex = 1;
+            this.outer_pairing_radius_cyl_chart.BackColor = System.Drawing.Color.White;
+            this.outer_pairing_radius_cyl_chart.Caption = "Outer pairing radius cyl";
+            this.outer_pairing_radius_cyl_chart.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.outer_pairing_radius_cyl_chart.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.outer_pairing_radius_cyl_chart.Location = new System.Drawing.Point(3, 256);
+            this.outer_pairing_radius_cyl_chart.Name = "outer_pairing_radius_cyl_chart";
+            this.outer_pairing_radius_cyl_chart.Size = new System.Drawing.Size(826, 248);
+            this.outer_pairing_radius_cyl_chart.TabIndex = 1;
+            this.outer_pairing_radius_cyl_chart.UseSelectable = true;
             // 
             // SnapshotForm
             // 
@@ -380,15 +400,15 @@
         private System. Windows. Forms. TableLayoutPanel tableLayoutPanel4;
         private System. Windows. Forms. TableLayoutPanel tableLayoutPanel5;
         private System. Windows. Forms. TableLayoutPanel tableLayoutPanel6;
-        private WinFormsChartSamples. LineCurvesChart lineCurvesChart1;
-        private WinFormsChartSamples. LineCurvesChart lineCurvesChart2;
-        private WinFormsChartSamples. LineCurvesChart lineCurvesChart3;
-        private WinFormsChartSamples. LineCurvesChart lineCurvesChart4;
-        private WinFormsChartSamples. LineCurvesChart lineCurvesChart5;
-        private WinFormsChartSamples. LineCurvesChart lineCurvesChart6;
-        private WinFormsChartSamples. LineCurvesChart lineCurvesChart7;
-        private WinFormsChartSamples. LineCurvesChart lineCurvesChart8;
-        private WinFormsChartSamples. LineCurvesChart lineCurvesChart9;
-        private WinFormsChartSamples. LineCurvesChart lineCurvesChart10;
+        private WinFormsChartSamples. LineCurvesChart bottom_lowersection_height_chart;
+        private WinFormsChartSamples. LineCurvesChart outer_pairing_radius_cyl_chart;
+        private WinFormsChartSamples. LineCurvesChart top_thickness_chart;
+        private WinFormsChartSamples. LineCurvesChart top_diameter_chart;
+        private WinFormsChartSamples. LineCurvesChart ogive_pairing_radius_chart;
+        private WinFormsChartSamples. LineCurvesChart wall_thickness_chart;
+        private WinFormsChartSamples. LineCurvesChart outer_radius_chart;
+        private WinFormsChartSamples. LineCurvesChart inner_radius_chart;
+        private WinFormsChartSamples. LineCurvesChart outer_diameter_chart;
+        private WinFormsChartSamples. LineCurvesChart inner_diameter_chart;
     }
 }

@@ -17,5 +17,9 @@ namespace SecureAutomatedSystem {
             if(KeyChecker.IsValidKey)
                 Application.Run(new MainForm());
         }
+
+        public static string EncryptionKey {
+            get; set;
+        }
     }
 }

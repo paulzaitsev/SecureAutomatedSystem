@@ -27,8 +27,15 @@ namespace WinFormsChartSamples {
         public LineCurvesChart() {
             // This call is required by the Windows.Forms Form Designer.
             InitializeComponent();
+            chart1.ChartAreas["Default"].AxisY.LabelStyle.Format = "0.00###";
+            chart1.ChartAreas["Default"].CursorY.IsUserEnabled = true;
+            chart1.ChartAreas["Default"].CursorY.IsUserSelectionEnabled = true;
+            chart1.ChartAreas["Default"].AxisY.ScaleView.Zoomable = true;
 
-            // TODO: Add any initialization after the InitForm call
+            chart1.ChartAreas["Default"].AxisY.Minimum = Double.NaN;
+            chart1.ChartAreas["Default"].AxisY.Maximum = Double.NaN;
+            chart1.ChartAreas["Default"].AxisX.Minimum = Double.NaN;
+            chart1.ChartAreas["Default"].AxisX.Maximum = Double.NaN;
 
         }
 
@@ -54,7 +61,6 @@ namespace WinFormsChartSamples {
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.panel1 = new System.Windows.Forms.Panel();
             this.checkBoxShow3D = new System.Windows.Forms.CheckBox();
@@ -117,21 +123,7 @@ namespace WinFormsChartSamples {
             series1.ShadowOffset = 2;
             series1.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Double;
             series1.YValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Double;
-            series2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(26)))), ((int)(((byte)(59)))), ((int)(((byte)(105)))));
-            series2.BorderWidth = 3;
-            series2.ChartArea = "Default";
-            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series2.Color = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(224)))), ((int)(((byte)(64)))), ((int)(((byte)(10)))));
-            series2.Legend = "Default";
-            series2.MarkerSize = 9;
-            series2.MarkerStyle = System.Windows.Forms.DataVisualization.Charting.MarkerStyle.Diamond;
-            series2.Name = "Series2";
-            series2.ShadowColor = System.Drawing.Color.Black;
-            series2.ShadowOffset = 2;
-            series2.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Double;
-            series2.YValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Double;
             this.chart1.Series.Add(series1);
-            this.chart1.Series.Add(series2);
             this.chart1.Size = new System.Drawing.Size(457, 291);
             this.chart1.TabIndex = 1;
             // 
@@ -233,7 +225,7 @@ namespace WinFormsChartSamples {
             //else
             //{
             chart1.Series["Series1"].IsValueShownAsLabel = false;
-            chart1.Series["Series2"].IsValueShownAsLabel = false;
+            //chart1.Series["Series2"].IsValueShownAsLabel = false;
             //}
 
             // Set X axis margin
@@ -249,7 +241,7 @@ namespace WinFormsChartSamples {
             Random random = new Random();
             for (int pointIndex = 0; pointIndex < 10; pointIndex++) {
                 chart1.Series["Series1"].Points.AddY(random.Next(45, 95));
-                chart1.Series["Series2"].Points.AddY(random.Next(5, 65));
+                //chart1.Series["Series2"].Points.AddY(random.Next(5, 65));
             }
 
             UpdateChartSettings();
@@ -267,21 +259,25 @@ namespace WinFormsChartSamples {
             chart1.ChartAreas[0].Area3DStyle.Enable3D = checkBoxShow3D.Checked;
             if (checkBoxShow3D.Checked) {
                 chart1.Series["Series1"].MarkerStyle = MarkerStyle.None;
-                chart1.Series["Series2"].MarkerStyle = MarkerStyle.None;
+                //chart1.Series["Series2"].MarkerStyle = MarkerStyle.None;
                 chart1.Series["Series1"].BorderWidth = 1;
-                chart1.Series["Series2"].BorderWidth = 1;
+                //chart1.Series["Series2"].BorderWidth = 1;
             }
             else {
                 chart1.Series["Series1"].MarkerStyle = MarkerStyle.Circle;
-                chart1.Series["Series2"].MarkerStyle = MarkerStyle.Diamond;
+                //chart1.Series["Series2"].MarkerStyle = MarkerStyle.Diamond;
                 chart1.Series["Series1"].BorderWidth = 3;
-                chart1.Series["Series2"].BorderWidth = 3;
+                //chart1.Series["Series2"].BorderWidth = 3;
             }
         }
 
         public string Caption {
             get { return captionLabel.Text; }
             set { captionLabel.Text = value; }
+        }
+
+        public SeriesCollection Series {
+            get { return this.chart1.Series; }
         }
     }
 }

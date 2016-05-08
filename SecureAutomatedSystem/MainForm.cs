@@ -68,7 +68,7 @@ namespace SecureAutomatedSystem {
                 factory = new Emulator(Convert. ToSingle(InputDelay. Text), SavingInDB. Checked, EncryptInDB. Checked,
                                         new Product(p1, p2, p3, p4, p5, p6, p7, p8, p9, p10));
                 if (KeyForNextSession != null) {
-                    factory.EncryptionKey = KeyForNextSession;
+                    AppRunner.EncryptionKey = KeyForNextSession;
                 }              
             }
             catch {
@@ -77,8 +77,8 @@ namespace SecureAutomatedSystem {
                     "Error", MessageBoxButtons.OK);
                 factory = new Emulator();
             }
-            factory.StartProducing();
             factory. ProductProduced += OnProductProduced;
+            factory.StartProducing();
         }
 
         private void Stop_Click(object sender, EventArgs e) {
@@ -122,7 +122,7 @@ namespace SecureAutomatedSystem {
                                         "Error", MessageBoxButtons.OK);
                     }
                     if (factory != null)
-                        factory.EncryptionKey = KeyForEncryption;
+                        AppRunner.EncryptionKey = KeyForEncryption;
                     else
                         KeyForNextSession = KeyForEncryption;
                 }

@@ -29,10 +29,10 @@ namespace SecureAutomatedSystem.DemoMode.UI {
             this.iconBox = new System.Windows.Forms.PictureBox();
             this.demoModecb = new MetroFramework.Controls.MetroCheckBox();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.cancelButton = new System.Windows.Forms.Button();
-            this.okButton = new System.Windows.Forms.Button();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+            this.cancelButton = new System.Windows.Forms.Button();
+            this.okButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.iconBox)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
@@ -93,30 +93,6 @@ namespace SecureAutomatedSystem.DemoMode.UI {
             this.tableLayoutPanel1.TabIndex = 6;
             this.tableLayoutPanel1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.tableLayoutPanel1_MouseClick_1);
             // 
-            // cancelButton
-            // 
-            this.cancelButton.Location = new System.Drawing.Point(334, 3);
-            this.cancelButton.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
-            this.cancelButton.Name = "cancelButton";
-            this.cancelButton.Size = new System.Drawing.Size(74, 23);
-            this.cancelButton.TabIndex = 3;
-            this.cancelButton.Text = "Cancel";
-            this.cancelButton.UseVisualStyleBackColor = true;
-            this.cancelButton.Click += new System.EventHandler(this.cancelButton_Click);
-            // 
-            // okButton
-            // 
-            this.okButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.okButton.Enabled = false;
-            this.okButton.Location = new System.Drawing.Point(253, 3);
-            this.okButton.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
-            this.okButton.Name = "okButton";
-            this.okButton.Size = new System.Drawing.Size(75, 23);
-            this.okButton.TabIndex = 2;
-            this.okButton.Text = "OK";
-            this.okButton.UseVisualStyleBackColor = true;
-            this.okButton.Click += new System.EventHandler(this.okButton_Click);
-            // 
             // tableLayoutPanel2
             // 
             this.tableLayoutPanel2.ColumnCount = 2;
@@ -147,6 +123,30 @@ namespace SecureAutomatedSystem.DemoMode.UI {
             this.tableLayoutPanel3.Size = new System.Drawing.Size(411, 30);
             this.tableLayoutPanel3.TabIndex = 6;
             this.tableLayoutPanel3.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel3_Paint);
+            // 
+            // cancelButton
+            // 
+            this.cancelButton.Location = new System.Drawing.Point(334, 3);
+            this.cancelButton.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
+            this.cancelButton.Name = "cancelButton";
+            this.cancelButton.Size = new System.Drawing.Size(74, 23);
+            this.cancelButton.TabIndex = 3;
+            this.cancelButton.Text = "Cancel";
+            this.cancelButton.UseVisualStyleBackColor = true;
+            this.cancelButton.Click += new System.EventHandler(this.cancelButton_Click);
+            // 
+            // okButton
+            // 
+            this.okButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.okButton.Enabled = false;
+            this.okButton.Location = new System.Drawing.Point(253, 3);
+            this.okButton.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
+            this.okButton.Name = "okButton";
+            this.okButton.Size = new System.Drawing.Size(75, 23);
+            this.okButton.TabIndex = 2;
+            this.okButton.Text = "OK";
+            this.okButton.UseVisualStyleBackColor = true;
+            this.okButton.Click += new System.EventHandler(this.okButton_Click);
             // 
             // KeyCheckerForm
             // 
