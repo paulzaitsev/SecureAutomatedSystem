@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Threading.Tasks;
 using System.Security.Cryptography;
+using SecureAutomatedSystem.Utils;
 
 namespace SecureAutomatedSystem.ProcessEmulation{
     public class Emulator {
@@ -70,13 +71,10 @@ namespace SecureAutomatedSystem.ProcessEmulation{
 
         private void SaveData() {
             if (!EncryptData || EncryptionKey.Length != 8) {
-                DBConnection.PullNewProduct(CurrentProduct);
+                DBUtils.PullNewProduct(CurrentProduct);
             }
             else {
-                DES Encryptor = DES.Create();
-                Encryptor.Mode = CipherMode.ECB;
-                Encryptor.Key = System.Text.Encoding.UTF8.GetBytes(EncryptionKey);
-                DBConnection.PullNewProductWithEnctyprion(Encryptor, CurrentProduct);
+                DBUtils.PullNewProductWithEnctyprion(CurrentProduct, EncryptionKey);
             }            
         }
     }

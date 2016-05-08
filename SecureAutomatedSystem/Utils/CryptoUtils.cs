@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
@@ -16,6 +17,30 @@ namespace SecureAutomatedSystem.Utils {
                 }
             }
             return sBuilder.ToString();
+        }
+
+        private static DES desEncryptor;
+
+        public static DES DesEncryptor {
+            get {
+                if (desEncryptor == null) {
+                    desEncryptor = DES. Create();
+                    desEncryptor.Mode = CipherMode. ECB;
+                }
+                return desEncryptor;
+            }
+        }
+
+        public static string EncryptParameter(float parameter, string key) {
+            DesEncryptor.Key = Encoding.UTF8.GetBytes(key);
+            using (MemoryStream msEncrypt = new MemoryStream()) {
+                using (CryptoStream csEncrypt = new CryptoStream(msEncrypt, DesEncryptor. CreateEncryptor(DesEncryptor. Key, DesEncryptor. IV), CryptoStreamMode. Write)) {
+                    using (StreamWriter swEncrypt = new StreamWriter(csEncrypt)) {
+                        swEncrypt.Write(parameter);
+                    }
+                    return Encoding.UTF8.GetString(msEncrypt.ToArray());
+                }
+            }
         }
     }
 }

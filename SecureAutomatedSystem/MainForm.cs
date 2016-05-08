@@ -64,14 +64,12 @@ namespace SecureAutomatedSystem {
                 float p8 = Convert.ToSingle(textBox16.Text, new CultureInfo("en-US"));
                 float p9 = Convert.ToSingle(textBox17.Text, new CultureInfo("en-US"));
                 float p10 = Convert.ToSingle(textBox18.Text, new CultureInfo("en-US"));
-                if (KeyForNextSession == null) {
-                    factory = new Emulator(Convert.ToSingle(InputDelay.Text), SavingInDB.Checked, EncryptInDB.Checked,
+
+                factory = new Emulator(Convert. ToSingle(InputDelay. Text), SavingInDB. Checked, EncryptInDB. Checked,
                                         new Product(p1, p2, p3, p4, p5, p6, p7, p8, p9, p10));
-                }
-                else {
-                    factory = new Emulator(Convert.ToSingle(InputDelay.Text), SavingInDB.Checked, EncryptInDB.Checked,
-                                        new Product(p1, p2, p3, p4, p5, p6, p7, p8, p9, p10)) { EncryptionKey = KeyForNextSession };
-                }                
+                if (KeyForNextSession != null) {
+                    factory.EncryptionKey = KeyForNextSession;
+                }              
             }
             catch {
                 MessageBox.Show(
@@ -79,9 +77,8 @@ namespace SecureAutomatedSystem {
                     "Error", MessageBoxButtons.OK);
                 factory = new Emulator();
             }
-
-            factory.ProductProduced += OnProductProduced;
             factory.StartProducing();
+            factory. ProductProduced += OnProductProduced;
         }
 
         private void Stop_Click(object sender, EventArgs e) {
@@ -110,8 +107,7 @@ namespace SecureAutomatedSystem {
             }
         }
 
-        private void SearchKeyButton_Click(object sender, EventArgs e)
-        {
+        private void SearchKeyButton_Click(object sender, EventArgs e) {
             OpenFileDialog SearchKeyDialog = new OpenFileDialog();
             SearchKeyDialog.ShowDialog();
             FilePath.Text = SearchKeyDialog.FileName;
