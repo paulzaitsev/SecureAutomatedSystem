@@ -55,6 +55,7 @@ namespace SecureAutomatedSystem.Charts.LineCurves {
         /// </summary>
         private void InitializeComponent() {
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LineCurvesChart));
             System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
@@ -96,14 +97,13 @@ namespace SecureAutomatedSystem.Charts.LineCurves {
             chartArea1.Name = "Default";
             chartArea1.ShadowColor = System.Drawing.Color.Transparent;
             this.chart1.ChartAreas.Add(chartArea1);
-            this.chart1.Dock = System.Windows.Forms.DockStyle.Fill;
+            resources.ApplyResources(this.chart1, "chart1");
             legend1.BackColor = System.Drawing.Color.Transparent;
             legend1.Enabled = false;
             legend1.Font = new System.Drawing.Font("Trebuchet MS", 8.25F, System.Drawing.FontStyle.Bold);
             legend1.IsTextAutoFit = false;
             legend1.Name = "Default";
             this.chart1.Legends.Add(legend1);
-            this.chart1.Location = new System.Drawing.Point(3, 24);
             this.chart1.Name = "chart1";
             this.chart1.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Bright;
             series1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(26)))), ((int)(((byte)(59)))), ((int)(((byte)(105)))));
@@ -120,77 +120,45 @@ namespace SecureAutomatedSystem.Charts.LineCurves {
             series1.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Double;
             series1.YValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Double;
             this.chart1.Series.Add(series1);
-            this.chart1.Size = new System.Drawing.Size(457, 291);
-            this.chart1.TabIndex = 1;
             // 
             // panel1
             // 
             this.panel1.Controls.Add(this.checkBoxShow3D);
             this.panel1.Controls.Add(this.checkBoxShowMargin);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(3, 321);
+            resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(457, 31);
-            this.panel1.TabIndex = 2;
             // 
             // checkBoxShow3D
             // 
-            this.checkBoxShow3D.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.checkBoxShow3D.Location = new System.Drawing.Point(187, 3);
+            resources.ApplyResources(this.checkBoxShow3D, "checkBoxShow3D");
             this.checkBoxShow3D.Name = "checkBoxShow3D";
-            this.checkBoxShow3D.Size = new System.Drawing.Size(168, 24);
-            this.checkBoxShow3D.TabIndex = 5;
-            this.checkBoxShow3D.Text = "Display chart as 3&D:";
-            this.checkBoxShow3D.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.checkBoxShow3D.CheckedChanged += new System.EventHandler(this.checkBoxShow3D_CheckedChanged);
             // 
             // checkBoxShowMargin
             // 
-            this.checkBoxShowMargin.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.checkBoxShowMargin.Location = new System.Drawing.Point(3, 3);
+            resources.ApplyResources(this.checkBoxShowMargin, "checkBoxShowMargin");
             this.checkBoxShowMargin.Name = "checkBoxShowMargin";
-            this.checkBoxShowMargin.Size = new System.Drawing.Size(168, 24);
-            this.checkBoxShowMargin.TabIndex = 4;
-            this.checkBoxShowMargin.Text = "Show X Axis &Margin:";
-            this.checkBoxShowMargin.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.checkBoxShowMargin.CheckedChanged += new System.EventHandler(this.checkBoxShowMargin_CheckedChanged);
             // 
             // tableLayoutPanel1
             // 
-            this.tableLayoutPanel1.ColumnCount = 1;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            resources.ApplyResources(this.tableLayoutPanel1, "tableLayoutPanel1");
             this.tableLayoutPanel1.Controls.Add(this.chart1, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.panel1, 0, 2);
             this.tableLayoutPanel1.Controls.Add(this.captionLabel, 0, 0);
-            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 3;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 21F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 37F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(463, 355);
-            this.tableLayoutPanel1.TabIndex = 3;
             // 
             // captionLabel
             // 
-            this.captionLabel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.captionLabel.AutoSize = true;
-            this.captionLabel.Location = new System.Drawing.Point(3, 0);
+            resources.ApplyResources(this.captionLabel, "captionLabel");
             this.captionLabel.Name = "captionLabel";
-            this.captionLabel.Size = new System.Drawing.Size(457, 19);
-            this.captionLabel.TabIndex = 3;
-            this.captionLabel.Text = "Caption";
-            this.captionLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // LineCurvesChart
             // 
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.tableLayoutPanel1);
-            this.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this, "$this");
             this.Name = "LineCurvesChart";
-            this.Size = new System.Drawing.Size(463, 355);
             this.Load += new System.EventHandler(this.LineCurvesChartType_Load);
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
             this.panel1.ResumeLayout(false);
