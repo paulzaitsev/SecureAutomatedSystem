@@ -1,4 +1,6 @@
-﻿namespace SecureAutomatedSystem.Snapshot {
+﻿using SecureAutomatedSystem.Charts.LineCurves;
+
+namespace SecureAutomatedSystem.Snapshot {
     partial class SnapshotForm {
         /// <summary>
         /// Required designer variable.
@@ -35,16 +37,16 @@
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
             this.metricsTabPage = new MetroFramework.Controls.MetroTabPage();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
-            this.outer_diameter_chart = new WinFormsChartSamples.LineCurvesChart();
-            this.inner_diameter_chart = new WinFormsChartSamples.LineCurvesChart();
-            this.outer_radius_chart = new WinFormsChartSamples.LineCurvesChart();
-            this.inner_radius_chart = new WinFormsChartSamples.LineCurvesChart();
-            this.ogive_pairing_radius_chart = new WinFormsChartSamples.LineCurvesChart();
-            this.wall_thickness_chart = new WinFormsChartSamples.LineCurvesChart();
-            this.top_thickness_chart = new WinFormsChartSamples.LineCurvesChart();
-            this.top_diameter_chart = new WinFormsChartSamples.LineCurvesChart();
-            this.bottom_lowersection_height_chart = new WinFormsChartSamples.LineCurvesChart();
-            this.outer_pairing_radius_cyl_chart = new WinFormsChartSamples.LineCurvesChart();
+            this.outer_diameter_chart = new LineCurvesChart();
+            this.inner_diameter_chart = new LineCurvesChart();
+            this.outer_radius_chart = new LineCurvesChart();
+            this.inner_radius_chart = new LineCurvesChart();
+            this.ogive_pairing_radius_chart = new LineCurvesChart();
+            this.wall_thickness_chart = new LineCurvesChart();
+            this.top_thickness_chart = new LineCurvesChart();
+            this.top_diameter_chart = new LineCurvesChart();
+            this.bottom_lowersection_height_chart = new LineCurvesChart();
+            this.outer_pairing_radius_cyl_chart = new LineCurvesChart();
             this.tableLayoutPanel1.SuspendLayout();
             this.metroTabControl1.SuspendLayout();
             this.diameterMetricsTabPage.SuspendLayout();
@@ -400,15 +402,15 @@
         private System. Windows. Forms. TableLayoutPanel tableLayoutPanel4;
         private System. Windows. Forms. TableLayoutPanel tableLayoutPanel5;
         private System. Windows. Forms. TableLayoutPanel tableLayoutPanel6;
-        private WinFormsChartSamples. LineCurvesChart bottom_lowersection_height_chart;
-        private WinFormsChartSamples. LineCurvesChart outer_pairing_radius_cyl_chart;
-        private WinFormsChartSamples. LineCurvesChart top_thickness_chart;
-        private WinFormsChartSamples. LineCurvesChart top_diameter_chart;
-        private WinFormsChartSamples. LineCurvesChart ogive_pairing_radius_chart;
-        private WinFormsChartSamples. LineCurvesChart wall_thickness_chart;
-        private WinFormsChartSamples. LineCurvesChart outer_radius_chart;
-        private WinFormsChartSamples. LineCurvesChart inner_radius_chart;
-        private WinFormsChartSamples. LineCurvesChart outer_diameter_chart;
-        private WinFormsChartSamples. LineCurvesChart inner_diameter_chart;
+        private LineCurvesChart bottom_lowersection_height_chart;
+        private LineCurvesChart outer_pairing_radius_cyl_chart;
+        private LineCurvesChart top_thickness_chart;
+        private LineCurvesChart top_diameter_chart;
+        private LineCurvesChart ogive_pairing_radius_chart;
+        private LineCurvesChart wall_thickness_chart;
+        private LineCurvesChart outer_radius_chart;
+        private LineCurvesChart inner_radius_chart;
+        private LineCurvesChart outer_diameter_chart;
+        private LineCurvesChart inner_diameter_chart;
     }
 }

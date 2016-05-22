@@ -1,13 +1,9 @@
 using System;
-using System.Collections;
-using System.ComponentModel;
-using System.Drawing;
-using System.Data;
 using System.Windows.Forms;
 using System.Windows.Forms.DataVisualization.Charting;
 using MetroFramework.Controls;
 
-namespace WinFormsChartSamples {
+namespace SecureAutomatedSystem.Charts.LineCurves {
     /// <summary>
     /// Summary description for LineCurvesChart.
     /// </summary>

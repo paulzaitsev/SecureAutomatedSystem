@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Forms.DataVisualization.Charting;
+using SecureAutomatedSystem.Charts.LineCurves;
 using SecureAutomatedSystem.ProcessEmulation;
-using WinFormsChartSamples;
 
 namespace SecureAutomatedSystem.Utils {
     public static class DBUtils {
@@ -12,7 +12,7 @@ namespace SecureAutomatedSystem.Utils {
         delegate string AssignDelgate(float value);
 
         public static void PullNewProduct(Product newProduct) {
-            dataSet.product.AddproductRow(CreateDataRow(newProduct, x => AssignParameter(x)));
+            dataSet.product.AddproductRow(CreateDataRow(newProduct, AssignParameter));
             productTableAdapter.Update(dataSet.product);
         }
 
@@ -43,7 +43,7 @@ namespace SecureAutomatedSystem.Utils {
         static string AssignParameter(float value, string key) {
             return CryptoUtils.EncryptParameter(value, key);
         }
-
+        #region ChartDataBinding
         public static void BindToData(this LineCurvesChart lcChart, string fieldName, string key) {
             lcChart.Series["Series1"].Points.Clear();
             foreach (databaseDataSet.productRow dataRow in dataSet.product) {
@@ -54,5 +54,6 @@ namespace SecureAutomatedSystem.Utils {
                 lcChart.Series["Series1"].Points.Add(new DataPoint(realX, realY));
             }
         }
+        #endregion
     }
 }
