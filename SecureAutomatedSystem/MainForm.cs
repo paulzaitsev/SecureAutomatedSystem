@@ -46,16 +46,16 @@ namespace SecureAutomatedSystem {
         private string KeyForNextSession;
 
         private void OnProductProduced(object sender, EventArgs e) {
-            textBox1.Text = factory.CurrentProduct.OuterDiameter.ToString();
-            textBox2.Text = factory.CurrentProduct.OuterRadius.ToString();
-            textBox3.Text = factory.CurrentProduct.InnerDiameter.ToString();
-            textBox4.Text = factory.CurrentProduct.InnerRadius.ToString();
-            textBox5.Text = factory.CurrentProduct.OuterPairingRadius.ToString();
-            textBox6.Text = factory.CurrentProduct.WallThickness.ToString();
-            textBox7.Text = factory.CurrentProduct.TopThickness.ToString();
-            textBox8.Text = factory.CurrentProduct.BottomLowersectionHeight.ToString();
-            textBox9.Text = factory.CurrentProduct.TopDiameter.ToString();
-            textBox10.Text = factory.CurrentProduct.OuterPairingRadiusCylindricalOgive.ToString();
+            textBox1.Text = factory.CurrentProduct.OuterDiameter.ToString(culture);
+            textBox2.Text = factory.CurrentProduct.OuterRadius.ToString(culture);
+            textBox3.Text = factory.CurrentProduct.InnerDiameter.ToString(culture);
+            textBox4.Text = factory.CurrentProduct.InnerRadius.ToString(culture);
+            textBox5.Text = factory.CurrentProduct.OuterPairingRadius.ToString(culture);
+            textBox6.Text = factory.CurrentProduct.WallThickness.ToString(culture);
+            textBox7.Text = factory.CurrentProduct.TopThickness.ToString(culture);
+            textBox8.Text = factory.CurrentProduct.BottomLowersectionHeight.ToString(culture);
+            textBox9.Text = factory.CurrentProduct.TopDiameter.ToString(culture);
+            textBox10.Text = factory.CurrentProduct.OuterPairingRadiusCylindricalOgive.ToString(culture);
         }
 
         private void RevertAccessibilityInProcessTab() {
