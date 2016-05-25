@@ -32,7 +32,12 @@ namespace SecureAutomatedSystem.Charts.LineCurves {
             chart1.ChartAreas["Default"].AxisY.Maximum = Double.NaN;
             chart1.ChartAreas["Default"].AxisX.Minimum = Double.NaN;
             chart1.ChartAreas["Default"].AxisX.Maximum = Double.NaN;
+            CheckLicense();
+        }
 
+        private void CheckLicense() {
+            this.checkBoxShow3D.Enabled = AppRunner.CurrentAppMode != AppMode.DemoMode;
+            this.checkBoxShowMargin.Enabled = AppRunner.CurrentAppMode != AppMode.DemoMode;
         }
 
         /// <summary> 
