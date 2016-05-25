@@ -456,6 +456,7 @@
             this.licenseTile.ActiveControl = null;
             this.licenseTile.Name = "licenseTile";
             this.licenseTile.UseSelectable = true;
+            this.licenseTile.Click += new System.EventHandler(this.licenseTile_Click);
             // 
             // aboutTile
             // 

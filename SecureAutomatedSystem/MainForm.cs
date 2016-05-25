@@ -4,6 +4,7 @@ using System.Windows.Forms;
 using MetroFramework.Forms;
 using System.Globalization;
 using System.IO;
+using SecureAutomatedSystem.DemoMode.UI;
 using SecureAutomatedSystem.ProcessEmulation;
 using SecureAutomatedSystem.Snapshot;
 
@@ -13,6 +14,12 @@ namespace SecureAutomatedSystem {
         public MainForm() {
             InitializeComponent();
             LoadSuggestedparams();
+            CheckLicense();
+        }
+
+        private void CheckLicense() {
+            this.EncryptInDB.Enabled = AppRunner.CurrentAppMode != AppMode.DemoMode;
+            this.InputDelay.Enabled = AppRunner.CurrentAppMode != AppMode.DemoMode;
         }
 
         private void LoadSuggestedparams() {
@@ -145,5 +152,13 @@ namespace SecureAutomatedSystem {
             }
         }
 
+        private void licenseTile_Click(object sender, EventArgs e) {
+            using (KeyCheckerForm form = new KeyCheckerForm()) {
+                form. LicenseChanged += (s, ea) => {
+                    CheckLicense();
+                };
+                form.ShowDialog();
+            }
+        }
     }
 }

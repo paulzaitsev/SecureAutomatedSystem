@@ -9,6 +9,16 @@ namespace SecureAutomatedSystem.DemoMode {
             get { return IsValid(ValidLicenseKey) || RegisterUtils.CheckRegister(); }
         }
 
+        public static bool IsRegisterDemoKey {
+            get {
+                if (RegisterUtils.CheckRegister()) {
+                    string demoKeyMD5 = CryptoUtils.GetMd5Hash(Constants.DemoKey);
+                    return string.Equals(RegisterUtils.GetRegisterKeyValue(), demoKeyMD5);
+                }
+                return false;
+            }
+        }
+
         public static void RegisterKey(string key) {
             if (IsValid(key)) {
                 ValidLicenseKey = key;

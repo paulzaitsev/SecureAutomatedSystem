@@ -34,6 +34,15 @@ namespace SecureAutomatedSystem.Utils {
                 return key != null && key.GetValue(StringId.LicenseKey) != null;
             }
         }
+
+        public static string GetRegisterKeyValue() {
+            using (RegistryKey key = Registry. CurrentUser. OpenSubKey(StringId. RegistrySubKeyName)) {
+                if (key != null && key.GetValue(StringId.LicenseKey) != null) {
+                    return key.GetValue(StringId.LicenseKey).ToString();
+                }
+            }
+            return string.Empty;
+        }
     }
 
     public static class StringId {
