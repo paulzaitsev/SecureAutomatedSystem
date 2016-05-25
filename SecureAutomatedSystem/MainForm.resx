@@ -134,6 +134,9 @@
   <data name="label13.Location" type="System.Drawing.Point, System.Drawing">
     <value>143, 3</value>
   </data>
+  <data name="label12.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
   <data name="&gt;&gt;textBox13.Parent" xml:space="preserve">
     <value>tableLayoutPanel2</value>
   </data>
@@ -168,11 +171,8 @@
   <data name="&gt;&gt;label15.Name" xml:space="preserve">
     <value>label15</value>
   </data>
-  <data name="label17.Text" xml:space="preserve">
-    <value>Wall Thickness</value>
-  </data>
-  <data name="&gt;&gt;textBox2.Parent" xml:space="preserve">
-    <value>tableLayoutPanel3</value>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>842, 579</value>
   </data>
   <data name="label4.TabIndex" type="System.Int32, mscorlib">
     <value>17</value>
@@ -192,6 +192,9 @@
   <data name="textBox14.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
     <value>Center</value>
   </data>
+  <data name="FilePath.Size" type="System.Drawing.Size, System.Drawing">
+    <value>128, 20</value>
+  </data>
   <data name="&gt;&gt;bindingSource1.Name" xml:space="preserve">
     <value>bindingSource1</value>
   </data>
@@ -207,11 +210,11 @@
   <data name="&gt;&gt;SavingInDB.Parent" xml:space="preserve">
     <value>tableLayoutPanel4</value>
   </data>
+  <data name="&gt;&gt;label6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="&gt;&gt;EncryptInDB.Name" xml:space="preserve">
     <value>EncryptInDB</value>
-  </data>
-  <data name="&gt;&gt;label3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="tableLayoutPanel1.Location" type="System.Drawing.Point, System.Drawing">
     <value>5, 17</value>
@@ -225,17 +228,11 @@
   <data name="textBox2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
-  <data name="textBox14.Size" type="System.Drawing.Size, System.Drawing">
-    <value>117, 20</value>
-  </data>
-  <data name="&gt;&gt;textBox12.Parent" xml:space="preserve">
-    <value>tableLayoutPanel2</value>
-  </data>
-  <data name="&gt;&gt;label4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="Stop.Text" xml:space="preserve">
     <value>Stop Process</value>
+  </data>
+  <data name="&gt;&gt;textBox11.Name" xml:space="preserve">
+    <value>textBox11</value>
   </data>
   <data name="&gt;&gt;SearchKeyButton.Name" xml:space="preserve">
     <value>SearchKeyButton</value>
@@ -246,11 +243,11 @@
   <data name="textBox16.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
     <value>Center</value>
   </data>
+  <data name="&gt;&gt;aboutTile.Parent" xml:space="preserve">
+    <value>tableLayoutPanelMenu</value>
+  </data>
   <data name="Stop.Size" type="System.Drawing.Size, System.Drawing">
     <value>128, 27</value>
-  </data>
-  <data name="label1.Text" xml:space="preserve">
-    <value>Outer Diameter</value>
   </data>
   <data name="&gt;&gt;label5.Parent" xml:space="preserve">
     <value>tableLayoutPanel3</value>
@@ -260,6 +257,9 @@
   </data>
   <data name="label16.Size" type="System.Drawing.Size, System.Drawing">
     <value>104, 13</value>
+  </data>
+  <data name="label16.Text" xml:space="preserve">
+    <value>Outer Pairing Radius</value>
   </data>
   <data name="textBox13.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 101</value>
@@ -282,14 +282,17 @@
   <data name="label18.TabIndex" type="System.Int32, mscorlib">
     <value>25</value>
   </data>
-  <data name="&gt;&gt;databaseDataSet.Type" xml:space="preserve">
-    <value>SecureAutomatedSystem.databaseDataSet, databaseDataSet.Designer.cs, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  <data name="&gt;&gt;SavingInDB.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;label15.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;tableLayoutPanel2.Type" xml:space="preserve">
     <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label5.Name" xml:space="preserve">
+    <value>label5</value>
   </data>
   <data name="&gt;&gt;textBox3.Parent" xml:space="preserve">
     <value>tableLayoutPanel3</value>
@@ -333,9 +336,6 @@
   <data name="textBox10.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="&gt;&gt;snapshotTile.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
   <data name="&gt;&gt;InputDelay.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
@@ -347,6 +347,15 @@
   </data>
   <data name="&gt;&gt;label4.Parent" xml:space="preserve">
     <value>tableLayoutPanel3</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanelProcess.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanelProcess.Name" xml:space="preserve">
+    <value>tableLayoutPanelProcess</value>
   </data>
   <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
     <value>137, 83</value>
@@ -363,17 +372,11 @@
   <data name="&gt;&gt;tableLayoutPanelMenu.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="label15.Size" type="System.Drawing.Size, System.Drawing">
-    <value>76, 13</value>
-  </data>
   <data name="textBox7.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
   <data name="&gt;&gt;label21.Name" xml:space="preserve">
     <value>label21</value>
-  </data>
-  <data name="textBox11.TabIndex" type="System.Int32, mscorlib">
-    <value>28</value>
   </data>
   <data name="&gt;&gt;licenseTile.Name" xml:space="preserve">
     <value>licenseTile</value>
@@ -396,14 +399,17 @@
   <data name="&gt;&gt;tableLayoutPanelMenu.Type" xml:space="preserve">
     <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;label19.ZOrder" xml:space="preserve">
-    <value>8</value>
+  <data name="label8.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 1, 3, 0</value>
   </data>
   <data name="textBox4.Size" type="System.Drawing.Size, System.Drawing">
     <value>122, 20</value>
   </data>
   <data name="&gt;&gt;textBox15.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="textBox10.Size" type="System.Drawing.Size, System.Drawing">
+    <value>122, 20</value>
   </data>
   <data name="&gt;&gt;tableLayoutPanel3.ZOrder" xml:space="preserve">
     <value>3</value>
@@ -420,6 +426,9 @@
   <data name="&gt;&gt;tableLayoutPanelMenu.Parent" xml:space="preserve">
     <value>tableLayoutPanelProcess</value>
   </data>
+  <data name="tableLayoutPanel3.RowCount" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
   <data name="textBox14.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 157</value>
   </data>
@@ -428,9 +437,6 @@
   </data>
   <data name="textBox18.Size" type="System.Drawing.Size, System.Drawing">
     <value>123, 20</value>
-  </data>
-  <data name="textBox9.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
-    <value>Center</value>
   </data>
   <data name="label19.Size" type="System.Drawing.Size, System.Drawing">
     <value>109, 15</value>
@@ -444,14 +450,8 @@
   <data name="textBox1.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
     <value>Center</value>
   </data>
-  <data name="textBox8.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
   <data name="&gt;&gt;FilePath.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="label15.Text" xml:space="preserve">
-    <value>Inner Diameter</value>
   </data>
   <data name="&gt;&gt;Start.Parent" xml:space="preserve">
     <value>tableLayoutPanel4</value>
@@ -468,14 +468,20 @@
   <data name="FilePath.TabIndex" type="System.Int32, mscorlib">
     <value>29</value>
   </data>
-  <data name="&gt;&gt;textBox16.ZOrder" xml:space="preserve">
-    <value>14</value>
+  <data name="label16.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 1, 3, 0</value>
   </data>
-  <data name="&gt;&gt;textBox9.Parent" xml:space="preserve">
+  <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 182</value>
+  </data>
+  <data name="&gt;&gt;label7.Parent" xml:space="preserve">
     <value>tableLayoutPanel3</value>
   </data>
   <data name="textBox3.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 60</value>
+  </data>
+  <data name="&gt;&gt;aboutTile.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroTile, MetroFramework, Version=1.3.5.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
   </data>
   <data name="label1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -489,8 +495,8 @@
   <data name="textBox1.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
   </data>
-  <data name="&gt;&gt;label18.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;tableLayoutPanel4.Name" xml:space="preserve">
+    <value>tableLayoutPanel4</value>
   </data>
   <data name="Start.Size" type="System.Drawing.Size, System.Drawing">
     <value>128, 27</value>
@@ -519,11 +525,17 @@
   <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
     <value>12</value>
   </data>
-  <data name="&gt;&gt;textBox11.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;label18.ZOrder" xml:space="preserve">
+    <value>6</value>
   </data>
   <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
     <value>1</value>
+  </data>
+  <data name="&gt;&gt;SearchKeyButton.Parent" xml:space="preserve">
+    <value>tableLayoutPanel4</value>
+  </data>
+  <data name="label12.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 0</value>
   </data>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>6, 13</value>
@@ -546,8 +558,8 @@
   <data name="&gt;&gt;label17.Name" xml:space="preserve">
     <value>label17</value>
   </data>
-  <data name="textBox15.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
+  <data name="metroTabPage1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
   </data>
   <data name="label3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 1, 3, 0</value>
@@ -564,14 +576,8 @@
   <data name="&gt;&gt;label20.Parent" xml:space="preserve">
     <value>tableLayoutPanel2</value>
   </data>
-  <data name="&gt;&gt;textBox2.Name" xml:space="preserve">
-    <value>textBox2</value>
-  </data>
-  <data name="&gt;&gt;label7.Parent" xml:space="preserve">
-    <value>tableLayoutPanel3</value>
-  </data>
-  <data name="textBox15.Text" xml:space="preserve">
-    <value>8</value>
+  <data name="tableLayoutPanel3.ColumnCount" type="System.Int32, mscorlib">
+    <value>2</value>
   </data>
   <data name="label14.Size" type="System.Drawing.Size, System.Drawing">
     <value>78, 13</value>
@@ -579,8 +585,11 @@
   <data name="tableLayoutPanel2.TabIndex" type="System.Int32, mscorlib">
     <value>26</value>
   </data>
-  <data name="SearchKeyButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>128, 23</value>
+  <data name="&gt;&gt;label12.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="licenseTile.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
   </data>
   <data name="Start.Text" xml:space="preserve">
     <value>Start Process</value>
@@ -590,6 +599,9 @@
   </data>
   <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
     <value>137, 1</value>
+  </data>
+  <data name="textBox9.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="textBox2.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -621,6 +633,9 @@
   <data name="&gt;&gt;label14.Parent" xml:space="preserve">
     <value>tableLayoutPanel2</value>
   </data>
+  <data name="&gt;&gt;tableLayoutPanel1.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
   <data name="&gt;&gt;label21.Parent" xml:space="preserve">
     <value>tableLayoutPanel2</value>
   </data>
@@ -633,14 +648,23 @@
   <data name="label11.Size" type="System.Drawing.Size, System.Drawing">
     <value>115, 13</value>
   </data>
+  <data name="label17.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 1, 3, 0</value>
+  </data>
   <data name="textBox2.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
     <value>Center</value>
   </data>
   <data name="EncryptInDB.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
+  <data name="textBox5.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
   <data name="label9.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 125</value>
+  </data>
+  <data name="&gt;&gt;textBox3.Name" xml:space="preserve">
+    <value>textBox3</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
     <value>MetroFramework.Forms.MetroForm, MetroFramework, Version=1.3.5.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
@@ -663,14 +687,11 @@
   <data name="&gt;&gt;snapshotTile.Name" xml:space="preserve">
     <value>snapshotTile</value>
   </data>
-  <data name="tableLayoutPanel2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>252, 391</value>
+  <data name="textBox13.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Center</value>
   </data>
   <data name="textBox17.Text" xml:space="preserve">
     <value>11</value>
-  </data>
-  <data name="textBox2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>137, 20</value>
   </data>
   <data name="label18.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -678,26 +699,20 @@
   <data name="textBox16.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
-  <data name="&gt;&gt;textBox2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="label16.TabIndex" type="System.Int32, mscorlib">
     <value>25</value>
   </data>
-  <data name="&gt;&gt;textBox4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="&gt;&gt;licenseTile.ZOrder" xml:space="preserve">
     <value>1</value>
-  </data>
-  <data name="&gt;&gt;textBox12.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;textBox8.ZOrder" xml:space="preserve">
     <value>18</value>
   </data>
   <data name="&gt;&gt;label12.Name" xml:space="preserve">
     <value>label12</value>
+  </data>
+  <data name="&gt;&gt;label2.Name" xml:space="preserve">
+    <value>label2</value>
   </data>
   <data name="label4.Text" xml:space="preserve">
     <value>Inner Radius</value>
@@ -714,20 +729,20 @@
   <data name="&gt;&gt;label14.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
+  <data name="label12.Text" xml:space="preserve">
+    <value>Produced Product</value>
+  </data>
   <data name="label17.TabIndex" type="System.Int32, mscorlib">
     <value>25</value>
   </data>
   <data name="label4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 1, 3, 0</value>
   </data>
-  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
-    <value>tableLayoutPanel3</value>
+  <data name="&gt;&gt;textBox12.Name" xml:space="preserve">
+    <value>textBox12</value>
   </data>
   <data name="label11.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 83</value>
-  </data>
-  <data name="label6.Text" xml:space="preserve">
-    <value>Wall Thickness</value>
   </data>
   <data name="textBox17.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -750,20 +765,11 @@
   <data name="&gt;&gt;label10.Parent" xml:space="preserve">
     <value>tableLayoutPanel3</value>
   </data>
-  <data name="textBox4.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="textBox4.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
-    <value>Center</value>
-  </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
     <value>128, 13</value>
   </data>
-  <data name="snapshotTile.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 88</value>
-  </data>
-  <data name="textBox13.Size" type="System.Drawing.Size, System.Drawing">
-    <value>117, 20</value>
+  <data name="&gt;&gt;label5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;label8.Name" xml:space="preserve">
     <value>label8</value>
@@ -776,9 +782,6 @@
   </data>
   <data name="&gt;&gt;textBox16.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="label6.TabIndex" type="System.Int32, mscorlib">
-    <value>19</value>
   </data>
   <data name="&gt;&gt;label15.ZOrder" xml:space="preserve">
     <value>13</value>
@@ -825,35 +828,29 @@
   <data name="&gt;&gt;textBox10.Parent" xml:space="preserve">
     <value>tableLayoutPanel3</value>
   </data>
+  <data name="&gt;&gt;textBox2.Name" xml:space="preserve">
+    <value>textBox2</value>
+  </data>
   <data name="&gt;&gt;textBox15.ZOrder" xml:space="preserve">
     <value>12</value>
   </data>
   <data name="textBox9.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
+  <data name="&gt;&gt;textBox1.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
   <data name="label7.TabIndex" type="System.Int32, mscorlib">
     <value>20</value>
-  </data>
-  <data name="&gt;&gt;textBox6.ZOrder" xml:space="preserve">
-    <value>9</value>
   </data>
   <data name="&gt;&gt;label7.Name" xml:space="preserve">
     <value>label7</value>
   </data>
-  <data name="label13.TabIndex" type="System.Int32, mscorlib">
-    <value>25</value>
-  </data>
   <data name="&gt;&gt;textBox14.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="&gt;&gt;tableLayoutPanel3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBox9.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="tableLayoutPanel3.ColumnCount" type="System.Int32, mscorlib">
-    <value>2</value>
+  <data name="&gt;&gt;tableLayoutPanel2.Parent" xml:space="preserve">
+    <value>tableLayoutPanel1</value>
   </data>
   <data name="textBox12.Text" xml:space="preserve">
     <value>10.5</value>
@@ -873,8 +870,8 @@
   <data name="&gt;&gt;metroTabControl1.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;SavingInDB.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Outer Diameter</value>
   </data>
   <data name="tableLayoutPanel2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -900,8 +897,8 @@
   <data name="label21.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 1, 3, 0</value>
   </data>
-  <data name="&gt;&gt;textBox1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="textBox5.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="tableLayoutPanel4.ColumnCount" type="System.Int32, mscorlib">
     <value>1</value>
@@ -909,14 +906,14 @@
   <data name="label21.Text" xml:space="preserve">
     <value>Outer Pairing Rad Cylindrical</value>
   </data>
-  <data name="&gt;&gt;label8.ZOrder" xml:space="preserve">
-    <value>19</value>
+  <data name="snapshotTile.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
   </data>
   <data name="InputDelay.Text" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="textBox13.Text" xml:space="preserve">
-    <value>8.5</value>
+  <data name="label7.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="label20.Location" type="System.Drawing.Point, System.Drawing">
     <value>126, 83</value>
@@ -927,8 +924,8 @@
   <data name="&gt;&gt;label11.Parent" xml:space="preserve">
     <value>tableLayoutPanel4</value>
   </data>
-  <data name="label7.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="label5.Text" xml:space="preserve">
+    <value>Outer Pairing Radius</value>
   </data>
   <data name="metroTabControl1.Location" type="System.Drawing.Point, System.Drawing">
     <value>115, 3</value>
@@ -938,6 +935,9 @@
   </data>
   <data name="textBox14.TabIndex" type="System.Int32, mscorlib">
     <value>31</value>
+  </data>
+  <data name="textBox13.Text" xml:space="preserve">
+    <value>8.5</value>
   </data>
   <data name="textBox9.Size" type="System.Drawing.Size, System.Drawing">
     <value>128, 20</value>
@@ -960,8 +960,8 @@
   <data name="SearchKeyButton.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="&gt;&gt;label2.Name" xml:space="preserve">
-    <value>label2</value>
+  <data name="&gt;&gt;label18.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;textBox12.ZOrder" xml:space="preserve">
     <value>15</value>
@@ -1011,9 +1011,6 @@
   <data name="SearchKeyButton.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 216</value>
   </data>
-  <data name="label13.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 0</value>
-  </data>
   <data name="&gt;&gt;label11.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
@@ -1032,8 +1029,14 @@
   <data name="&gt;&gt;textBox5.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="EncryptInDB.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
   <data name="&gt;&gt;Start.Name" xml:space="preserve">
     <value>Start</value>
+  </data>
+  <data name="textBox7.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Center</value>
   </data>
   <data name="textBox14.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -1041,11 +1044,11 @@
   <data name="metroTabPage1.Size" type="System.Drawing.Size, System.Drawing">
     <value>676, 451</value>
   </data>
-  <data name="&gt;&gt;label9.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;label12.Parent" xml:space="preserve">
+    <value>tableLayoutPanel1</value>
   </data>
-  <data name="&gt;&gt;textBox12.Name" xml:space="preserve">
-    <value>textBox12</value>
+  <data name="textBox8.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Center</value>
   </data>
   <data name="metroTabPage1.Text" xml:space="preserve">
     <value>Process</value>
@@ -1056,6 +1059,9 @@
   <data name="tableLayoutPanelProcess.ColumnCount" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
+  <data name="&gt;&gt;label10.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="&gt;&gt;label21.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
@@ -1064,6 +1070,9 @@
   </data>
   <data name="label3.TabIndex" type="System.Int32, mscorlib">
     <value>16</value>
+  </data>
+  <data name="&gt;&gt;Stop.Parent" xml:space="preserve">
+    <value>tableLayoutPanel4</value>
   </data>
   <data name="&gt;&gt;textBox5.Parent" xml:space="preserve">
     <value>tableLayoutPanel3</value>
@@ -1074,9 +1083,6 @@
   <data name="textBox16.Size" type="System.Drawing.Size, System.Drawing">
     <value>123, 20</value>
   </data>
-  <data name="textBox13.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
   <data name="label8.Text" xml:space="preserve">
     <value>Bottom Lowersection Height</value>
   </data>
@@ -1086,17 +1092,14 @@
   <data name="&gt;&gt;textBox16.Name" xml:space="preserve">
     <value>textBox16</value>
   </data>
-  <data name="label10.Location" type="System.Drawing.Point, System.Drawing">
-    <value>137, 125</value>
-  </data>
   <data name="tableLayoutPanel2.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
     <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="textBox18" Row="7" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="label21" Row="6" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox14" Row="7" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label14" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label17" Row="6" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label20" Row="4" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="label18" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox17" Row="5" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="label19" Row="2" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="label16" Row="4" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="textBox13" Row="5" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="textBox11" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="textBox15" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="label15" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="textBox16" Row="3" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox12" Row="3" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,49,Percent,51" /&gt;&lt;Rows Styles="Absolute,16,Absolute,25,Absolute,16,Absolute,25,Absolute,16,Absolute,25,Absolute,31,Absolute,127" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
   <data name="aboutTile.Size" type="System.Drawing.Size, System.Drawing">
     <value>100, 88</value>
   </data>
-  <data name="&gt;&gt;textBox6.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="snapshotTile.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 88</value>
   </data>
   <data name="textBox1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -1104,8 +1107,11 @@
   <data name="InputDelay.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 102</value>
   </data>
-  <data name="&gt;&gt;textBox1.ZOrder" xml:space="preserve">
-    <value>4</value>
+  <data name="&gt;&gt;textBox2.Parent" xml:space="preserve">
+    <value>tableLayoutPanel3</value>
+  </data>
+  <data name="label2.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
   </data>
   <data name="&gt;&gt;tableLayoutPanelProcess.Type" xml:space="preserve">
     <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -1119,6 +1125,9 @@
   <data name="textBox8.Location" type="System.Drawing.Point, System.Drawing">
     <value>137, 216</value>
   </data>
+  <data name="&gt;&gt;textBox9.Parent" xml:space="preserve">
+    <value>tableLayoutPanel3</value>
+  </data>
   <data name="tableLayoutPanelMenu.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
@@ -1127,6 +1136,9 @@
   </data>
   <data name="&gt;&gt;label15.Parent" xml:space="preserve">
     <value>tableLayoutPanel2</value>
+  </data>
+  <data name="&gt;&gt;textBox17.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;label2.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -1137,26 +1149,23 @@
   <data name="label15.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="&gt;&gt;textBox3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
     <value>104, 13</value>
   </data>
   <data name="textBox17.Size" type="System.Drawing.Size, System.Drawing">
     <value>123, 20</value>
   </data>
-  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
-    <value>tableLayoutPanel3</value>
-  </data>
   <data name="&gt;&gt;SearchKeyButton.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
-  <data name="textBox6.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
+  <data name="textBox9.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 157</value>
   </data>
   <data name="label7.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 1, 3, 0</value>
-  </data>
-  <data name="EncryptInDB.Text" xml:space="preserve">
-    <value>Encrypt Data in DB</value>
   </data>
   <data name="&gt;&gt;tableLayoutPanel4.Parent" xml:space="preserve">
     <value>tableLayoutPanel1</value>
@@ -1167,11 +1176,11 @@
   <data name="label9.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="tableLayoutPanel2.RowCount" type="System.Int32, mscorlib">
-    <value>8</value>
+  <data name="textBox14.Text" xml:space="preserve">
+    <value>12</value>
   </data>
-  <data name="Start.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 19</value>
+  <data name="label13.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
   </data>
   <data name="label8.TabIndex" type="System.Int32, mscorlib">
     <value>21</value>
@@ -1191,38 +1200,29 @@
   <data name="&gt;&gt;EncryptInDB.Type" xml:space="preserve">
     <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="label12.TabIndex" type="System.Int32, mscorlib">
-    <value>24</value>
-  </data>
-  <data name="aboutTile.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
+  <data name="tableLayoutPanel4.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
   </data>
   <data name="&gt;&gt;InputDelay.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="textBox7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>128, 20</value>
+  <data name="label20.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 1, 3, 0</value>
   </data>
-  <data name="&gt;&gt;label4.Name" xml:space="preserve">
-    <value>label4</value>
+  <data name="&gt;&gt;FilePath.Parent" xml:space="preserve">
+    <value>tableLayoutPanel4</value>
   </data>
-  <data name="&gt;&gt;label8.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;textBox16.ZOrder" xml:space="preserve">
+    <value>14</value>
   </data>
-  <data name="textBox2.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
+  <data name="label21.Location" type="System.Drawing.Point, System.Drawing">
+    <value>126, 124</value>
   </data>
   <data name="&gt;&gt;textBox18.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 42</value>
-  </data>
-  <data name="&gt;&gt;InputDelay.Name" xml:space="preserve">
-    <value>InputDelay</value>
-  </data>
-  <data name="&gt;&gt;label9.ZOrder" xml:space="preserve">
-    <value>5</value>
   </data>
   <data name="label11.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 1, 3, 0</value>
@@ -1236,8 +1236,14 @@
   <data name="&gt;&gt;tableLayoutPanel1.Parent" xml:space="preserve">
     <value>metroTabPage1</value>
   </data>
-  <data name="label5.Text" xml:space="preserve">
-    <value>Outer Pairing Radius</value>
+  <data name="Stop.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 52</value>
+  </data>
+  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
+    <value>tableLayoutPanel3</value>
+  </data>
+  <data name="&gt;&gt;databaseDataSet.Type" xml:space="preserve">
+    <value>SecureAutomatedSystem.databaseDataSet, databaseDataSet.Designer.cs, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="tableLayoutPanel1.ColumnCount" type="System.Int32, mscorlib">
     <value>3</value>
@@ -1251,6 +1257,9 @@
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>MainForm</value>
   </data>
+  <data name="&gt;&gt;textBox8.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="&gt;&gt;textBox8.Parent" xml:space="preserve">
     <value>tableLayoutPanel3</value>
   </data>
@@ -1260,8 +1269,8 @@
   <data name="&gt;&gt;label13.Parent" xml:space="preserve">
     <value>tableLayoutPanel1</value>
   </data>
-  <data name="EncryptInDB.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="label13.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 0</value>
   </data>
   <data name="textBox10.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -1275,14 +1284,14 @@
   <data name="tableLayoutPanel1.TabIndex" type="System.Int32, mscorlib">
     <value>28</value>
   </data>
-  <data name="&gt;&gt;tableLayoutPanel2.Parent" xml:space="preserve">
-    <value>tableLayoutPanel1</value>
+  <data name="label17.Text" xml:space="preserve">
+    <value>Wall Thickness</value>
   </data>
   <data name="textBox10.TabIndex" type="System.Int32, mscorlib">
     <value>13</value>
   </data>
-  <data name="label12.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 14pt</value>
+  <data name="textBox13.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
   </data>
   <data name="textBox11.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
     <value>Center</value>
@@ -1311,8 +1320,8 @@
   <data name="label5.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="&gt;&gt;label12.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="&gt;&gt;label9.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="textBox12.Size" type="System.Drawing.Size, System.Drawing">
     <value>117, 20</value>
@@ -1338,8 +1347,11 @@
   <data name="label13.Text" xml:space="preserve">
     <value>Expected Parameters</value>
   </data>
-  <data name="textBox9.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
+  <data name="SearchKeyButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>128, 23</value>
+  </data>
+  <data name="&gt;&gt;textBox6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="tableLayoutPanelProcess.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -1362,6 +1374,9 @@
   <data name="&gt;&gt;label13.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <data name="label16.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
   <data name="&gt;&gt;textBox6.Name" xml:space="preserve">
     <value>textBox6</value>
   </data>
@@ -1374,11 +1389,11 @@
   <data name="label9.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 1, 3, 0</value>
   </data>
-  <data name="&gt;&gt;tableLayoutPanel4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;textBox4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="metroTabPage1.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
+  <data name="textBox13.Size" type="System.Drawing.Size, System.Drawing">
+    <value>117, 20</value>
   </data>
   <data name="textBox6.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -1386,20 +1401,17 @@
   <data name="SavingInDB.Text" xml:space="preserve">
     <value>Save Statistic in DB</value>
   </data>
-  <data name="tableLayoutPanelProcess.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
+  <data name="label6.Text" xml:space="preserve">
+    <value>Wall Thickness</value>
   </data>
   <data name="&gt;&gt;label19.Parent" xml:space="preserve">
     <value>tableLayoutPanel2</value>
   </data>
-  <data name="label20.Text" xml:space="preserve">
-    <value>Top Diameter</value>
+  <data name="&gt;&gt;textBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="label20.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 1, 3, 0</value>
-  </data>
-  <data name="label14.Text" xml:space="preserve">
-    <value>Outer Diameter</value>
+  <data name="tableLayoutPanel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>252, 391</value>
   </data>
   <data name="label19.Location" type="System.Drawing.Point, System.Drawing">
     <value>126, 42</value>
@@ -1425,11 +1437,11 @@
   <data name="label18.Location" type="System.Drawing.Point, System.Drawing">
     <value>126, 1</value>
   </data>
-  <data name="&gt;&gt;label18.ZOrder" xml:space="preserve">
-    <value>6</value>
+  <data name="textBox4.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
   </data>
-  <data name="textBox5.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
+  <data name="textBox14.Size" type="System.Drawing.Size, System.Drawing">
+    <value>117, 20</value>
   </data>
   <data name="textBox7.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 216</value>
@@ -1443,17 +1455,17 @@
   <data name="tableLayoutPanel1.RowCount" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
-  <data name="label12.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 0</value>
+  <data name="textBox1.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
-  <data name="&gt;&gt;label5.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="label12.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="label15.Text" xml:space="preserve">
+    <value>Inner Diameter</value>
   </data>
   <data name="textBox8.Size" type="System.Drawing.Size, System.Drawing">
     <value>122, 20</value>
-  </data>
-  <data name="textBox15.Location" type="System.Drawing.Point, System.Drawing">
-    <value>126, 19</value>
   </data>
   <data name="&gt;&gt;metroTabControl1.Parent" xml:space="preserve">
     <value>tableLayoutPanelProcess</value>
@@ -1464,8 +1476,8 @@
   <data name="label12.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left, Right</value>
   </data>
-  <data name="&gt;&gt;SearchKeyButton.Parent" xml:space="preserve">
-    <value>tableLayoutPanel4</value>
+  <data name="&gt;&gt;label8.ZOrder" xml:space="preserve">
+    <value>19</value>
   </data>
   <data name="label3.Text" xml:space="preserve">
     <value>Inner Diameter</value>
@@ -1473,8 +1485,8 @@
   <data name="&gt;&gt;licenseTile.Parent" xml:space="preserve">
     <value>tableLayoutPanelMenu</value>
   </data>
-  <data name="FilePath.Size" type="System.Drawing.Size, System.Drawing">
-    <value>128, 20</value>
+  <data name="&gt;&gt;textBox2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="InputDelay.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
     <value>Center</value>
@@ -1488,11 +1500,8 @@
   <data name="textBox12.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 60</value>
   </data>
-  <data name="label13.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="textBox7.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
-    <value>Center</value>
+  <data name="&gt;&gt;label9.ZOrder" xml:space="preserve">
+    <value>5</value>
   </data>
   <data name="Stop.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -1503,17 +1512,14 @@
   <data name="label2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="EncryptInDB.TabIndex" type="System.Int32, mscorlib">
-    <value>28</value>
+  <data name="&gt;&gt;textBox12.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;FilePath.Parent" xml:space="preserve">
-    <value>tableLayoutPanel4</value>
+  <data name="&gt;&gt;label19.ZOrder" xml:space="preserve">
+    <value>8</value>
   </data>
-  <data name="&gt;&gt;label12.Parent" xml:space="preserve">
-    <value>tableLayoutPanel1</value>
-  </data>
-  <data name="tableLayoutPanel3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>401, 37</value>
+  <data name="EncryptInDB.Text" xml:space="preserve">
+    <value>Encrypt Data in DB</value>
   </data>
   <data name="&gt;&gt;tableLayoutPanel3.Parent" xml:space="preserve">
     <value>tableLayoutPanel1</value>
@@ -1521,20 +1527,20 @@
   <data name="label1.TabIndex" type="System.Int32, mscorlib">
     <value>14</value>
   </data>
-  <data name="&gt;&gt;tableLayoutPanelProcess.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="textBox8.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="label9.Size" type="System.Drawing.Size, System.Drawing">
     <value>71, 13</value>
   </data>
-  <data name="textBox5.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
+  <data name="textBox2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>137, 20</value>
   </data>
   <data name="tableLayoutPanelProcess.RowCount" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
-  <data name="label17.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 1, 3, 0</value>
+  <data name="tableLayoutPanel2.RowCount" type="System.Int32, mscorlib">
+    <value>8</value>
   </data>
   <data name="label20.Size" type="System.Drawing.Size, System.Drawing">
     <value>71, 13</value>
@@ -1542,14 +1548,11 @@
   <data name="textBox12.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
     <value>Center</value>
   </data>
-  <data name="textBox1.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
+  <data name="&gt;&gt;label4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="tableLayoutPanel4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 2, 3, 3</value>
-  </data>
-  <data name="textBox18.Text" xml:space="preserve">
-    <value>5</value>
   </data>
   <data name="textBox8.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -1563,14 +1566,14 @@
   <data name="&gt;&gt;textBox17.Name" xml:space="preserve">
     <value>textBox17</value>
   </data>
-  <data name="label17.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 124</value>
-  </data>
   <data name="label20.TabIndex" type="System.Int32, mscorlib">
     <value>25</value>
   </data>
-  <data name="&gt;&gt;tableLayoutPanel4.Name" xml:space="preserve">
-    <value>tableLayoutPanel4</value>
+  <data name="EncryptInDB.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
+  </data>
+  <data name="tableLayoutPanelProcess.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
   </data>
   <data name="snapshotTile.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -1578,23 +1581,23 @@
   <data name="textBox3.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
   </data>
-  <data name="textBox8.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
-    <value>Center</value>
+  <data name="label12.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 14pt</value>
   </data>
-  <data name="label2.TabIndex" type="System.Int32, mscorlib">
-    <value>15</value>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>tableLayoutPanel3</value>
   </data>
-  <data name="&gt;&gt;textBox3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;textBox9.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="label10.Location" type="System.Drawing.Point, System.Drawing">
+    <value>137, 125</value>
   </data>
   <data name="&gt;&gt;textBox5.Name" xml:space="preserve">
     <value>textBox5</value>
   </data>
-  <data name="tableLayoutPanelMenu.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;textBox1.Parent" xml:space="preserve">
-    <value>tableLayoutPanel3</value>
+  <data name="textBox4.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Center</value>
   </data>
   <data name="&gt;&gt;textBox14.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -1608,8 +1611,8 @@
   <data name="&gt;&gt;metroTabControl1.Type" xml:space="preserve">
     <value>MetroFramework.Controls.MetroTabControl, MetroFramework, Version=1.3.5.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
   </data>
-  <data name="&gt;&gt;textBox17.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="label17.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 124</value>
   </data>
   <data name="&gt;&gt;label1.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -1623,11 +1626,8 @@
   <data name="textBox6.Size" type="System.Drawing.Size, System.Drawing">
     <value>122, 20</value>
   </data>
-  <data name="label9.Text" xml:space="preserve">
-    <value>Top Diameter</value>
-  </data>
-  <data name="&gt;&gt;label10.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;textBox6.ZOrder" xml:space="preserve">
+    <value>9</value>
   </data>
   <data name="textBox4.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -1635,11 +1635,11 @@
   <data name="&gt;&gt;textBox14.Parent" xml:space="preserve">
     <value>tableLayoutPanel2</value>
   </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>842, 579</value>
+  <data name="label9.Text" xml:space="preserve">
+    <value>Top Diameter</value>
   </data>
-  <data name="&gt;&gt;tableLayoutPanelProcess.Name" xml:space="preserve">
-    <value>tableLayoutPanelProcess</value>
+  <data name="&gt;&gt;label4.Name" xml:space="preserve">
+    <value>label4</value>
   </data>
   <data name="textBox6.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
     <value>Center</value>
@@ -1653,8 +1653,8 @@
   <data name="&gt;&gt;SearchKeyButton.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="label16.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="textBox18.Text" xml:space="preserve">
+    <value>5</value>
   </data>
   <data name="label15.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 42</value>
@@ -1674,17 +1674,20 @@
   <data name="textBox10.Location" type="System.Drawing.Point, System.Drawing">
     <value>137, 157</value>
   </data>
-  <data name="&gt;&gt;label6.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="textBox6.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
-  <data name="&gt;&gt;label5.Name" xml:space="preserve">
-    <value>label5</value>
+  <data name="label13.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
   </data>
   <data name="metroTabPage1.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 38</value>
   </data>
   <data name="tableLayoutPanel4.Size" type="System.Drawing.Size, System.Drawing">
     <value>134, 392</value>
+  </data>
+  <data name="label20.Text" xml:space="preserve">
+    <value>Top Diameter</value>
   </data>
   <data name="textBox2.Size" type="System.Drawing.Size, System.Drawing">
     <value>122, 20</value>
@@ -1698,20 +1701,20 @@
   <data name="tableLayoutPanel3.TabIndex" type="System.Int32, mscorlib">
     <value>27</value>
   </data>
-  <data name="textBox13.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
-    <value>Center</value>
+  <data name="&gt;&gt;tableLayoutPanel3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="label13.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 14pt</value>
   </data>
-  <data name="textBox14.Text" xml:space="preserve">
-    <value>12</value>
+  <data name="textBox15.Text" xml:space="preserve">
+    <value>8</value>
   </data>
-  <data name="label16.Text" xml:space="preserve">
-    <value>Outer Pairing Radius</value>
+  <data name="&gt;&gt;textBox1.Parent" xml:space="preserve">
+    <value>tableLayoutPanel3</value>
   </data>
-  <data name="label18.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 1, 3, 0</value>
+  <data name="&gt;&gt;Stop.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="tableLayoutPanelProcess.Size" type="System.Drawing.Size, System.Drawing">
     <value>802, 499</value>
@@ -1722,11 +1725,11 @@
   <data name="&gt;&gt;label9.Parent" xml:space="preserve">
     <value>tableLayoutPanel3</value>
   </data>
-  <data name="Stop.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 52</value>
+  <data name="textBox2.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
   </data>
-  <data name="label8.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 1, 3, 0</value>
+  <data name="&gt;&gt;InputDelay.Name" xml:space="preserve">
+    <value>InputDelay</value>
   </data>
   <data name="&gt;&gt;metroTabPage1.Name" xml:space="preserve">
     <value>metroTabPage1</value>
@@ -1734,14 +1737,14 @@
   <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
     <value>137, 42</value>
   </data>
-  <data name="&gt;&gt;tableLayoutPanel1.ZOrder" xml:space="preserve">
-    <value>2</value>
+  <data name="&gt;&gt;label8.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="label16.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 1, 3, 0</value>
+  <data name="textBox9.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Center</value>
   </data>
-  <data name="&gt;&gt;aboutTile.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroTile, MetroFramework, Version=1.3.5.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  <data name="textBox15.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
   </data>
   <data name="InputDelay.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -1752,8 +1755,8 @@
   <data name="Start.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
-  <data name="&gt;&gt;textBox3.Name" xml:space="preserve">
-    <value>textBox3</value>
+  <data name="&gt;&gt;textBox11.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;textBox10.ZOrder" xml:space="preserve">
     <value>0</value>
@@ -1761,8 +1764,8 @@
   <data name="&gt;&gt;textBox17.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
-  <data name="label12.Text" xml:space="preserve">
-    <value>Produced Product</value>
+  <data name="label15.Size" type="System.Drawing.Size, System.Drawing">
+    <value>76, 13</value>
   </data>
   <data name="&gt;&gt;tableLayoutPanel4.ZOrder" xml:space="preserve">
     <value>4</value>
@@ -1770,26 +1773,23 @@
   <data name="textBox8.TabIndex" type="System.Int32, mscorlib">
     <value>11</value>
   </data>
-  <data name="textBox10.Size" type="System.Drawing.Size, System.Drawing">
-    <value>122, 20</value>
+  <data name="&gt;&gt;textBox12.Parent" xml:space="preserve">
+    <value>tableLayoutPanel2</value>
   </data>
-  <data name="label21.Location" type="System.Drawing.Point, System.Drawing">
-    <value>126, 124</value>
+  <data name="tableLayoutPanelMenu.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
   </data>
   <data name="&gt;&gt;Stop.Name" xml:space="preserve">
     <value>Stop</value>
   </data>
+  <data name="&gt;&gt;label3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="label10.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 1, 3, 0</value>
   </data>
-  <data name="textBox9.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 157</value>
-  </data>
   <data name="&gt;&gt;SavingInDB.ZOrder" xml:space="preserve">
     <value>5</value>
-  </data>
-  <data name="tableLayoutPanel2.ColumnCount" type="System.Int32, mscorlib">
-    <value>2</value>
   </data>
   <data name="FilePath.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -1800,11 +1800,8 @@
   <data name="textBox18.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
-  <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 182</value>
-  </data>
-  <data name="tableLayoutPanel4.TabIndex" type="System.Int32, mscorlib">
-    <value>28</value>
+  <data name="label14.Text" xml:space="preserve">
+    <value>Outer Diameter</value>
   </data>
   <data name="textBox3.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -1812,23 +1809,26 @@
   <data name="label17.Size" type="System.Drawing.Size, System.Drawing">
     <value>80, 13</value>
   </data>
-  <data name="&gt;&gt;Stop.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="Start.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 19</value>
   </data>
-  <data name="snapshotTile.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
+  <data name="tableLayoutPanel2.ColumnCount" type="System.Int32, mscorlib">
+    <value>2</value>
   </data>
   <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
     <value>13</value>
   </data>
-  <data name="&gt;&gt;aboutTile.Parent" xml:space="preserve">
-    <value>tableLayoutPanelMenu</value>
+  <data name="label18.Size" type="System.Drawing.Size, System.Drawing">
+    <value>78, 13</value>
   </data>
-  <data name="&gt;&gt;textBox11.Name" xml:space="preserve">
-    <value>textBox11</value>
+  <data name="textBox7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>128, 20</value>
   </data>
-  <data name="licenseTile.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
+  <data name="&gt;&gt;snapshotTile.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="aboutTile.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
   </data>
   <data name="EncryptInDB.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 158</value>
@@ -1836,20 +1836,20 @@
   <data name="&gt;&gt;label6.Name" xml:space="preserve">
     <value>label6</value>
   </data>
-  <data name="label18.Size" type="System.Drawing.Size, System.Drawing">
-    <value>78, 13</value>
+  <data name="label18.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 1, 3, 0</value>
   </data>
-  <data name="&gt;&gt;textBox8.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="textBox11.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
   </data>
-  <data name="tableLayoutPanel3.RowCount" type="System.Int32, mscorlib">
-    <value>10</value>
+  <data name="label6.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
   </data>
   <data name="&gt;&gt;tableLayoutPanel1.Type" xml:space="preserve">
     <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;Stop.Parent" xml:space="preserve">
-    <value>tableLayoutPanel4</value>
+  <data name="textBox15.Location" type="System.Drawing.Point, System.Drawing">
+    <value>126, 19</value>
   </data>
   <data name="&gt;&gt;textBox13.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -1857,8 +1857,8 @@
   <data name="tableLayoutPanelProcess.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
     <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="metroTabControl1" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="tableLayoutPanelMenu" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Absolute,112,Percent,100" /&gt;&lt;Rows Styles="Percent,100" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
-  <data name="label12.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="tableLayoutPanel3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>401, 37</value>
   </data>
   <data name="&gt;&gt;label14.Name" xml:space="preserve">
     <value>label14</value>
