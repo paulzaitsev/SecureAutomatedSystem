@@ -121,9 +121,9 @@
     <value />
   </data>
   <data name="checkBoxShow3D.Text" xml:space="preserve">
-    <value />
+    <value>3D режим</value>
   </data>
   <data name="checkBoxShowMargin.Text" xml:space="preserve">
-    <value />
+    <value>Отображать ось Х</value>
   </data>
 </root>
