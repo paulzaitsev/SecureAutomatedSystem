@@ -63,7 +63,7 @@ namespace SecureAutomatedSystem.ProcessEmulation{
             float topThickness = Benchmark.TopThickness + (float)((randomGeneratorVariable.Next(100) - 50.0) / 50.0) + (float)randomGeneratorVariable.NextDouble()/2; 
             float bottomLowersectionHeight = Benchmark.BottomLowersectionHeight + (float)((randomGeneratorVariable.Next(100) - 50.0) / 50.0) + (float)randomGeneratorVariable.NextDouble()/2; 
             float topDiameter = Benchmark.TopDiameter + (float)((randomGeneratorVariable.Next(100) - 50.0) / 50.0) + (float)randomGeneratorVariable.NextDouble()/2;
-            float outerPairingRadiusCyl = Benchmark.OuterPairingRadiusCyl + (float)((randomGeneratorVariable.Next(100) - 50.0) / 50.0) + (float)randomGeneratorVariable.NextDouble()/2;
+            float outerPairingRadiusCyl = Benchmark.OuterPairingRadiusCylindricalOgive + (float)((randomGeneratorVariable.Next(100) - 50.0) / 50.0) + (float)randomGeneratorVariable.NextDouble()/2;
 
             return new Product(outerDiameter, outerRadius, innerDiameter, innerRadius, outerPairingRadius, wallThickness, topThickness, bottomLowersectionHeight, topDiameter, outerPairingRadiusCyl);
         }

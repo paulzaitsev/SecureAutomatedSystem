@@ -464,6 +464,7 @@
             this.aboutTile.ActiveControl = null;
             this.aboutTile.Name = "aboutTile";
             this.aboutTile.UseSelectable = true;
+            this.aboutTile.Click += new System.EventHandler(this.aboutTile_Click);
             // 
             // bindingSource1
             // 

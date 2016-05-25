@@ -35,7 +35,7 @@ namespace SecureAutomatedSystem.ProcessEmulation {
         public float TopDiameter { get; set; }
 
         [XmlAttributeAttribute("outer_pairing_radius_cyl")]
-        public float OuterPairingRadiusCyl { get; set; }
+        public float OuterPairingRadiusCylindricalOgive { get; set; }
 
         public Product() { }
 
@@ -49,7 +49,7 @@ namespace SecureAutomatedSystem.ProcessEmulation {
             TopThickness = p7;
             BottomLowersectionHeight = p8;
             TopDiameter = p9;
-            OuterPairingRadiusCyl = p10;
+            OuterPairingRadiusCylindricalOgive = p10;
         }
 
         public void Assign(Product source) {
@@ -63,7 +63,7 @@ namespace SecureAutomatedSystem.ProcessEmulation {
                 this.TopThickness = source.TopThickness;
                 this.BottomLowersectionHeight = source.BottomLowersectionHeight;
                 this.TopDiameter = source.TopDiameter;
-                this.OuterPairingRadiusCyl = source.OuterPairingRadiusCyl;
+                this.OuterPairingRadiusCylindricalOgive = source.OuterPairingRadiusCylindricalOgive;
             }
         }
 
@@ -74,7 +74,7 @@ namespace SecureAutomatedSystem.ProcessEmulation {
                                  "\nTopThickness = {6} \nBottomLowersectionHeight = {7} \nTopDiameter = {8}" +
                                  "\nOuterPairingRadiusCylindrical = {9}", OuterDiameter, OuterRadius, InnerDiameter,
                 InnerRadius, OuterPairingRadius, WallThickness, TopThickness, BottomLowersectionHeight,
-                TopDiameter, OuterPairingRadiusCyl);
+                TopDiameter, OuterPairingRadiusCylindricalOgive);
         }
 
         public void DeserializeFromXml(string xmlFileName) {

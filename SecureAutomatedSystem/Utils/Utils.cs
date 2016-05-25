@@ -56,4 +56,10 @@ namespace SecureAutomatedSystem.Utils {
         public static int ValidKeyLenght = 6;
         public static string DemoKey = "DemoKey";
     }
+
+    public static class ReflectionUtils {
+        public static object GetValue(object src, string propertyName) {
+            return src.GetType().GetProperty(propertyName).GetValue(src, null);
+        }
+    }
 }

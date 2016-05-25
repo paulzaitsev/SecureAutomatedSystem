@@ -4,6 +4,7 @@ using System.Windows.Forms;
 using MetroFramework.Forms;
 using System.Globalization;
 using System.IO;
+using MetroFramework;
 using SecureAutomatedSystem.DemoMode.UI;
 using SecureAutomatedSystem.ProcessEmulation;
 using SecureAutomatedSystem.Snapshot;
@@ -37,7 +38,7 @@ namespace SecureAutomatedSystem {
             textBox13.Text = product.OuterPairingRadius.ToString();
             textBox17.Text = product.TopThickness.ToString();
             textBox14.Text = product.WallThickness.ToString();
-            textBox18.Text = product.OuterPairingRadiusCyl.ToString();
+            textBox18.Text = product.OuterPairingRadiusCylindricalOgive.ToString();
         }
 
         private Emulator factory;
@@ -53,13 +54,13 @@ namespace SecureAutomatedSystem {
             textBox7.Text = factory.CurrentProduct.TopThickness.ToString();
             textBox8.Text = factory.CurrentProduct.BottomLowersectionHeight.ToString();
             textBox9.Text = factory.CurrentProduct.TopDiameter.ToString();
-            textBox10.Text = factory.CurrentProduct.OuterPairingRadiusCyl.ToString();
+            textBox10.Text = factory.CurrentProduct.OuterPairingRadiusCylindricalOgive.ToString();
         }
 
         private void RevertAccessibilityInProcessTab() {
             Stop.Enabled = !Stop.Enabled;
             Start.Enabled = !Start.Enabled;
-            InputDelay.Enabled = !InputDelay.Enabled;
+            InputDelay.Enabled = !InputDelay.Enabled && AppRunner.CurrentAppMode != AppMode.DemoMode;
             //textBox11.Enabled = !textBox11.Enabled;
             //textBox12.Enabled = !textBox12.Enabled;
             //textBox13.Enabled = !textBox13.Enabled;
@@ -84,11 +85,11 @@ namespace SecureAutomatedSystem {
                 float p9 = Convert.ToSingle(textBox17.Text, new CultureInfo("en-US"));
                 float p10 = Convert.ToSingle(textBox18.Text, new CultureInfo("en-US"));
 
-                factory = new Emulator(Convert. ToSingle(InputDelay. Text), SavingInDB. Checked, EncryptInDB. Checked,
-                                        new Product(p1, p2, p3, p4, p5, p6, p7, p8, p9, p10));
+                factory = new Emulator(Convert.ToSingle(InputDelay.Text), SavingInDB.Checked, EncryptInDB.Checked,
+                    new Product(p1, p2, p3, p4, p5, p6, p7, p8, p9, p10));
                 if (KeyForNextSession != null) {
                     AppRunner.EncryptionKey = KeyForNextSession;
-                }              
+                }
             }
             catch {
                 MessageBox.Show(
@@ -96,7 +97,7 @@ namespace SecureAutomatedSystem {
                     "Error", MessageBoxButtons.OK);
                 factory = new Emulator();
             }
-            factory. ProductProduced += OnProductProduced;
+            factory.ProductProduced += OnProductProduced;
             factory.StartProducing();
         }
 
@@ -159,6 +160,11 @@ namespace SecureAutomatedSystem {
                 };
                 form.ShowDialog();
             }
+        }
+
+        private void aboutTile_Click(object sender, EventArgs e) {
+            string authorsString = "gr.230721 Inc.";
+            MetroMessageBox.Show(this, authorsString, "Authors");
         }
     }
 }
