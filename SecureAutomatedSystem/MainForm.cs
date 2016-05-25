@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 using System.Windows.Forms;
 using MetroFramework.Forms;
 using System.Globalization;
@@ -11,6 +12,25 @@ namespace SecureAutomatedSystem {
 
         public MainForm() {
             InitializeComponent();
+            LoadSuggestedparams();
+        }
+
+        private void LoadSuggestedparams() {
+            Product product = new Product();
+            try {
+                product.DeserializeFromXml("SuggestedParams.xml");
+            }
+            catch (Exception e) {
+                Debug.WriteLine(e.Message);
+            }
+            textBox11.Text = product.OuterDiameter.ToString();
+            textBox15.Text = product.TopThickness.ToString();
+            textBox12.Text = product.InnerDiameter.ToString();
+            textBox16.Text = product.BottomLowersectionHeight.ToString();
+            textBox13.Text = product.OuterPairingRadius.ToString();
+            textBox17.Text = product.TopThickness.ToString();
+            textBox14.Text = product.WallThickness.ToString();
+            textBox18.Text = product.OuterPairingRadiusCyl.ToString();
         }
 
         private Emulator factory;
@@ -33,14 +53,14 @@ namespace SecureAutomatedSystem {
             Stop.Enabled = !Stop.Enabled;
             Start.Enabled = !Start.Enabled;
             InputDelay.Enabled = !InputDelay.Enabled;
-            textBox11.Enabled = !textBox11.Enabled;
-            textBox12.Enabled = !textBox12.Enabled;
-            textBox13.Enabled = !textBox13.Enabled;
-            textBox14.Enabled = !textBox14.Enabled;
-            textBox15.Enabled = !textBox15.Enabled;
-            textBox16.Enabled = !textBox16.Enabled;
-            textBox17.Enabled = !textBox17.Enabled;
-            textBox18.Enabled = !textBox18.Enabled;
+            //textBox11.Enabled = !textBox11.Enabled;
+            //textBox12.Enabled = !textBox12.Enabled;
+            //textBox13.Enabled = !textBox13.Enabled;
+            //textBox14.Enabled = !textBox14.Enabled;
+            //textBox15.Enabled = !textBox15.Enabled;
+            //textBox16.Enabled = !textBox16.Enabled;
+            //textBox17.Enabled = !textBox17.Enabled;
+            //textBox18.Enabled = !textBox18.Enabled;
         }
 
         private void Start_Click(object sender, EventArgs e) {

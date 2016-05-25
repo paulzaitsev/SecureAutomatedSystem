@@ -63,6 +63,7 @@
     </Compile>
     <Compile Include="databaseDataSet.cs">
       <DependentUpon>databaseDataSet.xsd</DependentUpon>
+      <SubType>Component</SubType>
     </Compile>
     <Compile Include="databaseDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -98,10 +99,19 @@
     <EmbeddedResource Include="Charts\LineCurves\LineCurvesChart.resx">
       <DependentUpon>LineCurvesChart.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Charts\LineCurves\LineCurvesChart.ru.resx">
+      <DependentUpon>LineCurvesChart.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DemoMode\UI\KeyCheckerForm.resx">
       <DependentUpon>KeyCheckerForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="DemoMode\UI\KeyCheckerForm.ru.resx">
+      <DependentUpon>KeyCheckerForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.ru.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -114,6 +124,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Snapshot\SnapshotForm.resx">
+      <DependentUpon>SnapshotForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Snapshot\SnapshotForm.ru.resx">
       <DependentUpon>SnapshotForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="databaseDataSet.xsc">
