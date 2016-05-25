@@ -16,12 +16,11 @@ namespace SecureAutomatedSystem {
 
     static class AppRunner {
         public static void Run() {
-            var mainForm = new MainForm();
             if (!RegisterUtils.CheckRegister()) {
                 Application.Run(new KeyCheckerForm());
             }
             if(KeyChecker.IsValidKey)
-                Application. Run(mainForm);
+                Application. Run(new MainForm());
         }
 
         public static AppMode CurrentAppMode {
