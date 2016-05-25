@@ -23,6 +23,7 @@ namespace SecureAutomatedSystem {
             this.InputDelay.Enabled = AppRunner.CurrentAppMode != AppMode.DemoMode;
         }
 
+        private CultureInfo culture = new CultureInfo("en-US");
         private void LoadSuggestedparams() {
             Product product = new Product();
             try {
@@ -31,14 +32,14 @@ namespace SecureAutomatedSystem {
             catch (Exception e) {
                 Debug.WriteLine(e.Message);
             }
-            textBox11.Text = product.OuterDiameter.ToString();
-            textBox15.Text = product.TopThickness.ToString();
-            textBox12.Text = product.InnerDiameter.ToString();
-            textBox16.Text = product.BottomLowersectionHeight.ToString();
-            textBox13.Text = product.OuterPairingRadius.ToString();
-            textBox17.Text = product.TopThickness.ToString();
-            textBox14.Text = product.WallThickness.ToString();
-            textBox18.Text = product.OuterPairingRadiusCylindricalOgive.ToString();
+            textBox11. Text = product. OuterDiameter. ToString(culture);
+            textBox15. Text = product. TopThickness. ToString(culture);
+            textBox12. Text = product. InnerDiameter. ToString(culture);
+            textBox16. Text = product. BottomLowersectionHeight. ToString(culture);
+            textBox13. Text = product. OuterPairingRadius. ToString(culture);
+            textBox17. Text = product. TopThickness. ToString(culture);
+            textBox14. Text = product. WallThickness. ToString(culture);
+            textBox18. Text = product. OuterPairingRadiusCylindricalOgive. ToString(culture);
         }
 
         private Emulator factory;
@@ -74,16 +75,16 @@ namespace SecureAutomatedSystem {
         private void Start_Click(object sender, EventArgs e) {
             RevertAccessibilityInProcessTab();
             try {
-                float p1 = Convert.ToSingle(textBox11.Text, new CultureInfo("en-US"));
+                float p1 = Convert.ToSingle(textBox11.Text, culture);
                 float p2 = p1/2;
-                float p3 = Convert.ToSingle(textBox12.Text, new CultureInfo("en-US"));
+                float p3 = Convert. ToSingle(textBox12. Text, culture);
                 float p4 = p3/2;
-                float p5 = Convert.ToSingle(textBox13.Text, new CultureInfo("en-US"));
-                float p6 = Convert.ToSingle(textBox14.Text, new CultureInfo("en-US"));
-                float p7 = Convert.ToSingle(textBox15.Text, new CultureInfo("en-US"));
-                float p8 = Convert.ToSingle(textBox16.Text, new CultureInfo("en-US"));
-                float p9 = Convert.ToSingle(textBox17.Text, new CultureInfo("en-US"));
-                float p10 = Convert.ToSingle(textBox18.Text, new CultureInfo("en-US"));
+                float p5 = Convert. ToSingle(textBox13. Text, culture);
+                float p6 = Convert. ToSingle(textBox14. Text, culture);
+                float p7 = Convert. ToSingle(textBox15. Text, culture);
+                float p8 = Convert. ToSingle(textBox16. Text, culture);
+                float p9 = Convert. ToSingle(textBox17. Text, culture);
+                float p10 = Convert. ToSingle(textBox18. Text, culture);
 
                 factory = new Emulator(Convert.ToSingle(InputDelay.Text), SavingInDB.Checked, EncryptInDB.Checked,
                     new Product(p1, p2, p3, p4, p5, p6, p7, p8, p9, p10));
