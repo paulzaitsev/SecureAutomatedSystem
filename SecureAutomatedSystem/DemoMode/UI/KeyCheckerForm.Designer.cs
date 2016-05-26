@@ -42,8 +42,8 @@ namespace SecureAutomatedSystem.DemoMode.UI {
             // 
             // keyField
             // 
-            resources.ApplyResources(this.keyField, "keyField");
             this.keyField.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.keyField, "keyField");
             this.keyField.Name = "keyField";
             this.keyField.TabStop = false;
             this.keyField.TextChanged += new System.EventHandler(this.keyField_TextChanged);

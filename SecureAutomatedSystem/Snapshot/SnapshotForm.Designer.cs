@@ -70,23 +70,23 @@ namespace SecureAutomatedSystem.Snapshot {
             // 
             // metroTabControl1
             // 
+            resources.ApplyResources(this.metroTabControl1, "metroTabControl1");
             this.metroTabControl1.Controls.Add(this.diameterMetricsTabPage);
             this.metroTabControl1.Controls.Add(this.radiusMetricsTabPage);
             this.metroTabControl1.Controls.Add(this.ogivePartMetricsTabPage);
             this.metroTabControl1.Controls.Add(this.topMetricsTabPage);
             this.metroTabControl1.Controls.Add(this.metricsTabPage);
-            resources.ApplyResources(this.metroTabControl1, "metroTabControl1");
             this.metroTabControl1.Name = "metroTabControl1";
             this.metroTabControl1.SelectedIndex = 4;
             this.metroTabControl1.UseSelectable = true;
             // 
             // diameterMetricsTabPage
             // 
+            resources.ApplyResources(this.diameterMetricsTabPage, "diameterMetricsTabPage");
             this.diameterMetricsTabPage.Controls.Add(this.tableLayoutPanel2);
             this.diameterMetricsTabPage.HorizontalScrollbarBarColor = true;
             this.diameterMetricsTabPage.HorizontalScrollbarHighlightOnWheel = false;
             this.diameterMetricsTabPage.HorizontalScrollbarSize = 10;
-            resources.ApplyResources(this.diameterMetricsTabPage, "diameterMetricsTabPage");
             this.diameterMetricsTabPage.Name = "diameterMetricsTabPage";
             this.diameterMetricsTabPage.VerticalScrollbarBarColor = true;
             this.diameterMetricsTabPage.VerticalScrollbarHighlightOnWheel = false;
@@ -94,35 +94,35 @@ namespace SecureAutomatedSystem.Snapshot {
             // 
             // tableLayoutPanel2
             // 
-            this.tableLayoutPanel2.BackColor = System.Drawing.Color.White;
             resources.ApplyResources(this.tableLayoutPanel2, "tableLayoutPanel2");
+            this.tableLayoutPanel2.BackColor = System.Drawing.Color.White;
             this.tableLayoutPanel2.Controls.Add(this.outer_diameter_chart, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.inner_diameter_chart, 0, 1);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             // 
             // outer_diameter_chart
             // 
-            this.outer_diameter_chart.BackColor = System.Drawing.Color.White;
-            this.outer_diameter_chart.Caption = "Outer diameter";
             resources.ApplyResources(this.outer_diameter_chart, "outer_diameter_chart");
+            this.outer_diameter_chart.BackColor = System.Drawing.Color.White;
+            this.outer_diameter_chart.Caption = "Диаметр внешней части";
             this.outer_diameter_chart.Name = "outer_diameter_chart";
             this.outer_diameter_chart.UseSelectable = true;
             // 
             // inner_diameter_chart
             // 
-            this.inner_diameter_chart.BackColor = System.Drawing.Color.White;
-            this.inner_diameter_chart.Caption = "Inner diameter";
             resources.ApplyResources(this.inner_diameter_chart, "inner_diameter_chart");
+            this.inner_diameter_chart.BackColor = System.Drawing.Color.White;
+            this.inner_diameter_chart.Caption = "Диаметр внутренней части";
             this.inner_diameter_chart.Name = "inner_diameter_chart";
             this.inner_diameter_chart.UseSelectable = true;
             // 
             // radiusMetricsTabPage
             // 
+            resources.ApplyResources(this.radiusMetricsTabPage, "radiusMetricsTabPage");
             this.radiusMetricsTabPage.Controls.Add(this.tableLayoutPanel3);
             this.radiusMetricsTabPage.HorizontalScrollbarBarColor = true;
             this.radiusMetricsTabPage.HorizontalScrollbarHighlightOnWheel = false;
             this.radiusMetricsTabPage.HorizontalScrollbarSize = 10;
-            resources.ApplyResources(this.radiusMetricsTabPage, "radiusMetricsTabPage");
             this.radiusMetricsTabPage.Name = "radiusMetricsTabPage";
             this.radiusMetricsTabPage.VerticalScrollbarBarColor = true;
             this.radiusMetricsTabPage.VerticalScrollbarHighlightOnWheel = false;
@@ -130,35 +130,35 @@ namespace SecureAutomatedSystem.Snapshot {
             // 
             // tableLayoutPanel3
             // 
-            this.tableLayoutPanel3.BackColor = System.Drawing.Color.White;
             resources.ApplyResources(this.tableLayoutPanel3, "tableLayoutPanel3");
+            this.tableLayoutPanel3.BackColor = System.Drawing.Color.White;
             this.tableLayoutPanel3.Controls.Add(this.outer_radius_chart, 0, 0);
             this.tableLayoutPanel3.Controls.Add(this.inner_radius_chart, 0, 1);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             // 
             // outer_radius_chart
             // 
-            this.outer_radius_chart.BackColor = System.Drawing.Color.White;
-            this.outer_radius_chart.Caption = "Outer radius";
             resources.ApplyResources(this.outer_radius_chart, "outer_radius_chart");
+            this.outer_radius_chart.BackColor = System.Drawing.Color.White;
+            this.outer_radius_chart.Caption = "Внешний радиус";
             this.outer_radius_chart.Name = "outer_radius_chart";
             this.outer_radius_chart.UseSelectable = true;
             // 
             // inner_radius_chart
             // 
-            this.inner_radius_chart.BackColor = System.Drawing.Color.White;
-            this.inner_radius_chart.Caption = "Inner radius";
             resources.ApplyResources(this.inner_radius_chart, "inner_radius_chart");
+            this.inner_radius_chart.BackColor = System.Drawing.Color.White;
+            this.inner_radius_chart.Caption = "Внутренний радиус";
             this.inner_radius_chart.Name = "inner_radius_chart";
             this.inner_radius_chart.UseSelectable = true;
             // 
             // ogivePartMetricsTabPage
             // 
+            resources.ApplyResources(this.ogivePartMetricsTabPage, "ogivePartMetricsTabPage");
             this.ogivePartMetricsTabPage.Controls.Add(this.tableLayoutPanel4);
             this.ogivePartMetricsTabPage.HorizontalScrollbarBarColor = true;
             this.ogivePartMetricsTabPage.HorizontalScrollbarHighlightOnWheel = false;
             this.ogivePartMetricsTabPage.HorizontalScrollbarSize = 10;
-            resources.ApplyResources(this.ogivePartMetricsTabPage, "ogivePartMetricsTabPage");
             this.ogivePartMetricsTabPage.Name = "ogivePartMetricsTabPage";
             this.ogivePartMetricsTabPage.VerticalScrollbarBarColor = true;
             this.ogivePartMetricsTabPage.VerticalScrollbarHighlightOnWheel = false;
@@ -166,35 +166,35 @@ namespace SecureAutomatedSystem.Snapshot {
             // 
             // tableLayoutPanel4
             // 
-            this.tableLayoutPanel4.BackColor = System.Drawing.Color.White;
             resources.ApplyResources(this.tableLayoutPanel4, "tableLayoutPanel4");
+            this.tableLayoutPanel4.BackColor = System.Drawing.Color.White;
             this.tableLayoutPanel4.Controls.Add(this.ogive_pairing_radius_chart, 0, 0);
             this.tableLayoutPanel4.Controls.Add(this.wall_thickness_chart, 0, 1);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
             // 
             // ogive_pairing_radius_chart
             // 
-            this.ogive_pairing_radius_chart.BackColor = System.Drawing.Color.White;
-            this.ogive_pairing_radius_chart.Caption = "Outer pairing radius";
             resources.ApplyResources(this.ogive_pairing_radius_chart, "ogive_pairing_radius_chart");
+            this.ogive_pairing_radius_chart.BackColor = System.Drawing.Color.White;
+            this.ogive_pairing_radius_chart.Caption = "Радиус сопряжения ожив. части ";
             this.ogive_pairing_radius_chart.Name = "ogive_pairing_radius_chart";
             this.ogive_pairing_radius_chart.UseSelectable = true;
             // 
             // wall_thickness_chart
             // 
-            this.wall_thickness_chart.BackColor = System.Drawing.Color.White;
-            this.wall_thickness_chart.Caption = "Wall thickness";
             resources.ApplyResources(this.wall_thickness_chart, "wall_thickness_chart");
+            this.wall_thickness_chart.BackColor = System.Drawing.Color.White;
+            this.wall_thickness_chart.Caption = "Толщина стенки";
             this.wall_thickness_chart.Name = "wall_thickness_chart";
             this.wall_thickness_chart.UseSelectable = true;
             // 
             // topMetricsTabPage
             // 
+            resources.ApplyResources(this.topMetricsTabPage, "topMetricsTabPage");
             this.topMetricsTabPage.Controls.Add(this.tableLayoutPanel5);
             this.topMetricsTabPage.HorizontalScrollbarBarColor = true;
             this.topMetricsTabPage.HorizontalScrollbarHighlightOnWheel = false;
             this.topMetricsTabPage.HorizontalScrollbarSize = 10;
-            resources.ApplyResources(this.topMetricsTabPage, "topMetricsTabPage");
             this.topMetricsTabPage.Name = "topMetricsTabPage";
             this.topMetricsTabPage.VerticalScrollbarBarColor = true;
             this.topMetricsTabPage.VerticalScrollbarHighlightOnWheel = false;
@@ -202,35 +202,35 @@ namespace SecureAutomatedSystem.Snapshot {
             // 
             // tableLayoutPanel5
             // 
-            this.tableLayoutPanel5.BackColor = System.Drawing.Color.White;
             resources.ApplyResources(this.tableLayoutPanel5, "tableLayoutPanel5");
+            this.tableLayoutPanel5.BackColor = System.Drawing.Color.White;
             this.tableLayoutPanel5.Controls.Add(this.top_thickness_chart, 0, 0);
             this.tableLayoutPanel5.Controls.Add(this.top_diameter_chart, 0, 1);
             this.tableLayoutPanel5.Name = "tableLayoutPanel5";
             // 
             // top_thickness_chart
             // 
-            this.top_thickness_chart.BackColor = System.Drawing.Color.White;
-            this.top_thickness_chart.Caption = "Top thickness";
             resources.ApplyResources(this.top_thickness_chart, "top_thickness_chart");
+            this.top_thickness_chart.BackColor = System.Drawing.Color.White;
+            this.top_thickness_chart.Caption = "Толщина вершины";
             this.top_thickness_chart.Name = "top_thickness_chart";
             this.top_thickness_chart.UseSelectable = true;
             // 
             // top_diameter_chart
             // 
-            this.top_diameter_chart.BackColor = System.Drawing.Color.White;
-            this.top_diameter_chart.Caption = "Top diameter";
             resources.ApplyResources(this.top_diameter_chart, "top_diameter_chart");
+            this.top_diameter_chart.BackColor = System.Drawing.Color.White;
+            this.top_diameter_chart.Caption = "Диаметр вершины";
             this.top_diameter_chart.Name = "top_diameter_chart";
             this.top_diameter_chart.UseSelectable = true;
             // 
             // metricsTabPage
             // 
+            resources.ApplyResources(this.metricsTabPage, "metricsTabPage");
             this.metricsTabPage.Controls.Add(this.tableLayoutPanel6);
             this.metricsTabPage.HorizontalScrollbarBarColor = true;
             this.metricsTabPage.HorizontalScrollbarHighlightOnWheel = false;
             this.metricsTabPage.HorizontalScrollbarSize = 10;
-            resources.ApplyResources(this.metricsTabPage, "metricsTabPage");
             this.metricsTabPage.Name = "metricsTabPage";
             this.metricsTabPage.VerticalScrollbarBarColor = true;
             this.metricsTabPage.VerticalScrollbarHighlightOnWheel = false;
@@ -238,25 +238,25 @@ namespace SecureAutomatedSystem.Snapshot {
             // 
             // tableLayoutPanel6
             // 
-            this.tableLayoutPanel6.BackColor = System.Drawing.Color.White;
             resources.ApplyResources(this.tableLayoutPanel6, "tableLayoutPanel6");
+            this.tableLayoutPanel6.BackColor = System.Drawing.Color.White;
             this.tableLayoutPanel6.Controls.Add(this.bottom_lowersection_height_chart, 0, 0);
             this.tableLayoutPanel6.Controls.Add(this.outer_pairing_radius_cyl_chart, 0, 1);
             this.tableLayoutPanel6.Name = "tableLayoutPanel6";
             // 
             // bottom_lowersection_height_chart
             // 
-            this.bottom_lowersection_height_chart.BackColor = System.Drawing.Color.White;
-            this.bottom_lowersection_height_chart.Caption = "Bottom lowersection height";
             resources.ApplyResources(this.bottom_lowersection_height_chart, "bottom_lowersection_height_chart");
+            this.bottom_lowersection_height_chart.BackColor = System.Drawing.Color.White;
+            this.bottom_lowersection_height_chart.Caption = "Высота до нижнего сеч.";
             this.bottom_lowersection_height_chart.Name = "bottom_lowersection_height_chart";
             this.bottom_lowersection_height_chart.UseSelectable = true;
             // 
             // outer_pairing_radius_cyl_chart
             // 
-            this.outer_pairing_radius_cyl_chart.BackColor = System.Drawing.Color.White;
-            this.outer_pairing_radius_cyl_chart.Caption = "Outer pairing radius cyl";
             resources.ApplyResources(this.outer_pairing_radius_cyl_chart, "outer_pairing_radius_cyl_chart");
+            this.outer_pairing_radius_cyl_chart.BackColor = System.Drawing.Color.White;
+            this.outer_pairing_radius_cyl_chart.Caption = "Радиус сопряжения с цил. частью";
             this.outer_pairing_radius_cyl_chart.Name = "outer_pairing_radius_cyl_chart";
             this.outer_pairing_radius_cyl_chart.UseSelectable = true;
             // 

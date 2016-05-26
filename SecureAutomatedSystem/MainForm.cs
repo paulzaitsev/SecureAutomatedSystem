@@ -19,7 +19,7 @@ namespace SecureAutomatedSystem {
         }
 
         private void CheckLicense() {
-            this.EncryptInDB.Enabled = AppRunner.CurrentAppMode != AppMode.DemoMode;
+            //this.EncryptInDB.Enabled = AppRunner.CurrentAppMode != AppMode.DemoMode;
             this.InputDelay.Enabled = AppRunner.CurrentAppMode != AppMode.DemoMode;
         }
 

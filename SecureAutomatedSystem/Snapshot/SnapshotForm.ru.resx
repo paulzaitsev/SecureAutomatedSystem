@@ -117,52 +117,22 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="$this.Text" xml:space="preserve">
-    <value>Графики и рекомендации</value>
-  </data>
-  <data name="bottom_lowersection_height_chart.Caption" xml:space="preserve">
-    <value>Высота до нижнего сеч.</value>
-  </data>
   <data name="diameterMetricsTabPage.Text" xml:space="preserve">
     <value>Диаметр</value>
-  </data>
-  <data name="inner_diameter_chart.Caption" xml:space="preserve">
-    <value>Диаметр внутренней части</value>
-  </data>
-  <data name="inner_radius_chart.Caption" xml:space="preserve">
-    <value>Внутренний радиус</value>
-  </data>
-  <data name="metricsTabPage.Text" xml:space="preserve">
-    <value>Прочие показатели</value>
-  </data>
-  <data name="ogivePartMetricsTabPage.Text" xml:space="preserve">
-    <value>Параметры оживальной части</value>
-  </data>
-  <data name="ogive_pairing_radius_chart.Caption" xml:space="preserve">
-    <value>Радиус сопряжения ожив. части </value>
-  </data>
-  <data name="outer_diameter_chart.Caption" xml:space="preserve">
-    <value>Диаметр внешней части</value>
-  </data>
-  <data name="outer_pairing_radius_cyl_chart.Caption" xml:space="preserve">
-    <value>Радиус сопряжения с цил. частью</value>
-  </data>
-  <data name="outer_radius_chart.Caption" xml:space="preserve">
-    <value>Внешний радиус</value>
   </data>
   <data name="radiusMetricsTabPage.Text" xml:space="preserve">
     <value>Радиус</value>
   </data>
+  <data name="ogivePartMetricsTabPage.Text" xml:space="preserve">
+    <value>Параметры оживальной части</value>
+  </data>
   <data name="topMetricsTabPage.Text" xml:space="preserve">
     <value>Параметры вершины</value>
   </data>
-  <data name="top_diameter_chart.Caption" xml:space="preserve">
-    <value>Диаметр вершины</value>
+  <data name="metricsTabPage.Text" xml:space="preserve">
+    <value>Прочие показатели</value>
   </data>
-  <data name="top_thickness_chart.Caption" xml:space="preserve">
-    <value>Толщина вершины</value>
-  </data>
-  <data name="wall_thickness_chart.Caption" xml:space="preserve">
-    <value>Толщина стенки</value>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Графики и рекомендации</value>
   </data>
 </root>

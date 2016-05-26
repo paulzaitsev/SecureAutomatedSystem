@@ -117,7 +117,20 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="metroTabPage1.Text" xml:space="preserve">
+    <value>Процесс</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="tableLayoutPanel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="tableLayoutPanel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="tableLayoutPanel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>676, 451</value>
+  </data>
   <data name="label12.Location" type="System.Drawing.Point, System.Drawing">
     <value>411, 3</value>
   </data>
@@ -129,6 +142,12 @@
   </data>
   <data name="label13.Text" xml:space="preserve">
     <value>Ожидаемые параметры</value>
+  </data>
+  <data name="tableLayoutPanel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>143, 57</value>
+  </data>
+  <data name="tableLayoutPanel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>262, 391</value>
   </data>
   <data name="textBox18.Location" type="System.Drawing.Point, System.Drawing">
     <value>131, 157</value>
@@ -226,20 +245,17 @@
   <data name="textBox12.Size" type="System.Drawing.Size, System.Drawing">
     <value>122, 20</value>
   </data>
-  <data name="tableLayoutPanel2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>143, 57</value>
-  </data>
-  <data name="tableLayoutPanel2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>262, 391</value>
+  <data name="tableLayoutPanel3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>411, 57</value>
   </data>
   <data name="label1.Text" xml:space="preserve">
     <value>Внешний диаметр</value>
   </data>
   <data name="label10.Size" type="System.Drawing.Size, System.Drawing">
-    <value>109, 13</value>
+    <value>108, 13</value>
   </data>
   <data name="label10.Text" xml:space="preserve">
-    <value>Высота до ниж. сеч.</value>
+    <value>Рад. сопряж. цил. ч.</value>
   </data>
   <data name="label9.Size" type="System.Drawing.Size, System.Drawing">
     <value>102, 13</value>
@@ -284,13 +300,13 @@
     <value>Толщина вершины</value>
   </data>
   <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>108, 13</value>
+    <value>109, 13</value>
   </data>
   <data name="label8.Text" xml:space="preserve">
-    <value>Рад. сопряж. цил. ч.</value>
+    <value>Высота до ниж. сеч.</value>
   </data>
-  <data name="tableLayoutPanel3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>411, 57</value>
+  <data name="tableLayoutPanel4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 56</value>
   </data>
   <data name="Stop.Text" xml:space="preserve">
     <value>Стоп</value>
@@ -318,22 +334,6 @@
   </data>
   <data name="SearchKeyButton.Text" xml:space="preserve">
     <value>Выбрать файл ключа</value>
-  </data>
-  <data name="tableLayoutPanel4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 56</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="tableLayoutPanel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="tableLayoutPanel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="tableLayoutPanel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>676, 451</value>
-  </data>
-  <data name="metroTabPage1.Text" xml:space="preserve">
-    <value>Процесс</value>
   </data>
   <data name="snapshotTile.Text" xml:space="preserve">
     <value>Рекомендации</value>

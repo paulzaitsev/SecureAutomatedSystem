@@ -105,19 +105,19 @@
             // 
             // metroTabControl1
             // 
-            resources.ApplyResources(this.metroTabControl1, "metroTabControl1");
             this.metroTabControl1.Controls.Add(this.metroTabPage1);
+            resources.ApplyResources(this.metroTabControl1, "metroTabControl1");
             this.metroTabControl1.Name = "metroTabControl1";
             this.metroTabControl1.SelectedIndex = 0;
             this.metroTabControl1.UseSelectable = true;
             // 
             // metroTabPage1
             // 
-            resources.ApplyResources(this.metroTabPage1, "metroTabPage1");
             this.metroTabPage1.Controls.Add(this.tableLayoutPanel1);
             this.metroTabPage1.HorizontalScrollbarBarColor = true;
             this.metroTabPage1.HorizontalScrollbarHighlightOnWheel = false;
             this.metroTabPage1.HorizontalScrollbarSize = 10;
+            resources.ApplyResources(this.metroTabPage1, "metroTabPage1");
             this.metroTabPage1.Name = "metroTabPage1";
             this.metroTabPage1.VerticalScrollbarBarColor = true;
             this.metroTabPage1.VerticalScrollbarHighlightOnWheel = false;
@@ -125,8 +125,8 @@
             // 
             // tableLayoutPanel1
             // 
-            resources.ApplyResources(this.tableLayoutPanel1, "tableLayoutPanel1");
             this.tableLayoutPanel1.BackColor = System.Drawing.Color.White;
+            resources.ApplyResources(this.tableLayoutPanel1, "tableLayoutPanel1");
             this.tableLayoutPanel1.Controls.Add(this.label12, 2, 0);
             this.tableLayoutPanel1.Controls.Add(this.label13, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 1, 1);
@@ -444,24 +444,24 @@
             // 
             // snapshotTile
             // 
-            resources.ApplyResources(this.snapshotTile, "snapshotTile");
             this.snapshotTile.ActiveControl = null;
+            resources.ApplyResources(this.snapshotTile, "snapshotTile");
             this.snapshotTile.Name = "snapshotTile";
             this.snapshotTile.UseSelectable = true;
             this.snapshotTile.Click += new System.EventHandler(this.snapshotTile_Click);
             // 
             // licenseTile
             // 
-            resources.ApplyResources(this.licenseTile, "licenseTile");
             this.licenseTile.ActiveControl = null;
+            resources.ApplyResources(this.licenseTile, "licenseTile");
             this.licenseTile.Name = "licenseTile";
             this.licenseTile.UseSelectable = true;
             this.licenseTile.Click += new System.EventHandler(this.licenseTile_Click);
             // 
             // aboutTile
             // 
-            resources.ApplyResources(this.aboutTile, "aboutTile");
             this.aboutTile.ActiveControl = null;
+            resources.ApplyResources(this.aboutTile, "aboutTile");
             this.aboutTile.Name = "aboutTile";
             this.aboutTile.UseSelectable = true;
             this.aboutTile.Click += new System.EventHandler(this.aboutTile_Click);

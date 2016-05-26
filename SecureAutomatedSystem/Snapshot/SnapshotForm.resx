@@ -117,257 +117,479 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="tableLayoutPanel1.ColumnCount" type="System.Int32, mscorlib">
+  <data name="&gt;&gt;top_diameter_chart.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="tableLayoutPanel2.ColumnCount" type="System.Int32, mscorlib">
+  <data name="&gt;&gt;outer_pairing_radius_cyl_chart.Name" xml:space="preserve">
+    <value>outer_pairing_radius_cyl_chart</value>
+  </data>
+  <data name="topMetricsTabPage.Text" xml:space="preserve">
+    <value>Top</value>
+  </data>
+  <data name="&gt;&gt;radiusMetricsTabPage.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="outer_diameter_chart.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="outer_diameter_chart.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Verdana, 9pt</value>
-  </data>
-  <data name="outer_diameter_chart.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
-  </data>
-  <data name="outer_diameter_chart.Size" type="System.Drawing.Size, System.Drawing">
-    <value>826, 247</value>
-  </data>
-  <data name="outer_diameter_chart.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;outer_diameter_chart.Name" xml:space="preserve">
-    <value>outer_diameter_chart</value>
-  </data>
-  <data name="&gt;&gt;outer_diameter_chart.Type" xml:space="preserve">
-    <value>SecureAutomatedSystem.Charts.LineCurves.LineCurvesChart, SecureAutomatedSystem, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;outer_diameter_chart.Parent" xml:space="preserve">
-    <value>tableLayoutPanel2</value>
-  </data>
-  <data name="&gt;&gt;outer_diameter_chart.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="inner_diameter_chart.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="inner_diameter_chart.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Verdana, 9pt</value>
-  </data>
-  <data name="inner_diameter_chart.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 256</value>
-  </data>
-  <data name="inner_diameter_chart.Size" type="System.Drawing.Size, System.Drawing">
-    <value>826, 248</value>
-  </data>
-  <data name="inner_diameter_chart.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;inner_diameter_chart.Name" xml:space="preserve">
-    <value>inner_diameter_chart</value>
-  </data>
-  <data name="&gt;&gt;inner_diameter_chart.Type" xml:space="preserve">
-    <value>SecureAutomatedSystem.Charts.LineCurves.LineCurvesChart, SecureAutomatedSystem, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;inner_diameter_chart.Parent" xml:space="preserve">
-    <value>tableLayoutPanel2</value>
-  </data>
-  <data name="&gt;&gt;inner_diameter_chart.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="tableLayoutPanel2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="tableLayoutPanel2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="tableLayoutPanel2.RowCount" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="tableLayoutPanel2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>832, 507</value>
-  </data>
-  <data name="tableLayoutPanel2.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanel2.Name" xml:space="preserve">
-    <value>tableLayoutPanel2</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanel2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanel2.Parent" xml:space="preserve">
-    <value>diameterMetricsTabPage</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanel2.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="tableLayoutPanel2.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="outer_diameter_chart" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="inner_diameter_chart" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,50" /&gt;&lt;Rows Styles="Percent,50,Percent,50" /&gt;&lt;/TableLayoutSettings&gt;</value>
-  </data>
-  <data name="diameterMetricsTabPage.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 38</value>
-  </data>
-  <data name="diameterMetricsTabPage.Size" type="System.Drawing.Size, System.Drawing">
-    <value>832, 507</value>
-  </data>
-  <data name="diameterMetricsTabPage.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="diameterMetricsTabPage.Text" xml:space="preserve">
-    <value>Diameter</value>
-  </data>
-  <data name="&gt;&gt;diameterMetricsTabPage.Name" xml:space="preserve">
-    <value>diameterMetricsTabPage</value>
-  </data>
-  <data name="&gt;&gt;diameterMetricsTabPage.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroTabPage, MetroFramework, Version=1.3.5.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
-  </data>
-  <data name="&gt;&gt;diameterMetricsTabPage.Parent" xml:space="preserve">
-    <value>metroTabControl1</value>
-  </data>
-  <data name="&gt;&gt;diameterMetricsTabPage.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="tableLayoutPanel3.ColumnCount" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="outer_radius_chart.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="outer_radius_chart.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Verdana, 9pt</value>
-  </data>
-  <data name="outer_radius_chart.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
-  </data>
-  <data name="outer_radius_chart.Size" type="System.Drawing.Size, System.Drawing">
-    <value>826, 247</value>
-  </data>
-  <data name="outer_radius_chart.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;outer_radius_chart.Name" xml:space="preserve">
-    <value>outer_radius_chart</value>
-  </data>
-  <data name="&gt;&gt;outer_radius_chart.Type" xml:space="preserve">
-    <value>SecureAutomatedSystem.Charts.LineCurves.LineCurvesChart, SecureAutomatedSystem, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  <data name="&gt;&gt;top_diameter_chart.Name" xml:space="preserve">
+    <value>top_diameter_chart</value>
   </data>
   <data name="&gt;&gt;outer_radius_chart.Parent" xml:space="preserve">
     <value>tableLayoutPanel3</value>
   </data>
-  <data name="&gt;&gt;outer_radius_chart.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="tableLayoutPanel5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
   </data>
-  <data name="inner_radius_chart.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
+  <data name="tableLayoutPanel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 60</value>
   </data>
-  <data name="inner_radius_chart.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Verdana, 9pt</value>
+  <data name="ogivePartMetricsTabPage.Text" xml:space="preserve">
+    <value>Ogive part</value>
   </data>
-  <data name="inner_radius_chart.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="&gt;&gt;top_thickness_chart.Type" xml:space="preserve">
+    <value>SecureAutomatedSystem.Charts.LineCurves.LineCurvesChart, SecureAutomatedSystem, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="ogivePartMetricsTabPage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>832, 507</value>
+  </data>
+  <data name="top_diameter_chart.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 256</value>
   </data>
-  <data name="inner_radius_chart.Size" type="System.Drawing.Size, System.Drawing">
-    <value>826, 248</value>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="tableLayoutPanel6.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
   </data>
-  <data name="inner_radius_chart.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="ogivePartMetricsTabPage.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
   </data>
-  <data name="&gt;&gt;inner_radius_chart.Name" xml:space="preserve">
-    <value>inner_radius_chart</value>
+  <data name="metricsTabPage.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
   </data>
-  <data name="&gt;&gt;inner_radius_chart.Type" xml:space="preserve">
+  <data name="&gt;&gt;metroTabControl1.Name" xml:space="preserve">
+    <value>metroTabControl1</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel6.Parent" xml:space="preserve">
+    <value>metricsTabPage</value>
+  </data>
+  <data name="tableLayoutPanel6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>832, 507</value>
+  </data>
+  <data name="&gt;&gt;ogivePartMetricsTabPage.Name" xml:space="preserve">
+    <value>ogivePartMetricsTabPage</value>
+  </data>
+  <data name="&gt;&gt;outer_radius_chart.Type" xml:space="preserve">
     <value>SecureAutomatedSystem.Charts.LineCurves.LineCurvesChart, SecureAutomatedSystem, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="tableLayoutPanel2.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel5.Name" xml:space="preserve">
+    <value>tableLayoutPanel5</value>
+  </data>
+  <data name="diameterMetricsTabPage.Text" xml:space="preserve">
+    <value>Diameter</value>
   </data>
   <data name="&gt;&gt;inner_radius_chart.Parent" xml:space="preserve">
     <value>tableLayoutPanel3</value>
   </data>
-  <data name="&gt;&gt;inner_radius_chart.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="topMetricsTabPage.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
   </data>
-  <data name="tableLayoutPanel3.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
+  <data name="outer_pairing_radius_cyl_chart.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Verdana, 9pt</value>
   </data>
-  <data name="tableLayoutPanel3.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="tableLayoutPanel6.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
-  <data name="tableLayoutPanel3.RowCount" type="System.Int32, mscorlib">
-    <value>2</value>
+  <data name="tableLayoutPanel6.ColumnCount" type="System.Int32, mscorlib">
+    <value>1</value>
   </data>
-  <data name="tableLayoutPanel3.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="tableLayoutPanel1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="metricsTabPage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 38</value>
+  </data>
+  <data name="tableLayoutPanel2.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="outer_diameter_chart" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="inner_diameter_chart" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,50" /&gt;&lt;Rows Styles="Percent,50,Percent,50" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  </data>
+  <data name="&gt;&gt;wall_thickness_chart.Type" xml:space="preserve">
+    <value>SecureAutomatedSystem.Charts.LineCurves.LineCurvesChart, SecureAutomatedSystem, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="wall_thickness_chart.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>SnapshotForm</value>
+  </data>
+  <data name="top_thickness_chart.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel6.Name" xml:space="preserve">
+    <value>tableLayoutPanel6</value>
+  </data>
+  <data name="&gt;&gt;bottom_lowersection_height_chart.Name" xml:space="preserve">
+    <value>bottom_lowersection_height_chart</value>
+  </data>
+  <data name="metroTabControl1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="topMetricsTabPage.Size" type="System.Drawing.Size, System.Drawing">
     <value>832, 507</value>
   </data>
-  <data name="tableLayoutPanel3.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanel3.Name" xml:space="preserve">
-    <value>tableLayoutPanel3</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanel3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanel3.Parent" xml:space="preserve">
-    <value>radiusMetricsTabPage</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanel3.ZOrder" xml:space="preserve">
-    <value>2</value>
+  <data name="bottom_lowersection_height_chart.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
   </data>
   <data name="tableLayoutPanel3.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
     <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="outer_radius_chart" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="inner_radius_chart" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,50" /&gt;&lt;Rows Styles="Percent,50,Percent,50" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
-  <data name="radiusMetricsTabPage.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 38</value>
+  <data name="&gt;&gt;top_diameter_chart.Parent" xml:space="preserve">
+    <value>tableLayoutPanel5</value>
   </data>
-  <data name="radiusMetricsTabPage.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="&gt;&gt;top_thickness_chart.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="metricsTabPage.Text" xml:space="preserve">
+    <value>Other metrics</value>
+  </data>
+  <data name="ogive_pairing_radius_chart.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Verdana, 9pt</value>
+  </data>
+  <data name="&gt;&gt;radiusMetricsTabPage.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroTabPage, MetroFramework, Version=1.3.5.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="tableLayoutPanel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="&gt;&gt;bottom_lowersection_height_chart.Type" xml:space="preserve">
+    <value>SecureAutomatedSystem.Charts.LineCurves.LineCurvesChart, SecureAutomatedSystem, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;wall_thickness_chart.Parent" xml:space="preserve">
+    <value>tableLayoutPanel4</value>
+  </data>
+  <data name="outer_radius_chart.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Verdana, 9pt</value>
+  </data>
+  <data name="&gt;&gt;metroTabControl1.Parent" xml:space="preserve">
+    <value>tableLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel3.Parent" xml:space="preserve">
+    <value>radiusMetricsTabPage</value>
+  </data>
+  <data name="tableLayoutPanel4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel2.Parent" xml:space="preserve">
+    <value>diameterMetricsTabPage</value>
+  </data>
+  <data name="bottom_lowersection_height_chart.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Verdana, 9pt</value>
+  </data>
+  <data name="&gt;&gt;bottom_lowersection_height_chart.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tableLayoutPanel1.ColumnCount" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="metroTabControl1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="tableLayoutPanel4.ColumnCount" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="tableLayoutPanel3.Size" type="System.Drawing.Size, System.Drawing">
     <value>832, 507</value>
   </data>
-  <data name="radiusMetricsTabPage.TabIndex" type="System.Int32, mscorlib">
+  <data name="top_thickness_chart.Size" type="System.Drawing.Size, System.Drawing">
+    <value>826, 247</value>
+  </data>
+  <data name="&gt;&gt;wall_thickness_chart.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="tableLayoutPanel3.ColumnCount" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;top_thickness_chart.Parent" xml:space="preserve">
+    <value>tableLayoutPanel5</value>
+  </data>
+  <data name="&gt;&gt;metroTabControl1.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroTabControl, MetroFramework, Version=1.3.5.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="outer_diameter_chart.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Verdana, 9pt</value>
+  </data>
+  <data name="&gt;&gt;topMetricsTabPage.Name" xml:space="preserve">
+    <value>topMetricsTabPage</value>
+  </data>
+  <data name="inner_diameter_chart.Size" type="System.Drawing.Size, System.Drawing">
+    <value>826, 248</value>
+  </data>
+  <data name="&gt;&gt;ogivePartMetricsTabPage.Parent" xml:space="preserve">
+    <value>metroTabControl1</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel4.Name" xml:space="preserve">
+    <value>tableLayoutPanel4</value>
+  </data>
+  <data name="wall_thickness_chart.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="metroTabControl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>840, 549</value>
+  </data>
+  <data name="&gt;&gt;ogive_pairing_radius_chart.Type" xml:space="preserve">
+    <value>SecureAutomatedSystem.Charts.LineCurves.LineCurvesChart, SecureAutomatedSystem, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="diameterMetricsTabPage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>832, 507</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel1.Name" xml:space="preserve">
+    <value>tableLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;diameterMetricsTabPage.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroTabPage, MetroFramework, Version=1.3.5.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="inner_radius_chart.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="tableLayoutPanel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>832, 507</value>
+  </data>
+  <data name="topMetricsTabPage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 38</value>
+  </data>
+  <data name="tableLayoutPanel2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="&gt;&gt;ogivePartMetricsTabPage.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;outer_pairing_radius_cyl_chart.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
   <data name="radiusMetricsTabPage.Text" xml:space="preserve">
     <value>Radius</value>
   </data>
-  <data name="&gt;&gt;radiusMetricsTabPage.Name" xml:space="preserve">
-    <value>radiusMetricsTabPage</value>
-  </data>
-  <data name="&gt;&gt;radiusMetricsTabPage.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroTabPage, MetroFramework, Version=1.3.5.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  <data name="ogive_pairing_radius_chart.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
   </data>
   <data name="&gt;&gt;radiusMetricsTabPage.Parent" xml:space="preserve">
     <value>metroTabControl1</value>
   </data>
-  <data name="&gt;&gt;radiusMetricsTabPage.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="&gt;&gt;outer_pairing_radius_cyl_chart.Parent" xml:space="preserve">
+    <value>tableLayoutPanel6</value>
   </data>
-  <data name="tableLayoutPanel4.ColumnCount" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="ogive_pairing_radius_chart.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="ogive_pairing_radius_chart.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="inner_radius_chart.Font" type="System.Drawing.Font, System.Drawing">
     <value>Verdana, 9pt</value>
   </data>
-  <data name="ogive_pairing_radius_chart.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="tableLayoutPanel3.RowCount" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel3.Name" xml:space="preserve">
+    <value>tableLayoutPanel3</value>
+  </data>
+  <data name="&gt;&gt;outer_diameter_chart.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tableLayoutPanel5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>832, 507</value>
+  </data>
+  <data name="tableLayoutPanel5.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="&gt;&gt;metroTabControl1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="wall_thickness_chart.Size" type="System.Drawing.Size, System.Drawing">
+    <value>826, 248</value>
+  </data>
+  <data name="tableLayoutPanel5.RowCount" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="outer_diameter_chart.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 3</value>
+  </data>
+  <data name="outer_pairing_radius_cyl_chart.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 256</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;metricsTabPage.Parent" xml:space="preserve">
+    <value>metroTabControl1</value>
+  </data>
+  <data name="top_thickness_chart.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="tableLayoutPanel1.RowCount" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="radiusMetricsTabPage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 38</value>
+  </data>
+  <data name="inner_diameter_chart.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="outer_radius_chart.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel3.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="tableLayoutPanel4.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="outer_pairing_radius_cyl_chart.Size" type="System.Drawing.Size, System.Drawing">
+    <value>826, 248</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel2.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;top_thickness_chart.Name" xml:space="preserve">
+    <value>top_thickness_chart</value>
+  </data>
+  <data name="metricsTabPage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>832, 507</value>
+  </data>
+  <data name="&gt;&gt;radiusMetricsTabPage.Name" xml:space="preserve">
+    <value>radiusMetricsTabPage</value>
+  </data>
+  <data name="&gt;&gt;outer_diameter_chart.Type" xml:space="preserve">
+    <value>SecureAutomatedSystem.Charts.LineCurves.LineCurvesChart, SecureAutomatedSystem, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="tableLayoutPanel4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>832, 507</value>
+  </data>
+  <data name="&gt;&gt;topMetricsTabPage.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="inner_diameter_chart.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;metricsTabPage.Name" xml:space="preserve">
+    <value>metricsTabPage</value>
+  </data>
+  <data name="tableLayoutPanel4.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="tableLayoutPanel6.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel6.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;inner_radius_chart.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="inner_radius_chart.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="wall_thickness_chart.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Verdana, 9pt</value>
+  </data>
+  <data name="radiusMetricsTabPage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>832, 507</value>
+  </data>
+  <data name="diameterMetricsTabPage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 38</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="tableLayoutPanel2.ColumnCount" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="tableLayoutPanel2.RowCount" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="top_thickness_chart.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Verdana, 9pt</value>
+  </data>
+  <data name="top_diameter_chart.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Verdana, 9pt</value>
+  </data>
+  <data name="&gt;&gt;outer_pairing_radius_cyl_chart.Type" xml:space="preserve">
+    <value>SecureAutomatedSystem.Charts.LineCurves.LineCurvesChart, SecureAutomatedSystem, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel5.Parent" xml:space="preserve">
+    <value>topMetricsTabPage</value>
+  </data>
+  <data name="bottom_lowersection_height_chart.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="outer_radius_chart.Size" type="System.Drawing.Size, System.Drawing">
+    <value>826, 247</value>
+  </data>
+  <data name="&gt;&gt;outer_diameter_chart.Name" xml:space="preserve">
+    <value>outer_diameter_chart</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>SnapshotForm</value>
+  </data>
+  <data name="inner_radius_chart.Size" type="System.Drawing.Size, System.Drawing">
+    <value>826, 248</value>
+  </data>
+  <data name="ogivePartMetricsTabPage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 38</value>
+  </data>
+  <data name="&gt;&gt;inner_radius_chart.Name" xml:space="preserve">
+    <value>inner_radius_chart</value>
+  </data>
+  <data name="outer_diameter_chart.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="tableLayoutPanel4.RowCount" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;top_diameter_chart.Type" xml:space="preserve">
+    <value>SecureAutomatedSystem.Charts.LineCurves.LineCurvesChart, SecureAutomatedSystem, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;bottom_lowersection_height_chart.Parent" xml:space="preserve">
+    <value>tableLayoutPanel6</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel4.Parent" xml:space="preserve">
+    <value>ogivePartMetricsTabPage</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>MetroFramework.Forms.MetroForm, MetroFramework, Version=1.3.5.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="tableLayoutPanel3.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="&gt;&gt;inner_diameter_chart.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="top_diameter_chart.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;inner_radius_chart.Type" xml:space="preserve">
+    <value>SecureAutomatedSystem.Charts.LineCurves.LineCurvesChart, SecureAutomatedSystem, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="ogive_pairing_radius_chart.Size" type="System.Drawing.Size, System.Drawing">
     <value>826, 247</value>
   </data>
-  <data name="ogive_pairing_radius_chart.TabIndex" type="System.Int32, mscorlib">
+  <data name="&gt;&gt;diameterMetricsTabPage.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;ogive_pairing_radius_chart.Name" xml:space="preserve">
-    <value>ogive_pairing_radius_chart</value>
+  <data name="&gt;&gt;tableLayoutPanel1.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
-  <data name="&gt;&gt;ogive_pairing_radius_chart.Type" xml:space="preserve">
-    <value>SecureAutomatedSystem.Charts.LineCurves.LineCurvesChart, SecureAutomatedSystem, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  <data name="tableLayoutPanel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>846, 555</value>
+  </data>
+  <data name="metroTabControl1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="tableLayoutPanel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
   </data>
   <data name="&gt;&gt;ogive_pairing_radius_chart.Parent" xml:space="preserve">
     <value>tableLayoutPanel4</value>
@@ -375,382 +597,157 @@
   <data name="&gt;&gt;ogive_pairing_radius_chart.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="wall_thickness_chart.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+  <data name="&gt;&gt;tableLayoutPanel4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ogive_pairing_radius_chart.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="ogive_pairing_radius_chart.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="top_thickness_chart.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="&gt;&gt;inner_diameter_chart.Name" xml:space="preserve">
+    <value>inner_diameter_chart</value>
+  </data>
+  <data name="tableLayoutPanel5.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="outer_radius_chart.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;outer_radius_chart.Name" xml:space="preserve">
+    <value>outer_radius_chart</value>
+  </data>
+  <data name="top_diameter_chart.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
-  <data name="wall_thickness_chart.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Verdana, 9pt</value>
+  <data name="&gt;&gt;outer_radius_chart.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
-  <data name="wall_thickness_chart.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 256</value>
-  </data>
-  <data name="wall_thickness_chart.Size" type="System.Drawing.Size, System.Drawing">
-    <value>826, 248</value>
-  </data>
-  <data name="wall_thickness_chart.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
+  <data name="tableLayoutPanel6.RowCount" type="System.Int32, mscorlib">
+    <value>2</value>
   </data>
   <data name="&gt;&gt;wall_thickness_chart.Name" xml:space="preserve">
     <value>wall_thickness_chart</value>
   </data>
-  <data name="&gt;&gt;wall_thickness_chart.Type" xml:space="preserve">
-    <value>SecureAutomatedSystem.Charts.LineCurves.LineCurvesChart, SecureAutomatedSystem, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  <data name="diameterMetricsTabPage.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
   </data>
-  <data name="&gt;&gt;wall_thickness_chart.Parent" xml:space="preserve">
-    <value>tableLayoutPanel4</value>
+  <data name="&gt;&gt;topMetricsTabPage.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroTabPage, MetroFramework, Version=1.3.5.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
   </data>
-  <data name="&gt;&gt;wall_thickness_chart.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="tableLayoutPanel6.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="bottom_lowersection_height_chart" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="outer_pairing_radius_cyl_chart" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,50" /&gt;&lt;Rows Styles="Percent,50,Percent,50" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
-  <data name="tableLayoutPanel4.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
+  <data name="&gt;&gt;topMetricsTabPage.Parent" xml:space="preserve">
+    <value>metroTabControl1</value>
   </data>
-  <data name="tableLayoutPanel4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
+  <data name="&gt;&gt;diameterMetricsTabPage.Parent" xml:space="preserve">
+    <value>metroTabControl1</value>
   </data>
-  <data name="tableLayoutPanel4.RowCount" type="System.Int32, mscorlib">
-    <value>2</value>
+  <data name="&gt;&gt;tableLayoutPanel2.Name" xml:space="preserve">
+    <value>tableLayoutPanel2</value>
   </data>
-  <data name="tableLayoutPanel4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>832, 507</value>
+  <data name="&gt;&gt;inner_diameter_chart.Parent" xml:space="preserve">
+    <value>tableLayoutPanel2</value>
   </data>
-  <data name="tableLayoutPanel4.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanel4.Name" xml:space="preserve">
-    <value>tableLayoutPanel4</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanel4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanel4.Parent" xml:space="preserve">
-    <value>ogivePartMetricsTabPage</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanel4.ZOrder" xml:space="preserve">
+  <data name="tableLayoutPanel3.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
   <data name="tableLayoutPanel4.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
     <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="ogive_pairing_radius_chart" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="wall_thickness_chart" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,50" /&gt;&lt;Rows Styles="Percent,50,Percent,50" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
-  <data name="ogivePartMetricsTabPage.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 38</value>
-  </data>
-  <data name="ogivePartMetricsTabPage.Size" type="System.Drawing.Size, System.Drawing">
-    <value>832, 507</value>
-  </data>
-  <data name="ogivePartMetricsTabPage.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="ogivePartMetricsTabPage.Text" xml:space="preserve">
-    <value>Ogive part</value>
-  </data>
-  <data name="&gt;&gt;ogivePartMetricsTabPage.Name" xml:space="preserve">
-    <value>ogivePartMetricsTabPage</value>
-  </data>
-  <data name="&gt;&gt;ogivePartMetricsTabPage.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroTabPage, MetroFramework, Version=1.3.5.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
-  </data>
-  <data name="&gt;&gt;ogivePartMetricsTabPage.Parent" xml:space="preserve">
-    <value>metroTabControl1</value>
-  </data>
-  <data name="&gt;&gt;ogivePartMetricsTabPage.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="tableLayoutPanel5.ColumnCount" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="top_thickness_chart.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="top_thickness_chart.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Verdana, 9pt</value>
-  </data>
-  <data name="top_thickness_chart.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
-  </data>
-  <data name="top_thickness_chart.Size" type="System.Drawing.Size, System.Drawing">
-    <value>826, 247</value>
-  </data>
-  <data name="top_thickness_chart.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;top_thickness_chart.Name" xml:space="preserve">
-    <value>top_thickness_chart</value>
-  </data>
-  <data name="&gt;&gt;top_thickness_chart.Type" xml:space="preserve">
-    <value>SecureAutomatedSystem.Charts.LineCurves.LineCurvesChart, SecureAutomatedSystem, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;top_thickness_chart.Parent" xml:space="preserve">
-    <value>tableLayoutPanel5</value>
-  </data>
-  <data name="&gt;&gt;top_thickness_chart.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="top_diameter_chart.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="top_diameter_chart.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Verdana, 9pt</value>
-  </data>
-  <data name="top_diameter_chart.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 256</value>
-  </data>
-  <data name="top_diameter_chart.Size" type="System.Drawing.Size, System.Drawing">
-    <value>826, 248</value>
-  </data>
-  <data name="top_diameter_chart.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;top_diameter_chart.Name" xml:space="preserve">
-    <value>top_diameter_chart</value>
-  </data>
-  <data name="&gt;&gt;top_diameter_chart.Type" xml:space="preserve">
-    <value>SecureAutomatedSystem.Charts.LineCurves.LineCurvesChart, SecureAutomatedSystem, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;top_diameter_chart.Parent" xml:space="preserve">
-    <value>tableLayoutPanel5</value>
-  </data>
-  <data name="&gt;&gt;top_diameter_chart.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="tableLayoutPanel5.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="tableLayoutPanel5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="tableLayoutPanel5.RowCount" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="tableLayoutPanel5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>832, 507</value>
-  </data>
-  <data name="tableLayoutPanel5.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanel5.Name" xml:space="preserve">
-    <value>tableLayoutPanel5</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanel5.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanel5.Parent" xml:space="preserve">
-    <value>topMetricsTabPage</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanel5.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="tableLayoutPanel5.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="top_thickness_chart" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="top_diameter_chart" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,50" /&gt;&lt;Rows Styles="Percent,50,Percent,50" /&gt;&lt;/TableLayoutSettings&gt;</value>
-  </data>
-  <data name="topMetricsTabPage.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 38</value>
-  </data>
-  <data name="topMetricsTabPage.Size" type="System.Drawing.Size, System.Drawing">
-    <value>832, 507</value>
-  </data>
-  <data name="topMetricsTabPage.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="topMetricsTabPage.Text" xml:space="preserve">
-    <value>Top</value>
-  </data>
-  <data name="&gt;&gt;topMetricsTabPage.Name" xml:space="preserve">
-    <value>topMetricsTabPage</value>
-  </data>
-  <data name="&gt;&gt;topMetricsTabPage.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroTabPage, MetroFramework, Version=1.3.5.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
-  </data>
-  <data name="&gt;&gt;topMetricsTabPage.Parent" xml:space="preserve">
-    <value>metroTabControl1</value>
-  </data>
-  <data name="&gt;&gt;topMetricsTabPage.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="tableLayoutPanel6.ColumnCount" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="bottom_lowersection_height_chart.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="bottom_lowersection_height_chart.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Verdana, 9pt</value>
-  </data>
-  <data name="bottom_lowersection_height_chart.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
-  </data>
-  <data name="bottom_lowersection_height_chart.Size" type="System.Drawing.Size, System.Drawing">
-    <value>826, 247</value>
-  </data>
-  <data name="bottom_lowersection_height_chart.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;bottom_lowersection_height_chart.Name" xml:space="preserve">
-    <value>bottom_lowersection_height_chart</value>
-  </data>
-  <data name="&gt;&gt;bottom_lowersection_height_chart.Type" xml:space="preserve">
-    <value>SecureAutomatedSystem.Charts.LineCurves.LineCurvesChart, SecureAutomatedSystem, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;bottom_lowersection_height_chart.Parent" xml:space="preserve">
-    <value>tableLayoutPanel6</value>
-  </data>
-  <data name="&gt;&gt;bottom_lowersection_height_chart.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="outer_pairing_radius_cyl_chart.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="outer_pairing_radius_cyl_chart.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Verdana, 9pt</value>
-  </data>
-  <data name="outer_pairing_radius_cyl_chart.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 256</value>
-  </data>
-  <data name="outer_pairing_radius_cyl_chart.Size" type="System.Drawing.Size, System.Drawing">
-    <value>826, 248</value>
-  </data>
-  <data name="outer_pairing_radius_cyl_chart.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;outer_pairing_radius_cyl_chart.Name" xml:space="preserve">
-    <value>outer_pairing_radius_cyl_chart</value>
-  </data>
-  <data name="&gt;&gt;outer_pairing_radius_cyl_chart.Type" xml:space="preserve">
-    <value>SecureAutomatedSystem.Charts.LineCurves.LineCurvesChart, SecureAutomatedSystem, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;outer_pairing_radius_cyl_chart.Parent" xml:space="preserve">
-    <value>tableLayoutPanel6</value>
-  </data>
-  <data name="&gt;&gt;outer_pairing_radius_cyl_chart.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="tableLayoutPanel6.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="tableLayoutPanel6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="tableLayoutPanel6.RowCount" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="tableLayoutPanel6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>832, 507</value>
-  </data>
-  <data name="tableLayoutPanel6.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanel6.Name" xml:space="preserve">
-    <value>tableLayoutPanel6</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanel6.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanel6.Parent" xml:space="preserve">
-    <value>metricsTabPage</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanel6.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="tableLayoutPanel6.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="bottom_lowersection_height_chart" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="outer_pairing_radius_cyl_chart" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,50" /&gt;&lt;Rows Styles="Percent,50,Percent,50" /&gt;&lt;/TableLayoutSettings&gt;</value>
-  </data>
-  <data name="metricsTabPage.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 38</value>
-  </data>
-  <data name="metricsTabPage.Size" type="System.Drawing.Size, System.Drawing">
-    <value>832, 507</value>
-  </data>
-  <data name="metricsTabPage.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="metricsTabPage.Text" xml:space="preserve">
-    <value>Other metrics</value>
-  </data>
-  <data name="&gt;&gt;metricsTabPage.Name" xml:space="preserve">
-    <value>metricsTabPage</value>
-  </data>
-  <data name="&gt;&gt;metricsTabPage.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroTabPage, MetroFramework, Version=1.3.5.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
-  </data>
-  <data name="&gt;&gt;metricsTabPage.Parent" xml:space="preserve">
-    <value>metroTabControl1</value>
-  </data>
   <data name="&gt;&gt;metricsTabPage.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <data name="metroTabControl1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="metroTabControl1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
-  </data>
-  <data name="metroTabControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>840, 549</value>
-  </data>
-  <data name="metroTabControl1.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;metroTabControl1.Name" xml:space="preserve">
-    <value>metroTabControl1</value>
-  </data>
-  <data name="&gt;&gt;metroTabControl1.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroTabControl, MetroFramework, Version=1.3.5.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
-  </data>
-  <data name="&gt;&gt;metroTabControl1.Parent" xml:space="preserve">
-    <value>tableLayoutPanel1</value>
-  </data>
-  <data name="&gt;&gt;metroTabControl1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="tableLayoutPanel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="tableLayoutPanel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>20, 60</value>
-  </data>
-  <data name="tableLayoutPanel1.RowCount" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="tableLayoutPanel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>846, 555</value>
-  </data>
-  <data name="tableLayoutPanel1.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanel1.Name" xml:space="preserve">
-    <value>tableLayoutPanel1</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanel1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanel1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanel1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="tableLayoutPanel1.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="metroTabControl1" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,50" /&gt;&lt;Rows Styles="Percent,50" /&gt;&lt;/TableLayoutSettings&gt;</value>
-  </data>
-  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>ru</value>
-  </metadata>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 13</value>
+  <data name="outer_diameter_chart.Size" type="System.Drawing.Size, System.Drawing">
+    <value>826, 247</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>886, 635</value>
   </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>SnapshotForm</value>
+  <data name="bottom_lowersection_height_chart.Size" type="System.Drawing.Size, System.Drawing">
+    <value>826, 247</value>
   </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>SnapshotForm</value>
+  <data name="inner_diameter_chart.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Verdana, 9pt</value>
   </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>MetroFramework.Forms.MetroForm, MetroFramework, Version=1.3.5.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  <data name="&gt;&gt;tableLayoutPanel6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="tableLayoutPanel1.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="metroTabControl1" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,50" /&gt;&lt;Rows Styles="Percent,50" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  </data>
+  <data name="&gt;&gt;outer_diameter_chart.Parent" xml:space="preserve">
+    <value>tableLayoutPanel2</value>
+  </data>
+  <data name="outer_diameter_chart.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="bottom_lowersection_height_chart.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="inner_diameter_chart.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 256</value>
+  </data>
+  <data name="&gt;&gt;ogivePartMetricsTabPage.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroTabPage, MetroFramework, Version=1.3.5.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="outer_pairing_radius_cyl_chart.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="inner_radius_chart.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 256</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel5.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="top_diameter_chart.Size" type="System.Drawing.Size, System.Drawing">
+    <value>826, 248</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel4.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="radiusMetricsTabPage.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="tableLayoutPanel5.ColumnCount" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;diameterMetricsTabPage.Name" xml:space="preserve">
+    <value>diameterMetricsTabPage</value>
+  </data>
+  <data name="tableLayoutPanel5.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="top_thickness_chart" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="top_diameter_chart" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,50" /&gt;&lt;Rows Styles="Percent,50,Percent,50" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  </data>
+  <data name="&gt;&gt;ogive_pairing_radius_chart.Name" xml:space="preserve">
+    <value>ogive_pairing_radius_chart</value>
+  </data>
+  <data name="outer_pairing_radius_cyl_chart.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;inner_diameter_chart.Type" xml:space="preserve">
+    <value>SecureAutomatedSystem.Charts.LineCurves.LineCurvesChart, SecureAutomatedSystem, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="wall_thickness_chart.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 256</value>
+  </data>
+  <data name="tableLayoutPanel3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="outer_radius_chart.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="&gt;&gt;metricsTabPage.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroTabPage, MetroFramework, Version=1.3.5.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
 </root>
