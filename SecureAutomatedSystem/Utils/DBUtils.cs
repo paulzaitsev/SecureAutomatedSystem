@@ -3,6 +3,7 @@ using System.CodeDom;
 using System.Text;
 using System.Windows.Forms.DataVisualization.Charting;
 using SecureAutomatedSystem.Charts.LineCurves;
+using SecureAutomatedSystem.databaseDataSetTableAdapters;
 using SecureAutomatedSystem.ProcessEmulation;
 
 namespace SecureAutomatedSystem.Utils {
@@ -12,6 +13,11 @@ namespace SecureAutomatedSystem.Utils {
         private static databaseDataSetTableAdapters.productTableAdapter productTableAdapter = new databaseDataSetTableAdapters.productTableAdapter();
 
         delegate string AssignDelgate(float value);
+
+        public static productTableAdapter ProductTableAdapter {
+            get { return productTableAdapter; }
+            set { productTableAdapter = value; }
+        }
 
         public static void PullNewProduct(Product newProduct) {
             dataSet.product.AddproductRow(CreateDataRow(newProduct, AssignParameter));
@@ -52,22 +58,30 @@ namespace SecureAutomatedSystem.Utils {
             Product perfect = new Product();
             perfect.DeserializeFromXml("SuggestedParams.xml");
             foreach (databaseDataSet.productRow dataRow in dataSet.product) {
-                var valueX = dataRow["id"];
-                var valueY = dataRow[fieldName];
+                var valueX = GetDataBaseValue(dataRow, "id", null);//dataRow["id"];
+                var valueY = GetDataBaseValue(dataRow, fieldName, key);//dataRow[fieldName];
 
                 double realX = Double.Parse(valueX.ToString());
                 double realY = Double.Parse(valueY.ToString());
 
                 lcChart.Series["Series1"].Points.Add(new DataPoint(realX, realY));
 
-                var suggestedValue = ReflectionUtils. GetValue(perfect, FieldnameToPropertyName(fieldName));
+                var suggestedValue = ReflectionUtils.GetValue(perfect, FieldNameToPropertyName(fieldName));
                 double suggestedParam = Double.Parse(suggestedValue.ToString());
 
                 lcChart.Series["Series2"].Points.Add(new DataPoint(realX, suggestedParam));
             }
         }
 
-        static string FieldnameToPropertyName(string fieldName) {
+        private static object GetDataBaseValue(databaseDataSet.productRow row, string fieldName, string key) {
+            if (!string.IsNullOrEmpty(key)) {
+                var dbValue = row[fieldName];
+                return CryptoUtils.DecryptParameter(dbValue.ToString(), key);
+            }
+            return row[fieldName];
+        }
+        
+        static string FieldNameToPropertyName(string fieldName) {
             if (!string.IsNullOrEmpty(fieldName)) {
                 string[] separatedValues = fieldName.Split('_');
                 var sb = new StringBuilder();

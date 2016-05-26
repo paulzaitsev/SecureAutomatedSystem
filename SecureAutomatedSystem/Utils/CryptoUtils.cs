@@ -45,7 +45,8 @@ namespace SecureAutomatedSystem.Utils {
 
         public static string DecryptParameter(string parameter, string key) {
             DesEncryptor.Key = Encoding.UTF8.GetBytes(key);
-            using (MemoryStream msDecrypt = new MemoryStream()) {
+            byte[] parameterBytes = Encoding. UTF8. GetBytes(parameter);
+            using (MemoryStream msDecrypt = new MemoryStream(parameterBytes)) {
                 using ( CryptoStream csDecrypt = new CryptoStream(msDecrypt, DesEncryptor.CreateDecryptor(DesEncryptor.Key, DesEncryptor.IV), CryptoStreamMode.Read)) {
                     using (StreamReader srDecrypt = new StreamReader(csDecrypt)) {
                         return srDecrypt.ReadToEnd();
